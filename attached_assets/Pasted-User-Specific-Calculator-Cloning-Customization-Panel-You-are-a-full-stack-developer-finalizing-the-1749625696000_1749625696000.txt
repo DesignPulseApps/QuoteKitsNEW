@@ -1,0 +1,134 @@
+User-Specific Calculator Cloning & Customization Panel
+You are a full-stack developer finalizing the customization system for QuoteKit. The current interface shows a generic version of the calculator. We now need to implement true user-specific calculator instancing — where each selected calculator is cloned and uniquely editable.
+
+🎯 OBJECTIVE:
+When a user selects a calculator and clicks Customize, they should:
+
+Be editing their own cloned copy of that calculator (with full quote logic + inputs)
+
+See a live preview of their version, not the generic template
+
+Have full control over logo, fonts, style, service variables, and text
+
+Save those changes to their personal database record for that calculator
+
+Be able to embed their customized version on their site using a unique URL
+
+🔄 REQUIRED FUNCTIONALITY:
+✅ 1. Clone Calculator on Selection
+On user click (e.g. “Add to My Dashboard”), create a copy of the selected calculator in the database
+
+This copy includes:
+
+Full form structure
+
+Pricing logic
+
+Default styles
+
+Calculator type ID (for internal reference)
+
+✅ 2. Bind Customize Panel to Cloned Instance
+When user clicks Customize, fetch their copy (by calculator ID + user ID)
+
+Load their saved styles, service variables, pricing logic
+
+Allow full editing of:
+
+Texts (headline, subheading, CTA, footnote)
+
+Pricing tiers + logic (JSON block)
+
+Question labels + dropdown options
+
+Visibility toggles (email capture, PDF export, etc.)
+
+✅ 3. Enable Logo Upload
+Add logo upload field (image preview + delete option)
+
+Store uploaded file to Supabase/Firebase Storage
+
+Auto-attach logo URL to user's calculator config JSON
+
+Display logo in top left of calculator preview panel
+
+✅ 4. Add Full Font Library
+Replace current dropdown with extended Google Fonts (or similar), e.g.:
+
+js
+Copy
+Edit
+[
+  "Inter", "Lato", "Montserrat", "Playfair Display", "Poppins", "Roboto", "Roboto Slab",
+  "Open Sans", "Source Sans Pro", "Merriweather", "Raleway", "Oswald", "Nunito", "DM Sans",
+  "Quicksand", "Work Sans", "Abril Fatface", "Mulish", "Libre Baskerville", "Cormorant Garamond"
+]
+Apply font family to live preview instantly
+
+Save selected font in calculator config JSON
+
+✅ 5. Live Preview = Real Quote Calculator
+Replace static iframe with live instanced preview of user’s own calculator
+
+Reflect current question inputs, logic, and style changes instantly
+
+Ensure quote calculator pulls logic + labels from current state config
+
+🧠 DATA MODEL RECOMMENDATION:
+Each user-calculator instance should store:
+
+json
+Copy
+Edit
+{
+  "userId": "user_123",
+  "calculatorId": "wedding-photography",
+  "instanceId": "calc_abc123",
+  "branding": {
+    "primaryColor": "#3b82f6",
+    "accentColor": "#facc15",
+    "fontFamily": "Poppins",
+    "roundedCorners": 12,
+    "logoUrl": "https://cdn.supabase.com/user123/logo.png"
+  },
+  "text": {
+    "headline": "Get Your Wedding Quote",
+    "subheading": "Tell us about your special day",
+    "ctaText": "See My Price",
+    "footerNote": "*Final pricing depends on confirmation."
+  },
+  "quoteLogic": {
+    "baseRate": 1200,
+    "addOns": { ... },
+    "discounts": { ... }
+  },
+  "questions": [
+    {
+      "label": "Event Duration",
+      "type": "dropdown",
+      "options": ["Half Day", "Full Day", "Two Days"]
+    },
+    {
+      "label": "Number of Guests",
+      "type": "number"
+    }
+  ]
+}
+🧪 OPTIONAL: Advanced Improvements
+Save/Undo revision system (store last 3 versions)
+
+Preview on multiple devices (mobile/tablet switch)
+
+“Reset to Template Defaults” button
+
+Option to duplicate an existing customized calculator
+
+📦 FINAL OUTCOME:
+Each user can fully brand, configure, and embed their own private calculator clone
+
+All UI controls are stored in and read from their instance JSON
+
+All previews and embeds reflect their actual quote logic and styles
+
+You now have the ability to monetize each customized instance independently
+

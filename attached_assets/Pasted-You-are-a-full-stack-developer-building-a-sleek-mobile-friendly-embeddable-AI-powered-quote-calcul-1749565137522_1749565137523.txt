@@ -1,0 +1,139 @@
+You are a full-stack developer building a sleek, mobile-friendly, embeddable AI-powered quote calculator for **motorcycle repair shops**. This calculator will be sold as a standalone widget and embedded in websites built with WordPress, Squarespace, Wix, Webflow, or Showit.
+
+---
+
+🏁 GOAL:
+Create a fast, responsive, and brandable tool that:
+- Collects repair job details from clients  
+- Calculates a real-time repair cost estimate  
+- Displays a clean pricing breakdown  
+- Captures email leads (optional)  
+- Works smoothly as an iframe or JS embed  
+- Optimized for mobile
+
+---
+
+🏍️ TARGET USERS:
+- Independent motorcycle mechanics  
+- Custom bike shops  
+- Harley-Davidson & sportbike repair garages  
+- Mobile motorcycle repair services  
+- Scooter & electric bike technicians
+
+---
+
+🛠️ INPUT OPTIONS (Editable via JSON Config):
+1. **Bike Type** –  
+   - Cruiser  
+   - Sportbike  
+   - Touring  
+   - Dirt Bike  
+   - Scooter / Moped  
+   - Electric / Hybrid  
+
+2. **Service Type** –  
+   - General Maintenance  
+   - Engine Repair  
+   - Brake Replacement  
+   - Tire Change  
+   - Suspension Service  
+   - Electrical Diagnostics  
+
+3. **Urgency** –  
+   - Standard (2–3 days)  
+   - Express (Next day)  
+   - Emergency (Same day)  
+
+4. **Add-Ons** –  
+   - Oil & Filter Change  
+   - Chain Replacement  
+   - Valve Adjustment  
+   - Pickup & Dropoff  
+
+5. **Bike Age** –  
+   - 0–2 years  
+   - 3–5 years  
+   - 6–10 years  
+   - 10+ years  
+
+6. **Promo Code** – Optional input
+
+---
+
+🧮 SAMPLE PRICING LOGIC (Editable via JSON):
+- Base Service: €60–€300 depending on service  
+- Express: +€50, Emergency: +€100  
+- Pickup & Dropoff: +€40  
+- Oil Change: +€45  
+- Chain Replacement: +€70  
+- Bike age modifier: +10% if 10+ years old  
+- Promo code: Apply 10% discount
+
+---
+
+🧰 CORE FEATURES:
+✅ Step-by-step form layout (React preferred)  
+✅ Live total update with animation  
+✅ Optional email entry before viewing estimate  
+✅ Breakdown summary with “Book Now” CTA  
+✅ Save as PDF or send quote by email  
+✅ Fully embeddable via iframe/snippet  
+✅ JSON-based config for mechanics to edit prices
+
+---
+
+⚙️ ADVANCED FEATURES:
+
+1. 🗣️ **Natural Language Input (Optional):**  
+> “Need brake repair on a cruiser ASAP” → auto-filled form
+
+2. 🔧 **Service Suggestions Engine:**  
+Choosing “10+ year old bike” suggests full diagnostic check
+
+3. ⏳ **Quote Timer:**  
+“This quote is valid for 48 hours” with visual countdown
+
+4. 🌐 **Multi-Language Toggle:**  
+EN, DE, ES, FR available via dropdown
+
+5. 📈 **Analytics Dashboard (Admin Optional):**  
+- Track most-requested services  
+- Average quote value  
+- Conversion % from quotes to bookings
+
+6. 🔗 **CRM Integration:**  
+Zapier / Google Sheets / HubSpot support for lead syncing
+
+7. 📅 **Booking Integration (Future Add-On):**  
+Optional Stripe deposit and calendar sync
+
+---
+
+🎨 DESIGN STYLE:
+- Edgy, masculine palette: black, grey, metallic red  
+- Dashboard-style UI with strong font weights  
+- Motorcycle icons, wrench visuals  
+- Mobile-optimized UI  
+- Custom brand/logo upload for shops
+
+---
+
+🧱 TECH STACK:
+- React + Tailwind CSS  
+- Supabase or Firebase (for leads)  
+- JSON pricing engine  
+- Optional OpenAI/LangChain for language parsing  
+- Stripe support in later release
+
+---
+
+📦 DELIVERABLE:
+- Functional MVP quote calculator  
+- Editable logic file (JSON)  
+- Branded UI output  
+- Email/PDF quote export  
+- Simple embed code
+
+💡 Example Embed:
+```html
+<iframe src="https://quotekit.ai/motorcyclerepairs?user=custombikesvienna" style="width:100%;height:600px;border:none;"></iframe>

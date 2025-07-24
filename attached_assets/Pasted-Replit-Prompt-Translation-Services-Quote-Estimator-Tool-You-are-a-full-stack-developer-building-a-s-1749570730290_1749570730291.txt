@@ -1,0 +1,177 @@
+Replit Prompt: Translation Services Quote Estimator Tool
+You are a full-stack developer building a sleek, embeddable AI-powered quote calculator tailored for translation service providers. This widget will be sold as a standalone tool that translators and agencies can embed on their websites (WordPress, Squarespace, Wix, Webflow, Showit, etc.).
+
+🎯 GOAL:
+Create a modern, responsive quote calculator that:
+
+Gathers key translation request details
+
+Instantly displays a price estimate
+
+Optionally captures lead email before showing the result
+
+Can be embedded via iframe or JS snippet
+
+Is mobile-first and fully customizable
+
+🌍 TARGET USERS:
+Freelance translators
+
+Language service providers (LSPs)
+
+Subtitling/Transcription freelancers
+
+Multilingual marketing agencies
+
+Localization professionals
+
+📥 INPUT OPTIONS (Editable via JSON):
+Service Type
+
+Translation
+
+Proofreading
+
+Transcription
+
+Subtitling
+
+Certified Translation
+
+Source Language
+
+Dropdown (e.g., English, German, Spanish, French…)
+
+Target Language
+
+Dropdown (same options)
+
+Document Type
+
+Legal
+
+Marketing
+
+Technical
+
+Academic
+
+Personal
+
+Word Count
+
+0–500
+
+500–1000
+
+1000–5000
+
+5000+
+
+Urgency
+
+Standard (3–5 days)
+
+Express (48 hours)
+
+Same Day
+
+Add-ons
+
+Certified Stamp
+
+Formatting / Layout
+
+Extra Proofreading
+
+Promo Code – Optional
+
+💰 SAMPLE PRICING LOGIC (Editable via JSON):
+Base Rate: €0.12 per word
+
+Certified: +€20 flat fee
+
+Formatting: +10% total
+
+Proofreading: +€0.04 per word
+
+Express: +25%
+
+Same Day: +50%
+
+Promo: Apply 10% discount with valid code
+
+🧩 CORE FEATURES:
+✅ Step-by-step form UI with modern layout
+✅ Real-time quote calculator with animated updates
+✅ Optional email capture before revealing quote
+✅ Export quote as PDF or email to client
+✅ “Get Started” CTA with editable link
+✅ Iframe/embed snippet output for easy installation
+✅ JSON config for full customizability
+
+🚀 ADVANCED FEATURES:
+🧠 Natural Language Input (Optional)
+
+“Translate 2500 words from English to German, express delivery” → auto-fills form
+
+⏳ Quote Validity Lock
+
+“This quote is valid for 48 hours” + lead capture
+
+🧠 Service Explainers
+
+Hover tooltips: “What’s certified translation?”
+
+🌍 Language Toggle Support
+
+EN, DE, FR, ES — via translation file or simple API integration
+
+🔗 CRM Webhook
+
+Push leads to Mailchimp, Notion, Google Sheets, etc.
+
+📈 Quote Trends Dashboard
+
+Tracks average word count, service type, pricing trends
+
+🛎️ Instant Suggestion Engine
+
+Select Legal Document → Suggest Certified Translation + Formatting
+
+🎨 DESIGN STYLE:
+Clean, multilingual feel: white, blue, grey palette
+
+Flags/icons for language dropdowns
+
+Modern UI with elegant animations
+
+Upload logo, customize colors & button text
+
+🛠️ TECH STACK:
+React + Tailwind CSS
+
+Supabase or Firebase for lead capture
+
+JSON-driven pricing logic
+
+Optional OpenAI for NLP
+
+Optional Stripe integration (future-ready)
+
+📦 DELIVERABLE:
+Fully functional demo app
+
+Real-time pricing logic
+
+Optional email collection
+
+Embed-ready with user-specific link
+
+Admin panel for price edits and settings
+
+💡 Example Embed Code:
+html
+Copy
+Edit
+<iframe src="https://quotekit.ai/translator?user=globetexts" style="width:100%;height:600px;border:none;"></iframe>

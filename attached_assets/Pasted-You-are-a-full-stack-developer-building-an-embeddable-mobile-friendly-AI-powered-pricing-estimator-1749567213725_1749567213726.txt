@@ -1,0 +1,141 @@
+You are a full-stack developer building an embeddable, mobile-friendly, AI-powered pricing estimator tool for **SEO agencies**. The widget will be sold as a standalone tool, designed for websites on WordPress, Squarespace, Wix, Webflow, Framer, or Showit.
+
+---
+
+🎯 GOAL:
+Create a smart, branded quote calculator that:
+- Collects client SEO goals and needs  
+- Instantly generates a pricing estimate  
+- Displays a clean, itemized breakdown  
+- Captures lead email (optional)  
+- Embeds seamlessly via iframe or JS snippet  
+- Qualifies clients and reduces quote requests manually
+
+---
+
+💼 TARGET USERS:
+- SEO freelancers  
+- Boutique and mid-size SEO agencies  
+- Web developers offering SEO as a service  
+- White-label SEO resellers  
+- Local search consultants
+
+---
+
+📥 INPUT OPTIONS (Editable in JSON):
+1. **Primary SEO Goal** –  
+   - Rank higher on Google  
+   - Local SEO (Maps & Reviews)  
+   - Improve Core Web Vitals  
+   - Keyword strategy & blog content  
+   - E-commerce SEO
+
+2. **Website Size** –  
+   - 1–5 Pages  
+   - 6–15 Pages  
+   - 16–30 Pages  
+   - 30+ Pages  
+
+3. **Technical SEO Audit** –  
+   - Yes / No  
+
+4. **Monthly Blogging Plan** –  
+   - 0 / 2 / 4 / 8 blogs per month
+
+5. **Backlink Campaign** –  
+   - Basic (5 links/mo)  
+   - Pro (10 links/mo)  
+   - Premium (20+ links/mo)
+
+6. **Add-Ons** –  
+   - Competitor Analysis  
+   - Keyword Research Pack  
+   - Site Speed Optimization  
+   - Monthly Reporting  
+   - Landing Page Optimization
+
+7. **Promo Code** – Optional
+
+---
+
+🧮 SAMPLE PRICING LOGIC (Editable via JSON):
+- Base fee (1–5 pages + one goal): €400  
+- Add €100–€300 for larger websites  
+- Technical audit: +€150  
+- Blogging: €100 per blog  
+- Backlinks: Basic €150 / Pro €250 / Premium €400  
+- Add-ons range from €75–€250 each  
+- 10% off with valid promo code
+
+---
+
+🧩 CORE FEATURES:
+✅ Step-by-step form UX  
+✅ Real-time quote display  
+✅ Optional email capture before full reveal  
+✅ Email or save PDF estimate  
+✅ “Book a Call” CTA (configurable)  
+✅ JSON config for pricing and copy  
+✅ One-click iframe/embed code generation
+
+---
+
+🚀 ADVANCED FEATURES:
+
+1. 🤖 **Natural Language Input (Optional):**  
+> “I want to rank my ecom store and get backlinks + 4 blogs monthly” → auto-fills form
+
+2. ⏳ **Quote Validity Timer:**  
+> “This estimate is valid for 72 hours” with a countdown and email capture
+
+3. 💬 **Tooltip Assistant:**  
+> “What’s a technical SEO audit?” → hover/tap for mini definition
+
+4. 🏆 **Smart Package Badges:**  
+> “Popular: Local SEO + Monthly Reporting + Audit”
+
+5. 🌐 **Language Switcher:**  
+Easy toggle between EN, DE, ES, FR using translation JSON
+
+6. 🔌 **CRM Integrations:**  
+Leads pushed to Airtable, Notion, Pipedrive, Mailchimp, etc.
+
+7. 📊 **Admin Panel Analytics:**  
+Most selected options, avg. quote value, lead stats
+
+8. 🔐 **Package Unlock via Code:**  
+Enable “VIP” or “Hidden Tier” options only when code is entered
+
+9. 💳 **Stripe Checkout Integration (Phase 2):**  
+Optional deposit payment after quote reveal
+
+---
+
+🎨 DESIGN STYLE:
+- Clean and sharp: charcoal, white, accent green or blue  
+- Flat icons, rounded UI, Google fonts  
+- Subtle animations on scroll and quote reveal  
+- Fully responsive  
+- Customization options: logo, color, font, copy
+
+---
+
+🛠️ TECH STACK:
+- React + Tailwind CSS  
+- Supabase or Firebase for optional lead capture  
+- JSON config for editable pricing logic  
+- Optional: OpenAI for input parsing  
+- Stripe-ready (phase 2)
+
+---
+
+📦 DELIVERABLE:
+- MVP SEO quote app  
+- Branded quote display with email PDF export  
+- JSON-based pricing logic  
+- Admin config panel (optional)  
+- One-click embed snippet
+
+💡 Example Embed:
+```html
+<iframe src="https://quotekit.ai/seoagency?user=webboostco" style="width:100%;height:600px;border:none;"></iframe>

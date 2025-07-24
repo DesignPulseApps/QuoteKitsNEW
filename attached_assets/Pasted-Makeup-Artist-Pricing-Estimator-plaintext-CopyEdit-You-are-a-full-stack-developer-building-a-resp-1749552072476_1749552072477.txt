@@ -1,0 +1,139 @@
+Makeup Artist Pricing Estimator
+plaintext
+CopyEdit
+You are a full-stack developer building a responsive, embeddable AI-powered quote calculator for **makeup artists (MUAs)**. This standalone widget will integrate easily into websites built on WordPress, Showit, Wix, Webflow, and Squarespace.
+
+---
+
+? GOAL:
+Create a mobile-optimized, branded price calculator that:
+- Collects client details and occasion type  
+- Calculates a tailored quote instantly  
+- Offers a clean breakdown with optional add-ons  
+- Captures client email (optional)  
+- Can be embedded with an iframe or JS snippet
+
+---
+
+? TARGET USERS:
+- Freelance makeup artists  
+- Bridal makeup specialists  
+- Event and editorial MUAs  
+- Glam squads and mobile salons
+
+---
+
+? INPUT OPTIONS (Editable via JSON):
+1. **Occasion Type** –  
+   - Bridal  
+   - Bridesmaid  
+   - Event Glam  
+   - Photoshoot / Editorial  
+   - Prom / Graduation  
+
+2. **Number of People** – 1 to 10+  
+
+3. **Makeup Style** –  
+   - Natural / Soft Glam  
+   - Full Glam  
+   - Editorial / High Fashion  
+   - HD / Camera-Ready  
+
+4. **Add-ons** –  
+   - Lashes  
+   - Hair Styling  
+   - Skincare Prep  
+   - Touch-Up Kit  
+   - Travel to Venue  
+
+5. **Appointment Location** –  
+   - At Studio  
+   - On-Site / Client Venue  
+
+6. **Date & Time Selector** – Optional  
+
+7. **Promo Code** – Optional
+
+---
+
+? PRICING LOGIC (Editable in JSON):
+- Base service (1 person, natural makeup at studio): €100  
+- Full Glam: +€25  
+- Editorial: +€40  
+- Lashes: +€15  
+- Hair Styling: +€40  
+- Travel: +€50–€100  
+- Additional person: +€80 each  
+- Promo code: Apply 10% discount if valid
+
+---
+
+? CORE FEATURES:
+✅ Step-by-step React interface (card or progress layout)  
+✅ Real-time price updates based on selections  
+✅ Optional email capture to view full quote  
+✅ Breakdown of selected services and total  
+✅ “Book Me” CTA linked to booking form  
+✅ Branded PDF quote export and email  
+✅ Easy JSON config for non-tech MUA edits  
+✅ Embeddable via `<iframe>` or JavaScript snippet
+
+---
+
+? ADVANCED EXTRAS:
+
+1. ? **AI Input (Optional):**  
+User types: “I need bridal makeup with hair and lashes for 3 people” → form pre-fills
+
+2. ? **Quote Lockdown Timer:**  
+“Price valid for 48 hours” – timer starts once quote shown
+
+3. ? **Tooltip Assistant:**  
+> “Not sure what HD means?” → Hover popup with image demo
+
+4. ? **Most Popular Badge:**  
+> “Most selected: Full Glam + Hair + Lashes”
+
+5. ? **Language Selector:**  
+EN / DE / FR / IT with simple toggle or dropdown
+
+6. ? **Webhook / CRM Support:**  
+Send leads to Notion, Google Sheets, Trello, or Calendly
+
+7. ? **Admin Dashboard (Optional):**  
+Quote volume, conversion rate, top services, peak hours
+
+8. ?￯ﾸﾏ **Smart Logic Enhancements:**  
+- Choose “Bridal” → suggest trial session  
+- Select “5+ people” → recommend extra staff or time buffer  
+- “At venue” auto-triggers travel fee
+
+---
+
+? DESIGN STYLE:
+- Soft rose gold, peach, ivory tones  
+- Rounded corners, elegant serif fonts  
+- Lipstick and brush icons for visual cues  
+- Mobile-first with smooth transitions  
+- Brand customizer: logo, font, CTA button colors
+
+---
+
+?￯ﾸﾏ TECH STACK:
+- React + Tailwind CSS  
+- Firebase or Supabase for optional email capture  
+- JSON config for services and pricing logic  
+- OpenAI for NLP input (optional phase)  
+- Stripe integration (future version for deposit)
+
+---
+
+? DELIVERABLE:
+- Fully functional quote calculator app  
+- Live branded breakdown  
+- Email or PDF quote delivery  
+- One-click embed output
+
+? Example Embed:
+```html
+<iframe src="https://quotekit.ai/mua?user=glamstudio" style="width:100%;height:600px;border:none;"></iframe>

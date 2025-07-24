@@ -1,0 +1,137 @@
+Hair Stylist Quote Estimator Tool
+plaintext
+CopyEdit
+You are a full-stack developer building a mobile-friendly, embeddable AI-powered quote calculator for **hair stylists**. This tool will be sold as a standalone widget that stylists can embed in websites made with WordPress, Squarespace, Wix, Webflow, or Showit.
+
+---
+
+? GOAL:
+Develop a polished and responsive price estimator that:
+- Collects details about hairstyle requests  
+- Instantly calculates an estimated quote  
+- Shows a branded pricing breakdown  
+- Captures lead info via email (optional)  
+- Can be embedded using iframe or JS snippet  
+- Works seamlessly on mobile
+
+---
+
+?￢ﾀﾍ♀️ TARGET USERS:
+- Freelance hairstylists  
+- Bridal & event hair pros  
+- Mobile stylists  
+- High-end salons & home-based hair businesses
+
+---
+
+? INPUT OPTIONS (Editable via JSON Config):
+1. **Service Type** –  
+   - Blow-Dry  
+   - Haircut & Style  
+   - Bridal / Event Updo  
+   - Coloring / Highlights  
+   - Keratin / Straightening  
+
+2. **Hair Length** –  
+   - Short  
+   - Medium  
+   - Long  
+   - Extra Long  
+
+3. **Add-Ons** –  
+   - Olaplex / Bond Repair  
+   - Hair Extensions (Clip-in or Style-in)  
+   - Trial Session (for bridal)  
+   - Extra Styling Time  
+   - Travel to Venue  
+
+4. **Appointment Location** –  
+   - In Salon  
+   - Mobile / Client’s Location  
+
+5. **Date & Time** – Optional Picker
+
+6. **Promo Code** – Optional
+
+---
+
+? SAMPLE PRICING LOGIC (Editable via JSON):
+- Base Service: Haircut in salon, short hair = €60  
+- Add €10–€20 based on hair length  
+- Bridal Updo: starts at €150  
+- Travel: +€50–€100 depending on zone  
+- Add-ons: Olaplex (+€25), Extensions (+€40), Trial (+€50)  
+- Promo: Apply 10% discount if valid
+
+---
+
+? CORE FEATURES:
+✅ Modern, step-by-step React UI  
+✅ Real-time animated price display  
+✅ Optional email capture before quote shown  
+✅ PDF export or email quote option  
+✅ “Book Now” or “Contact Me” CTA (configurable link)  
+✅ One-click embed script or iframe  
+✅ JSON config file to edit pricing logic
+
+---
+
+? ADVANCED FEATURES:
+
+1. ? **Natural Language Input (Optional):**  
+> User types: “I need a bridal updo with extensions at my place” → auto-fills form
+
+2. ⏳ **Quote Lockdown Timer:**  
+“This quote is valid for 72 hours” with countdown and email reminder
+
+3. ? **Smart Tooltips:**  
+> “What’s Olaplex?” → hover popup with short explanation
+
+4. ? **Popular Combo Badges:**  
+> “Most booked: Blow-Dry + Olaplex”
+
+5. ? **Language Toggle:**  
+Multi-language support (EN, DE, ES, FR) via dropdown
+
+6. ? **CRM Integration:**  
+Send leads to Google Sheets, Notion, Mailchimp, etc.
+
+7. ? **Admin Analytics Dashboard:**  
+Track quote volume, average spend, most popular services
+
+8. ?￯ﾸﾏ **Dynamic Suggestion Engine:**  
+Select “Bridal” → Suggest “Trial + Travel” combo  
+Choose “Extra Long Hair” → Trigger add-on pricing logic
+
+9. ? **Promo Code Unlocks:**  
+Apply affiliate or seasonal offers using code input
+
+---
+
+? DESIGN STYLE:
+- Classy and sleek: white, blush pink, champagne tones  
+- Rounded UI, soft drop shadows  
+- Hair icons, scissors, blow dryers  
+- Smooth animations, mobile-first UI  
+- Upload logo + change fonts/colors via style editor
+
+---
+
+?￯ﾸﾏ TECH STACK:
+- React + Tailwind CSS  
+- Supabase or Firebase for optional lead capture  
+- Optional OpenAI or LangChain for NLP input  
+- JSON-driven logic  
+- Stripe (for deposit payments in future release)
+
+---
+
+? DELIVERABLE:
+- Fully working MVP app  
+- Quote display with branded breakdown  
+- Optional email PDF delivery  
+- Embed-ready script or iframe
+
+? Example Embed:
+```html
+<iframe src="https://quotekit.ai/hairstylist?user=glamhairbyemma" style="width:100%;height:600px;border:none;"></iframe>

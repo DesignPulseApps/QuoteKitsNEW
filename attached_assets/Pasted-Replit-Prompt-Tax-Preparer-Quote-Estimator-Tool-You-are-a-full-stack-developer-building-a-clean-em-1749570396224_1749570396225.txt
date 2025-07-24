@@ -1,0 +1,174 @@
+Replit Prompt: Tax Preparer Quote Estimator Tool
+You are a full-stack developer building a clean, embeddable AI-powered quote calculator tailored for tax preparers, accountants, and bookkeeping professionals. This widget will be sold as a white-labeled tool that can be embedded into any site (WordPress, Squarespace, Webflow, Wix, Showit, etc.).
+
+🎯 GOAL:
+Build a fast, modern quote calculator that:
+
+Gathers client tax prep details
+
+Provides an instant branded estimate
+
+Optionally captures leads via email
+
+Can be embedded via iframe or script
+
+Works smoothly across all devices
+
+💼 TARGET USERS:
+Freelance tax preparers
+
+Accountants & CPAs
+
+Online tax service firms
+
+Small business financial advisors
+
+Bookkeeping & compliance consultants
+
+📥 INPUT OPTIONS (Editable via JSON Config):
+Filing Type
+
+Individual
+
+Married Joint / Married Separate
+
+Business / Self-Employed
+
+LLC / Corporation
+
+Income Level
+
+Under €30k
+
+€30k–€70k
+
+€70k–€150k
+
+Over €150k
+
+Number of Forms
+
+W2 only
+
+1–3 extra forms (1099, etc.)
+
+4+ forms
+
+Investment / Crypto forms
+
+Add-ons
+
+Audit Protection
+
+Year-Round Support
+
+Prior-Year Filing
+
+In-Person Review Session
+
+Rush Filing (48hr)
+
+Promo Code (Optional)
+
+💰 SAMPLE PRICING LOGIC (Editable via JSON):
+Base Filing: €80 (Individual, W2 only)
+
+Married Joint: +€40
+
+Business Filing: +€120
+
+Additional forms: +€25–€75
+
+Crypto/Investments: +€60
+
+Add-ons:
+
+Audit Protection: +€40
+
+Year-Round Support: +€90
+
+Prior-Year Filing: +€60
+
+In-Person Review: +€50
+
+Rush Filing: +€75
+
+Promo code = 10% discount if valid
+
+🧩 CORE FEATURES:
+✅ Step-by-step input UI (React + Tailwind)
+✅ Real-time animated quote calculation
+✅ Optional email required to view full quote
+✅ PDF export or emailed quote option
+✅ “Book Your Filing” CTA (link editable)
+✅ One-click embed code output
+✅ All logic controlled via editable JSON
+
+🚀 ADVANCED FEATURES:
+🧠 Natural Language Input Option
+
+User types: “I need to file crypto taxes with rush service” → auto-fills the form
+
+⏳ Quote Validity Timer
+
+“Your quote is locked for 72 hours” with optional lead capture
+
+💬 Tooltip Explainers
+
+“What is audit protection?” → hover explanation
+
+🌐 Multi-Language Support
+
+EN, DE, ES, FR (editable or API-powered)
+
+📊 Lead Dashboard
+
+Tracks quote submissions, services chosen, timestamps
+
+🔁 Smart Suggestions
+
+Selecting Business Filing → auto-suggest Prior-Year Filing + Year-Round Support
+
+🔗 CRM Integration
+
+Push leads to Google Sheets, Notion, Mailchimp, etc.
+
+📈 Quote Trends Analytics
+
+Track most requested forms, average pricing, client type mix
+
+🎨 DESIGN STYLE:
+Clean and trustworthy: white, navy blue, grey accents
+
+Modern fonts with square UI elements
+
+Mobile-first layout with branded transitions
+
+Upload logo, edit CTA & colors in settings
+
+🛠️ TECH STACK:
+React + Tailwind CSS
+
+Supabase or Firebase for storing leads
+
+JSON-configurable pricing and logic
+
+Optional OpenAI API for NLP parsing
+
+Stripe (optional for future deposits)
+
+📦 DELIVERABLE:
+Fully working quote calculator app
+
+Real-time price display and breakdown
+
+Customizable embed with unique user link
+
+Admin panel access for pricing edits
+
+💡 Example Embed Code:
+html
+Copy
+Edit
+<iframe src="https://quotekit.ai/tax-preparer?user=accuratetaxpro" style="width:100%;height:600px;border:none;"></iframe>
+Would you like the next one? Just tell me the niche!

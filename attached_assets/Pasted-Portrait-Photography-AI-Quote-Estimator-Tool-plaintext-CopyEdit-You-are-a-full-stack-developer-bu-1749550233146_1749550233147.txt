@@ -1,0 +1,154 @@
+Portrait Photography AI Quote Estimator Tool
+plaintext
+CopyEdit
+You are a full-stack developer building a mobile-first, embeddable AI-powered pricing estimator for **portrait photographers**. The tool will be sold as a standalone widget and embeddable into sites like WordPress, Wix, Squarespace, Showit, and Webflow.
+
+---
+
+? GOAL:
+Build a smooth, responsive quote tool that:
+- Captures session preferences
+- Instantly displays a price estimate
+- Offers a branded service breakdown
+- Optionally collects leads (email)
+- Is embeddable via iframe or JS snippet
+- Matches photographer branding
+
+---
+
+? TARGET NICHE:
+Photographers offering:
+- Individual Portraits  
+- Couple Sessions  
+- Graduation / Senior Shoots  
+- Business & Personal Branding Shoots  
+
+---
+
+? INPUT OPTIONS (Editable by Photographer):
+1. **Portrait Type** –  
+   - Individual  
+   - Couple  
+   - Family  
+   - Senior / Graduation  
+   - Branding / Business  
+
+2. **Duration** –  
+   - 30 minutes  
+   - 1 hour  
+   - 2 hours  
+
+3. **Location** –  
+   - Studio  
+   - Outdoor  
+   - Client’s Home / Office  
+
+4. **Wardrobe Changes** –  
+   - 1  
+   - 2  
+   - 3+  
+
+5. **Add-ons** –  
+   - Professional Makeup  
+   - Retouching Level: Standard / Deluxe  
+   - Express Delivery  
+   - Extra Images  
+   - Headshot Bundle  
+
+6. **Usage Type** –  
+   - Personal  
+   - Commercial / Branding  
+
+7. **Promo Code** – Optional
+
+---
+
+? PRICING LOGIC (JSON Editable):
+- Base Session (30 min, studio, 1 outfit): €150  
+- +€75 per additional 30 mins  
+- Outdoor or On-location: +€60  
+- Makeup: +€80  
+- Extra Outfit: +€40 each  
+- Retouching: +€50 deluxe  
+- Extra Images: +€20 each  
+- Express Delivery: +€50  
+- Commercial Use: +€120  
+- Valid promo code: 10% off
+
+---
+
+? CORE FEATURES:
+✅ React form UI  
+✅ Live quote preview & animation  
+✅ Optional email capture (lead gen)  
+✅ PDF/email export of quote  
+✅ Configurable CTA button: “Book My Portrait”  
+✅ Copy-paste iframe embed code  
+✅ JSON-configurable inputs and logic
+
+---
+
+? ADVANCED FEATURES:
+
+1. ? **Natural Language Input (Optional):**  
+Client types: “I want an outdoor shoot with 2 outfits and retouching” → Autofills form
+
+2. ? **PDF/Email Export:**  
+Branded quote summary with total, breakdown, logo
+
+3. ? **Hover Definitions:**  
+"Commercial Use" = “Includes rights to use image for marketing”
+
+4. ⏳ **Quote Lock:**  
+“Your estimate is valid for 72 hours”
+
+5. ? **Smart Selections:**  
+“Most clients choose 1 hour, outdoor, 2 outfits + makeup”
+
+6. ? **Language Toggle:**  
+Support translations (German, Spanish, etc.)
+
+7. ? **CRM/Webhook Integration:**  
+Send leads to Notion, HubSpot, Google Sheets, etc.
+
+8. ? **Admin Dashboard (Optional):**  
+Lead tracker, quote logs, most selected combos
+
+9. ?￯ﾸﾏ **Dynamic Logic Triggers:**  
+- Commercial use auto-adds deluxe retouching  
+- 3+ outfits → suggest longer session  
+
+10. ? **Referral Code Unlock:**  
+Let photographers hide special packages behind partner or affiliate codes
+
+---
+
+? DESIGN STYLE:
+- Warm and approachable  
+- Soft gradients, rounded cards  
+- Customizable fonts, logo, button colors  
+- Focused on trust, clarity, elegance  
+- Portrait image thumbnails during steps
+
+---
+
+?￯ﾸﾏ TECH STACK:
+- React + Tailwind CSS  
+- Supabase or Firebase for email leads  
+- JSON-config for pricing logic  
+- Optional OpenAI for NL input  
+- Stripe for optional booking deposit (future phase)
+
+---
+
+? DELIVERABLE:
+- Fully working quote estimator  
+- Live quote calculator  
+- Export/share functions  
+- Embed code output  
+- Config JSON  
+- Optional admin/analytics view
+
+? Embed Example:
+```html
+<iframe src="https://portraithero.ai/embed?user=focusstudio" style="width:100%;height:600px;border:none;"></iframe>

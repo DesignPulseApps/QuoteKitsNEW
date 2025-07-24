@@ -1,0 +1,99 @@
+🔧 Prompt: Fix + Enhance QuoteKit Custom Calculator UI
+Role: Full-stack developer / AI engineer
+App context: QuoteKit is a live quote calculator builder for service businesses, running on Replit. Core components (field builder, multi-step UI, embedded metrics) are already in place, but key features are broken or underdeveloped.
+
+🛠️ Your Tasks:
+1. 🔁 Fix Broken Live Preview Panel
+Enable full scroll and interactivity inside the calculator preview modal (/dashboard).
+
+Users must be able to:
+
+Scroll through all 4 calculator steps (Package, Location, Details, Contact).
+
+See real-time updates as they customize labels, prices, and steps.
+
+Preview logic and pricing summaries before publishing.
+
+Preview should feel like a sandboxed experience of the embedded calculator.
+
+2. ⚙️ Activate & Expand Customization Controls
+Fix and extend the calculator editor so users can:
+
+Edit step names, field labels, option prices, currency
+
+Update headline + subheadings
+
+Control colors, font, button styles
+
+Save config in a structured schema (calculatorConfig.json or DB model)
+
+Link this config to each user’s instance of the calculator (persistent settings)
+
+3. 🧠 Restore AI Field Mutation Logic (Clone-aware Injection)
+Each calculator should mutate based on use-case:
+
+e.g. Wedding = “Coverage Hours”, “Locations”, “Add-ons”
+
+e.g. Hair Salon = “Style Type”, “Duration”, “Stylist Preference”
+
+The current builder doesn’t reflect the logic of its own field labels.
+
+Use either:
+
+AI prompt + OpenAI API to inject fields from category
+
+Or static templates that load by service type (wedding, beauty, repair, etc.)
+
+4. 📊 Fix Metrics: Quotes & Conversion
+Current quote stats show 0 or placeholder.
+
+Connect backend to:
+
+Track quotes per calculator ID
+
+Track conversion rate (optional: define by lead capture or “Check My Date” CTA click)
+
+Auto-update stats in the dashboard
+
+Fallbacks: display “--” or “Not enough data” when <10 quotes submitted.
+
+5. 📤 Improve Embed + Deployment Options
+On publish, generate:
+
+Public URL for each calculator
+
+Iframe/script embed code snippet
+
+Optional: webhook field or Zapier-compatible integration for quote submissions
+
+6. 🧠 [Optional Enhancement] Add AI Onboarding Assistant
+(If not already included)
+
+Ask user about:
+
+Their business type, typical services, regions covered
+
+Price range and availability
+
+Auto-fill a starter template from that info
+
+✨ Extras / Consider:
+Add loading spinners or progress indicators in preview mode
+
+Warn users if steps are incomplete (e.g. “Missing pricing on Step 2”)
+
+Auto-generate calculator titles from business name and category
+
+Provide test data mode (“simulate 10 quotes”)
+
+✅ Outcome:
+A fully working, AI-assisted quote calculator builder where users can:
+
+See live changes as they edit
+
+Offer context-specific quotes
+
+Track performance
+
+Embed the calculator anywhere
+

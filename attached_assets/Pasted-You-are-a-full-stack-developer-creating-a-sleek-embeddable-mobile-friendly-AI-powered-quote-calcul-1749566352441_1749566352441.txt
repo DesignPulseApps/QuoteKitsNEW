@@ -1,0 +1,143 @@
+You are a full-stack developer creating a sleek, embeddable, mobile-friendly AI-powered quote calculator for **web designers**. This tool will be sold as a widget that freelancers or agencies can embed into websites built with WordPress, Squarespace, Wix, Webflow, Showit, or Framer.
+
+---
+
+🌐 GOAL:
+Develop a stylish and responsive quote estimator that:
+- Collects project preferences  
+- Instantly calculates an estimated project cost  
+- Shows a beautiful breakdown  
+- Captures leads via email (optional)  
+- Is embeddable via iframe or JS snippet  
+- Feels custom, elegant, and fully brandable
+
+---
+
+👨‍💻 TARGET USERS:
+- Freelance web designers  
+- Small design agencies  
+- Portfolio websites  
+- Landing page specialists  
+- Webflow & Showit pros
+
+---
+
+📥 INPUT OPTIONS (Editable via JSON Config):
+1. **Website Type** –  
+   - Landing Page  
+   - Portfolio Site  
+   - Business Website  
+   - Blog  
+   - E-Commerce
+
+2. **Number of Pages** –  
+   - 1–3  
+   - 4–6  
+   - 7–10  
+   - 10+ (custom)
+
+3. **Platform** –  
+   - WordPress  
+   - Webflow  
+   - Squarespace  
+   - Shopify  
+   - Custom HTML
+
+4. **Extras / Add-Ons** –  
+   - Logo Design  
+   - SEO Setup  
+   - Blog Integration  
+   - Booking System  
+   - Copywriting  
+   - E-Commerce Integration
+
+5. **Timeline** –  
+   - 2 Weeks  
+   - 1 Month  
+   - Flexible  
+   - Urgent (within 7 days)
+
+6. **Promo Code** – Optional
+
+---
+
+💶 SAMPLE PRICING LOGIC (Editable via JSON):
+- Base: €600 for 1–3 page site  
+- Add €100 per additional page block  
+- Platform surcharge: Shopify +€150, Webflow +€100  
+- SEO Setup: +€120  
+- Booking System: +€180  
+- Copywriting: +€100 per page  
+- Rush timeline (within 7 days): +€250  
+- Promo: 10% off with valid code
+
+---
+
+✨ CORE FEATURES:
+✅ Elegant React interface with multi-step layout  
+✅ Dynamic price estimate and breakdown  
+✅ Optional email capture  
+✅ Save or email quote as PDF  
+✅ Configurable “Let’s Build It” CTA  
+✅ Easy JSON config for designers  
+✅ One-click iframe/JS embed
+
+---
+
+🚀 ADVANCED FEATURES:
+
+1. 🧠 **Natural Language Toggle (Optional):**  
+> “I need a Webflow portfolio with 6 pages and SEO” → auto-fills form
+
+2. ⏳ **Quote Lockdown Timer:**  
+> “This quote is locked for 48 hours” with countdown and optional email reminder
+
+3. ❓ **Smart Tooltips:**  
+> “What’s SEO Setup?” → hover card with explanation
+
+4. 🔥 **Highlight Combos:**  
+> “Most popular: 5 pages + SEO + Booking”
+
+5. 🌍 **Language Switch:**  
+Multi-language UI toggle (EN, DE, FR, ES, IT)
+
+6. 📊 **Analytics Dashboard:**  
+Track which services are selected most often, conversion rate, average quote value
+
+7. 🔗 **CRM Integration + Zapier Hook:**  
+Push leads to Notion, Airtable, Google Sheets
+
+8. 💳 **Stripe (Future Release):**  
+Take deposits for booked projects directly
+
+---
+
+🎨 DESIGN STYLE:
+- Minimalist, modern, and clean  
+- White space, light mode by default  
+- Rounded fields, card UI  
+- Soft animations and hover states  
+- Fully mobile-responsive  
+- Designers can upload logo + adjust palette
+
+---
+
+🛠️ TECH STACK:
+- React + Tailwind CSS  
+- Supabase / Firebase for optional data  
+- OpenAI (optional for NLP fill)  
+- JSON for logic/config  
+- Stripe integration (planned)
+
+---
+
+📦 DELIVERABLE:
+- Complete embeddable calculator  
+- Real-time quote logic  
+- Email/PDF output  
+- Customizable config  
+- One-click embed snippet
+
+💡 Example Embed:
+```html
+<iframe src="https://quotekit.ai/webdesigner?user=sitetailors" style="width:100%;height:600px;border:none;"></iframe>

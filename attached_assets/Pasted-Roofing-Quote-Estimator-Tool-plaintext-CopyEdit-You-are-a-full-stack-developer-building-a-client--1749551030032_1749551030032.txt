@@ -1,0 +1,156 @@
+Roofing Quote Estimator Tool
+plaintext
+CopyEdit
+You are a full-stack developer building a client-side, embeddable AI-powered pricing estimator tool for **roofing professionals**. This app will be sold as a standalone widget and can be embedded into any roofing company’s website (WordPress, Squarespace, Wix, Webflow, etc.).
+
+---
+
+? GOAL:
+Build a clean, responsive, mobile-optimized quote calculator that:
+- Captures client needs and roof details  
+- Instantly calculates an accurate price range  
+- Shows a branded estimate with breakdown  
+- Optionally collects client’s email for follow-up  
+- Can be embedded via iframe or JS script  
+
+---
+
+? TARGET NICHE:
+Roofing contractors offering:
+- Roof installation  
+- Leak repair  
+- Full roof replacement  
+- Gutter cleaning  
+- Roof inspections  
+- Commercial and residential roofing
+
+---
+
+? INPUT OPTIONS (Editable by Roofer):
+1. **Roof Service Type** –  
+   - Leak Repair  
+   - Full Replacement  
+   - Gutter Cleaning  
+   - Tile/Slate Replacement  
+   - Inspection Only  
+
+2. **Roof Type** –  
+   - Flat  
+   - Pitched  
+   - Metal  
+   - Tile  
+   - Asphalt Shingle  
+
+3. **Roof Size** –  
+   - Small (up to 50m²)  
+   - Medium (50–150m²)  
+   - Large (150–300m²)  
+   - Extra Large (300m²+)  
+
+4. **Building Type** –  
+   - House  
+   - Apartment Block  
+   - Commercial  
+
+5. **Access Difficulty** –  
+   - Easy  
+   - Moderate  
+   - Difficult  
+
+6. **Add-ons** –  
+   - Gutter Guard Installation  
+   - Waterproof Coating  
+   - Skylight Installation  
+   - Fascia Replacement  
+   - Emergency Call-Out  
+
+7. **Promo Code** – Optional
+
+---
+
+? PRICING LOGIC (JSON Editable):
+- Base Leak Repair: €150  
+- Full Replacement: €120/m²  
+- Gutter Cleaning: €100–€200  
+- Add €50–€200 depending on access  
+- Roof Type Multiplier: +10–20% for metal/slate  
+- Emergency Fee: +€100  
+- Add-ons: €75–€250 each  
+- Valid promo = 10% discount
+
+---
+
+? CORE FEATURES:
+✅ Step-by-step form flow with React  
+✅ Real-time pricing display  
+✅ Optional email required to unlock full estimate  
+✅ Export quote as PDF or email  
+✅ JSON logic for editable services  
+✅ Embed via iframe/snippet  
+✅ Configurable CTA: “Schedule a Roof Inspection”
+
+---
+
+? ADVANCED EXTRAS:
+
+1. ? **Natural Language Input Mode:**  
+Client types: “Need a flat roof leak fixed this weekend” → auto-fill estimate  
+
+2. ? **PDF / Email Export:**  
+Download branded quote summary for client records
+
+3. ? **Tooltip Definitions:**  
+E.g. “What is waterproof coating?” → Display tooltip info or popup
+
+4. ⏳ **Quote Lockdown:**  
+“This quote is valid for 5 business days” — with countdown
+
+5. ? **Best Value Badges:**  
+“Most chosen: Gutter cleaning + waterproofing”  
+
+6. ? **Multi-language Toggle:**  
+Support German, Spanish, French, etc.
+
+7. ? **CRM & Zapier Integration:**  
+Send leads to Notion, HubSpot, Sheets, or Airtable
+
+8. ? **Admin Dashboard View:**  
+Quote history, service breakdown, lead tracking
+
+9. ?￯ﾸﾏ **Logic Triggers:**  
+- Access = difficult → auto-add lift/equipment fee  
+- Large + pitched → recommend waterproofing
+
+10. ? **Partner Pricing Unlock:**  
+Affiliate partners can use codes to reveal special packages
+
+---
+
+? DESIGN STYLE:
+- Clean contractor-friendly theme (grays, yellows, slate blues)  
+- Icon-driven UI for roof types  
+- Mobile-first layout  
+- Upload logo, adjust brand colors  
+- Professional and trustworthy look  
+
+---
+
+?￯ﾸﾏ TECH STACK:
+- React + Tailwind CSS  
+- Firebase or Supabase for optional lead capture  
+- Logic controlled via editable JSON  
+- Option to include OpenAI for natural language parsing  
+- Stripe for future deposit or inspection payments (Phase 2)
+
+---
+
+? DELIVERABLE:
+- Responsive web app  
+- Branded estimate builder  
+- Live preview output  
+- Optional dashboard and export tools  
+- Embed link generator  
+
+? Embed Example:
+```html
+<iframe src="https://quotekit.ai/roofing?user=skylineRoofers" style="width:100%;height:600px;border:none;"></iframe>

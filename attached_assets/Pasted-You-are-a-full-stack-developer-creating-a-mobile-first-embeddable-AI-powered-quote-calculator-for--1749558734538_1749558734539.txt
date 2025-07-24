@@ -1,0 +1,137 @@
+You are a full-stack developer creating a mobile-first, embeddable AI-powered quote calculator for **life coaches**. This calculator will be sold as a standalone widget and can be embedded on websites built with Squarespace, WordPress, Webflow, Showit, or Wix.
+
+---
+
+🎯 GOAL:
+Build a modern, professional-looking estimator tool that:
+- Captures potential client goals and coaching needs  
+- Calculates an estimated plan price instantly  
+- Presents a branded, detailed quote breakdown  
+- Captures email addresses (optional)  
+- Is easy to embed and responsive on all devices
+
+---
+
+🧠 TARGET USERS:
+- Certified life coaches  
+- Executive coaches  
+- Confidence/mindset coaches  
+- Career transition coaches  
+- Spiritual/wellness coaches
+
+---
+
+📋 INPUT OPTIONS (Editable via JSON Config):
+1. **Coaching Focus** –  
+   - Personal Growth  
+   - Career Coaching  
+   - Confidence Building  
+   - Relationship Coaching  
+   - Life Purpose / Direction  
+
+2. **Session Format** –  
+   - 1:1 Zoom Coaching  
+   - Group Sessions  
+   - In-person (Local)  
+   - Asynchronous (Voxer/Email Coaching)  
+
+3. **Program Duration** –  
+   - One-off Session  
+   - 4-Week Coaching Plan  
+   - 8-Week Coaching Plan  
+   - Ongoing Monthly  
+
+4. **Add-Ons** –  
+   - Accountability Check-ins (Weekly)  
+   - Personalized Worksheets  
+   - Access to Recorded Resources  
+   - WhatsApp Support  
+   - Discovery Call  
+
+5. **Client Type** –  
+   - New Client  
+   - Returning Client  
+
+6. **Promo Code** – Optional
+
+---
+
+📊 SAMPLE PRICING LOGIC (Editable via JSON):
+- One-off session: €80  
+- 4-week plan: €280  
+- 8-week plan: €480  
+- Ongoing Monthly: €150/month  
+- Accountability Check-ins: +€20/week  
+- Worksheets: +€30  
+- Video Resources: +€40  
+- WhatsApp Support: +€15/week  
+- Discovery Call: Free or €20  
+- Returning Client: 10% off  
+- Promo Code: Apply 10% discount
+
+---
+
+🧩 CORE FEATURES:
+✅ Modern multi-step React form  
+✅ Real-time price updates  
+✅ Optional lead capture form before full quote reveal  
+✅ Export quote as PDF or send by email  
+✅ CTA: “Book a Discovery Call” or “Start My Journey”  
+✅ Configurable via JSON logic  
+✅ One-click iframe or JS embed code
+
+---
+
+🚀 ADVANCED FEATURES:
+
+1. 🧠 **Natural Language Input:**  
+> “I want 4 weeks of confidence coaching with worksheets and check-ins” → form autofill
+
+2. ⏳ **Quote Validity Timer:**  
+> “This estimate is locked in for 72 hours” (with reminder email if email captured)
+
+3. 💬 **Tooltips for Coaching Options:**  
+> “What’s Voxer Coaching?” → hover or tap for info
+
+4. 📊 **Smart Combo Suggestions:**  
+> “Most clients choose 8-week plan + WhatsApp Support”
+
+5. 🌍 **Language Selector:**  
+EN, FR, DE, ES, configurable via dropdown
+
+6. 📈 **Admin Analytics Panel:**  
+Track plan popularity, total quotes generated, avg. value
+
+7. 🔄 **Dynamic Recommendation Engine:**  
+- Select “Career Coaching” → suggest “Worksheets + 4 weeks”  
+- Select “Relationship Coaching” → suggest Discovery Call
+
+---
+
+🎨 DESIGN STYLE:
+- Warm, calming color palette: sage green, lilac, sand, soft neutrals  
+- Soft curves, motivational typography (like Raleway or Lora)  
+- Animation on form steps  
+- Style editor: add logo, adjust colors, edit CTA text
+
+---
+
+🛠️ TECH STACK:
+- React + Tailwind CSS  
+- Supabase/Firebase for optional email capture  
+- JSON logic configuration  
+- Stripe integration for future online payment  
+- OpenAI for natural language input parsing (optional)
+
+---
+
+📦 DELIVERABLE:
+- Working MVP quote tool  
+- Configurable form + pricing engine  
+- Branded quote output  
+- Download/email quote  
+- Embed-ready for website use
+
+💡 Example Embed Code:
+```html
+<iframe src="https://qu

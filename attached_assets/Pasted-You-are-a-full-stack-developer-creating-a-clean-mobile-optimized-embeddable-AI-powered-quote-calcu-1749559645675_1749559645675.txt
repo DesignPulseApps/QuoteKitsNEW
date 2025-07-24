@@ -1,0 +1,138 @@
+You are a full-stack developer creating a clean, mobile-optimized, embeddable AI-powered quote calculator for **private tutors**. This tool will be sold as a standalone widget that tutors can embed on platforms like WordPress, Squarespace, Wix, Webflow, and Showit.
+
+---
+
+🎯 GOAL:
+Build a professional, intuitive price estimator that:
+- Collects details about subject, frequency, and location  
+- Calculates a personalized tuition quote instantly  
+- Presents a branded breakdown and lead capture  
+- Can be embedded with iframe or JS  
+- Works smoothly on desktop and mobile
+
+---
+
+📚 TARGET USERS:
+- Private home tutors  
+- Online subject specialists  
+- Exam prep coaches (SAT, A-Levels, etc.)  
+- Music, language, or coding tutors  
+- Agencies offering freelance tuition
+
+---
+
+📋 INPUT OPTIONS (Editable via JSON Config):
+1. **Subject** –  
+   - Mathematics  
+   - Science  
+   - English / Languages  
+   - Coding / IT  
+   - Music (Piano, Violin, etc.)  
+
+2. **Student Level** –  
+   - Primary / Elementary  
+   - Secondary / High School  
+   - College / University  
+   - Adult Learner  
+
+3. **Session Type** –  
+   - Online  
+   - In-Person (Student’s Home)  
+   - In-Person (Tutor’s Home)  
+
+4. **Session Frequency** –  
+   - One-off  
+   - Weekly  
+   - Twice per week  
+   - Intensive (3+ per week)  
+
+5. **Session Duration** –  
+   - 30 min  
+   - 60 min  
+   - 90 min  
+
+6. **Add-Ons** –  
+   - Exam Prep Materials  
+   - Progress Reports  
+   - Homework Support  
+   - Emergency Same-Day Booking  
+
+7. **Promo Code** – Optional
+
+---
+
+📊 SAMPLE PRICING LOGIC (Editable via JSON):
+- Base: €30 for 60min online primary school session  
+- +€10 for secondary level  
+- +€15 for university level  
+- +€10 for in-person  
+- +€5 per extra 30 mins  
+- Add-ons:  
+   - Materials: +€10  
+   - Reports: +€15  
+   - Homework Support: +€10  
+   - Emergency: +€25  
+- Promo: Apply 10% off with valid code
+
+---
+
+✅ CORE FEATURES:
+- Step-by-step or card layout form  
+- Real-time animated pricing panel  
+- Optional email capture for full estimate  
+- CTA: “Schedule a Trial” or “Book Session”  
+- PDF or email quote output  
+- Configurable via JSON  
+- Easily embeddable via iframe/script
+
+---
+
+🚀 ADVANCED FEATURES:
+
+1. 💬 **Natural Language Input (Optional):**  
+> “I need weekly math help for my 14-year-old at home” → Auto-fills form
+
+2. 🧠 **Smart Suggestion Engine:**  
+> Select “Exam Prep” → Suggest “Progress Reports + Homework Add-On”
+
+3. ⏳ **Quote Timer / Save Option:**  
+> “This price is valid for 72 hours” → Requires email to save
+
+4. 🛠️ **Multi-Language Dropdown:**  
+> Translate form into DE, FR, ES, EN
+
+5. 📈 **Admin Analytics:**  
+Track average quote values, service types, popular times
+
+6. 🌐 **CRM Webhook Support:**  
+Push leads to Google Sheets, Notion, Mailchimp, etc.
+
+---
+
+🎨 DESIGN STYLE:
+- Clean academic layout: navy, cream, slate  
+- Icons for subjects, books, calendar  
+- Rounded inputs with progress bar  
+- Smooth fade animations  
+- Style editor for logo, fonts, and palette
+
+---
+
+🛠️ TECH STACK:
+- React + Tailwind  
+- Supabase or Firebase for leads  
+- JSON-driven config  
+- Stripe-ready backend (Phase 2)  
+- Optional OpenAI for NLP input
+
+---
+
+📦 DELIVERABLE:
+- Embeddable quote tool  
+- Real-time estimate logic  
+- Email/PDF output  
+- Simple script embed
+
+💡 Example Embed Code:
+```html
+<iframe src="https://quotekit.ai/tutor?user=mathmastervienna" style="width:100%;height:600px;border:none;"></iframe>

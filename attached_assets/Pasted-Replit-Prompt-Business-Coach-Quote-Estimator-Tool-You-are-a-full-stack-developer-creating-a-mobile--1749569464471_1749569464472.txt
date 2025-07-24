@@ -1,0 +1,169 @@
+Replit Prompt: Business Coach Quote Estimator Tool
+You are a full-stack developer creating a mobile-friendly, AI-powered quote calculator designed for business coaches. This tool will be sold as a customizable, embeddable widget for use on any website builder (e.g. WordPress, Wix, Webflow, Squarespace, Showit).
+
+🎯 GOAL:
+Build a sleek, responsive quote calculator that:
+
+Gathers information about coaching needs
+
+Calculates an estimated coaching package cost instantly
+
+Presents a branded pricing summary
+
+Captures lead emails (optional)
+
+Offers one-click embed functionality
+
+Works smoothly on all devices
+
+🧑‍💼 TARGET USERS:
+Business coaches
+
+Executive coaches
+
+Entrepreneur & startup coaches
+
+Career development mentors
+
+Strategy consultants
+
+📥 INPUT OPTIONS (Editable via JSON):
+Coaching Focus
+
+Leadership
+
+Startup / Business Growth
+
+Career Transition
+
+Productivity & Time Management
+
+Sales / Marketing
+
+Session Frequency
+
+One-time Deep Dive
+
+Weekly
+
+Biweekly
+
+Monthly
+
+Coaching Format
+
+Zoom / Online
+
+In-Person
+
+Hybrid
+
+Package Duration
+
+1 Month
+
+3 Months
+
+6 Months
+
+Custom Term
+
+Add-ons
+
+Email Support
+
+Strategy Worksheets
+
+Accountability Calls
+
+Personalized Action Plans
+
+Promo Code (optional)
+
+💰 SAMPLE PRICING LOGIC (Editable via JSON):
+Base: €200 per 1-hour session
+
+Discounts for long-term commitments (e.g. 10% off 3+ months)
+
+Email Support: +€50/month
+
+Accountability Calls: +€40/month
+
+Worksheets & Action Plans: €25 each
+
+In-person format adds +€100
+
+Valid promo codes apply 10% off
+
+🧩 CORE FEATURES:
+✅ Live price calculator with animated estimate
+✅ Optional lead capture before displaying full quote
+✅ “Schedule My Discovery Call” or custom CTA
+✅ JSON-driven pricing (easy to update)
+✅ PDF export or quote email feature
+✅ Embeddable via iframe or script snippet
+✅ Admin panel for default config and branding
+
+🚀 ADVANCED FEATURES:
+🧠 Natural Language Quote Input (optional toggle)
+
+E.g., “I want 3 months of startup coaching with email support” → auto-fill the form
+
+⏳ Quote Timer Lock
+
+“This quote is valid for 72 hours” with email prompt for saving
+
+📊 Popular Combo Hints
+
+“Most clients choose: Leadership Coaching + Weekly Sessions + Worksheets”
+
+🧠 Mini Tooltips or Glossary Popups
+
+“What is an accountability call?” → small hover explanation
+
+🌍 Language Switch Toggle
+
+EN / DE / FR / ES (via simple dropdown or translation API)
+
+🔗 CRM Integration
+
+Send captured leads to Mailchimp, Notion, HubSpot, or Google Sheets
+
+📈 Admin Analytics View
+
+Track user inputs, quote trends, and CTA clicks
+
+🔧 Dynamic Logic Engine
+
+If “6-month package” selected → suggest bulk discount
+If “Leadership” + “In-person” → recommend hybrid option
+
+🎨 DESIGN STYLE:
+Professional, confident design with luxury/modern palette (navy, gold, white)
+
+Modular card layout with progress transitions
+
+Smooth animations, mobile-first responsiveness
+
+Admin style editor (color picker, logo upload, font control)
+
+🛠️ TECH STACK:
+React + TailwindCSS
+
+Supabase for optional lead capture + email saving
+
+JSON-based logic for easy updates
+
+OpenAI/LangChain for NLP input (optional)
+
+Stripe integration (future version for instant package payment)
+
+📦 DELIVERABLE:
+MVP of business coach quote calculator
+
+Admin-configurable pricing logic
+
+Lead capture & quote summary features
+
+Embeddable script with admin dashboard link
+

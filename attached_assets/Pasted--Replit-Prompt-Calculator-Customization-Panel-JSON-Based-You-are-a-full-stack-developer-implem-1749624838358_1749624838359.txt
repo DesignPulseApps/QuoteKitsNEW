@@ -1,0 +1,149 @@
+🛠️ Replit Prompt: Calculator Customization Panel (JSON-Based)
+You are a full-stack developer implementing a dynamic customization feature for QuoteKit users. Each user has access to one or more AI-powered quote calculators. These calculators are embeddable widgets (iframe or JS) and are controlled via a JSON config file.
+
+Currently, the “Customize” button in the dashboard is inactive. Your task is to make it fully functional.
+
+🎯 GOAL:
+Build a full-featured customization panel that:
+
+Allows users to visually style their calculators
+
+Updates and saves a JSON config file per calculator
+
+Reflects changes live in the embedded widget preview
+
+Is easy for non-technical users to use
+
+Offers "Restore Defaults" and "Save Changes" options
+
+🧩 FEATURES TO INCLUDE:
+1. 🎨 Styling Customization
+Primary Brand Color (hex input or color picker)
+
+Accent Color (for highlights, buttons)
+
+Font Family (dropdown: Sans, Serif, Rounded, System)
+
+Font Size (Small / Medium / Large)
+
+Rounded Corners (0px, 6px, 12px, 24px)
+
+Button Style:
+
+Fill / Outline / Ghost
+
+Border radius slider
+
+Background Type:
+
+Solid color
+
+Gradient
+
+Light/dark mode toggle
+
+2. 🖼️ Logo & Imagery
+Upload Clinic or Business Logo
+
+Upload Background Image (optional)
+
+Header image or icon toggle
+
+3. ✍️ Text & Content Customization
+Custom Headline (e.g. “Get Your Free Estimate”)
+
+Subheading / Description Text
+
+Button Text ("Get My Quote", "See My Price", etc.)
+
+Footer Note (e.g. "*Prices are estimates only.")
+
+4. 🛠️ Functional Controls
+Hide/show email capture
+
+Toggle quote lock timer
+
+Enable PDF download toggle
+
+Set CTA Button URL (booking link or contact form)
+
+5. 🌍 Language Settings
+Choose interface language (EN, DE, ES, FR)
+
+Custom label overrides for any text field (via JSON editor or UI)
+
+6. 📦 Data Structure
+Each calculator should reference a JSON config file stored in Supabase (or Firebase):
+
+json
+Copy
+Edit
+{
+  "branding": {
+    "primaryColor": "#38bdf8",
+    "accentColor": "#facc15",
+    "fontFamily": "sans-serif",
+    "fontSize": "medium",
+    "roundedCorners": 12
+  },
+  "appearance": {
+    "background": "gradient",
+    "darkMode": true,
+    "logoUrl": "https://cdn.example.com/logo.png",
+    "backgroundImage": ""
+  },
+  "text": {
+    "headline": "Get Your Free Estimate",
+    "subheading": "Just answer a few quick questions",
+    "ctaText": "Calculate Now",
+    "footerNote": "*All quotes are subject to confirmation."
+  },
+  "functionality": {
+    "showEmailCapture": true,
+    "enableQuoteLock": true,
+    "ctaUrl": "https://yourdomain.com/book"
+  },
+  "language": {
+    "selected": "EN",
+    "labels": {
+      "step1Title": "Choose Your Package",
+      "submitButton": "Get My Price"
+    }
+  }
+}
+🧪 DEV REQUIREMENTS:
+React-based UI for customization form
+
+Live preview panel using iframe preview of calculator
+
+“Save & Apply” = write config JSON to user’s calculator instance
+
+“Restore Default” = reset JSON to factory version
+
+Auto-reload embedded calculator preview after save
+
+Tooltip help for each field (e.g. “Primary color is used for buttons and highlights”)
+
+📦 TECH STACK:
+React + Tailwind CSS
+
+JSON logic manager
+
+Supabase or Firebase for user-specific calculator config storage
+
+Optional: Live calculator preview via iframe refresh on save
+
+Optional: Upload endpoints for logo/bg images (via Supabase storage)
+
+✅ OUTCOME:
+The Customize button in the QuoteKit dashboard will:
+
+Open a modal or full-page editor
+
+Allow users to update branding, colors, content, functionality
+
+Save all changes via JSON
+
+Instantly preview updates
+
+Export/share embed-ready calculator with their custom style

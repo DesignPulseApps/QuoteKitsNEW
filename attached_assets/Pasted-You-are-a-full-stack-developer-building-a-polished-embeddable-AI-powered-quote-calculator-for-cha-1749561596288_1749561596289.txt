@@ -1,0 +1,126 @@
+You are a full-stack developer building a polished, embeddable AI-powered quote calculator for **chauffeur and limousine services**. This app will be sold as a standalone widget, embeddable into websites built with WordPress, Wix, Squarespace, Webflow, or Showit.
+
+---
+
+🎯 GOAL:
+Develop a premium, responsive quote calculator that:
+- Captures ride details and special requests  
+- Instantly calculates a custom quote  
+- Displays a branded breakdown with upsells  
+- Optionally collects client email  
+- Can be embedded using iframe or JS snippet  
+- Works flawlessly on mobile devices
+
+---
+
+🚘 TARGET USERS:
+- Chauffeur companies  
+- Wedding limo services  
+- VIP airport transfers  
+- Prom/event limo providers  
+- Black car and executive transport
+
+---
+
+📝 INPUT OPTIONS (Editable via JSON Config):
+1. **Service Type** –  
+   - Airport Transfer  
+   - Hourly Hire  
+   - Wedding / Event  
+   - Corporate Booking  
+
+2. **Vehicle Type** –  
+   - Sedan  
+   - Luxury Sedan  
+   - Stretch Limo  
+   - SUV  
+   - Party Bus  
+
+3. **Pickup & Drop-off Location** – City or ZIP-based input
+
+4. **Ride Duration or Time Block** –  
+   - 1 hour  
+   - 2–4 hours  
+   - 5+ hours  
+   - Full Day  
+
+5. **Add-Ons** –  
+   - Red Carpet Service  
+   - Champagne or Refreshments  
+   - Decoration (weddings/events)  
+   - Extra Stopovers  
+
+6. **Preferred Date & Time** – Calendar and time picker
+
+7. **Promo Code** – Optional
+
+---
+
+💰 SAMPLE PRICING LOGIC (Editable via JSON):
+- Base hourly rate: €100–€250 depending on vehicle type  
+- Airport Transfer: fixed base + distance fee  
+- Weddings: flat packages start at €450  
+- Add-ons: Champagne (+€50), Decorations (+€75), Extra Stops (+€20/stop)  
+- 10% discount on bookings of 4+ hours  
+- Promo code: 15% off if valid
+
+---
+
+✅ CORE FEATURES:
+- Modern step-by-step React UI  
+- Real-time animated quote preview  
+- Optional email input before showing full quote  
+- Option to download or email the quote  
+- CTA button: “Book Now” or “Reserve My Ride”  
+- Configurable JSON logic file  
+- Embed via JS script or iframe
+
+---
+
+🚀 ADVANCED EXTRAS:
+
+1. 🧠 **Natural Language Input (Optional):**  
+> “Need a stretch limo for prom night with red carpet and drinks” → auto-fills form
+
+2. ⏱️ **Quote Expiry Timer:**  
+> “This quote is valid for 48 hours” with visible countdown
+
+3. 📌 **Smart Combo Suggestions:**  
+> Selecting “Wedding” auto-suggests “Decor + Champagne”
+
+4. 🌍 **Language Switcher:**  
+EN, DE, ES, FR via dropdown
+
+5. 🔗 **CRM Webhook Support:**  
+Connect leads to Google Sheets, Notion, or Mailchimp via Zapier
+
+6. 📊 **Admin Dashboard:**  
+Track user inquiries, add-on trends, and conversion metrics
+
+---
+
+🎨 DESIGN STYLE:
+- Sleek black, silver, and deep gold palette  
+- Luxurious UI feel with icon-based layout  
+- Animated transitions and glowing highlight buttons  
+- Mobile-first layout, editable colors/logo
+
+---
+
+🧱 TECH STACK:
+- React + TailwindCSS  
+- Supabase / Firebase for optional lead capture  
+- JSON logic-based pricing  
+- Optional NLP via OpenAI API  
+- Stripe integration (future)
+
+---
+
+📦 DELIVERABLE:
+- Fully functional calculator MVP  
+- Quote breakdown with PDF/email options  
+- One-click iframe/embed code for clients
+
+💡 Example Embed:
+```html
+<iframe src="https://quotekit.ai/limo?user=vipchauffeurs" style="width:100%;height:600px;border:none;"></iframe>

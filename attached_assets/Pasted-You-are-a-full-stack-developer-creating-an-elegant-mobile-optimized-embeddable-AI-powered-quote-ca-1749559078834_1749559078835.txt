@@ -1,0 +1,138 @@
+You are a full-stack developer creating an elegant, mobile-optimized, embeddable AI-powered quote calculator for **hypnotherapists**. This tool will be sold as a standalone widget that can be embedded on platforms like WordPress, Squarespace, Webflow, Wix, and Showit.
+
+---
+
+🎯 GOAL:
+Develop a seamless user-friendly estimator that:
+- Collects treatment type and session details  
+- Instantly shows a personalized session quote  
+- Offers a clear, branded breakdown  
+- Optionally captures lead information  
+- Can be embedded via iframe or JS snippet  
+- Works flawlessly on desktop and mobile
+
+---
+
+🧠 TARGET USERS:
+- Clinical Hypnotherapists  
+- Anxiety, phobia, and habit specialists  
+- Smoking cessation experts  
+- Weight loss hypnotherapists  
+- RTT practitioners
+
+---
+
+📋 INPUT OPTIONS (Editable via JSON Config):
+1. **Treatment Type** –  
+   - Stop Smoking  
+   - Weight Loss  
+   - Stress & Anxiety  
+   - Confidence / Self-Esteem  
+   - Sleep Improvement  
+   - RTT Deep Healing  
+
+2. **Session Format** –  
+   - In-Person  
+   - Online via Zoom  
+   - Group Session  
+
+3. **Session Plan** –  
+   - One-off Session  
+   - 3-Session Plan  
+   - 6-Session Deep Dive  
+
+4. **Add-Ons** –  
+   - Personalized Audio Recording  
+   - Follow-up Check-In  
+   - Progress Journal  
+   - NLP Techniques Add-On  
+   - Urgent Booking (within 48h)  
+
+5. **Client Type** –  
+   - New Client  
+   - Returning Client  
+
+6. **Promo Code** – Optional
+
+---
+
+📊 SAMPLE PRICING LOGIC (Editable via JSON):
+- One-off session: €100  
+- 3-session plan: €270  
+- 6-session plan: €500  
+- Add-ons:  
+   - Audio Recording: +€25  
+   - Follow-up: +€20  
+   - NLP Add-On: +€30  
+   - Progress Journal: +€15  
+   - Urgent Booking: +€40  
+- Returning Clients: 10% discount  
+- Promo Code: Apply 10% discount if valid
+
+---
+
+🧩 CORE FEATURES:
+✅ Modern React form flow (multi-step or card-style)  
+✅ Live price updates  
+✅ Optional lead capture (email before showing quote)  
+✅ Branded quote summary output  
+✅ PDF or email delivery  
+✅ "Book Session" or "Schedule Now" CTA  
+✅ JSON-configured pricing logic  
+✅ Easy embed via iframe/snippet
+
+---
+
+🚀 ADVANCED FEATURES:
+
+1. 🧠 **Natural Language Form Fill (Optional):**  
+> “I need RTT therapy and a recording ASAP” → Auto-populates form
+
+2. ⏳ **Quote Timer:**  
+“This quote is valid for 48 hours” (set cookie and optionally email)
+
+3. 💬 **Mini Tooltip Glossary:**  
+> “What’s RTT?” → Hover/tap definitions
+
+4. 🌟 **Smart Combos:**  
+> “Most popular: 3-session plan + Audio Recording + NLP Add-On”
+
+5. 🌍 **Language Switch:**  
+Support for DE, FR, EN, ES via dropdown
+
+6. 📈 **Lead & Analytics Panel (Optional):**  
+Email log, top services, quote volume
+
+7. 🔄 **Dynamic Logic Adjustments:**  
+- “Urgent Booking” → Increases total and highlights earliest available time  
+- “RTT” selected → Suggests “6-Session Plan”
+
+---
+
+🎨 DESIGN STYLE:
+- Clean, therapeutic aesthetic: sage green, soft teal, lavender  
+- Minimal icons (brain, sound waves, breath)  
+- Rounded UI with fade transitions  
+- Upload logo and customize fonts/colors easily
+
+---
+
+🛠️ TECH STACK:
+- React + Tailwind CSS  
+- Firebase or Supabase for optional email capture  
+- OpenAI for NLP parsing (optional)  
+- JSON-driven pricing logic  
+- Stripe for future deposit collection (Phase 2)
+
+---
+
+📦 DELIVERABLE:
+- Embeddable pricing tool  
+- Configurable service logic  
+- Branded live estimate view  
+- PDF/email output  
+- One-click embed script
+
+💡 Example Embed Code:
+```html
+<iframe src="https://quotekit.ai/hypnotherapist?user=calmmindclinic" style="width:100%;height:600px;border:none;"></iframe>

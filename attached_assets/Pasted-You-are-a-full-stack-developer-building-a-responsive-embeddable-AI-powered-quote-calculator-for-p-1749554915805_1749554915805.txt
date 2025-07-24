@@ -1,0 +1,132 @@
+You are a full-stack developer building a responsive, embeddable AI-powered quote calculator for **personal trainers**. This widget will be sold as a standalone app that trainers can embed into websites made with WordPress, Squarespace, Wix, Webflow, or Showit.
+
+---
+
+🎯 GOAL:
+Create a mobile-friendly pricing estimator that:
+- Gathers user training preferences
+- Instantly calculates a custom quote
+- Displays a branded breakdown of services
+- Optionally captures leads via email
+- Can be embedded easily with iframe or JS script
+- Runs smoothly on all modern devices
+
+---
+
+💪 TARGET USERS:
+- Freelance personal trainers  
+- Fitness coaches & bootcamp instructors  
+- Online training platforms  
+- Gym-based and mobile PTs
+
+---
+
+📝 INPUT OPTIONS (Editable via JSON Config):
+1. **Training Type** –  
+   - General Fitness  
+   - Strength & Conditioning  
+   - Weight Loss  
+   - Pre/Postnatal  
+   - Online Coaching  
+
+2. **Session Format** –  
+   - 1-on-1  
+   - Small Group (2–4)  
+   - Virtual / Zoom  
+   - Outdoor / Park  
+   - In-Gym  
+
+3. **Session Frequency** –  
+   - Once a week  
+   - 2–3x per week  
+   - 4+ sessions per week  
+
+4. **Session Duration** –  
+   - 30 mins  
+   - 45 mins  
+   - 60 mins  
+
+5. **Add-Ons** –  
+   - Meal Plan  
+   - Progress Tracking App  
+   - Weekly Check-In Call  
+   - Goal-Specific PDF Plan  
+
+6. **Promo Code** – Optional
+
+---
+
+💰 SAMPLE PRICING LOGIC (Editable via JSON):
+- Base (1-on-1, 60min session): €50  
+- Add €15 for each extra weekly session  
+- Add-ons: Meal Plan (+€40), App (+€25), Check-in (+€20), PDF Plan (+€30)  
+- Outdoor sessions: +€10  
+- Virtual sessions: –€5 discount  
+- Promo code: 10% off if valid
+
+---
+
+🧠 CORE FEATURES:
+✅ React-based form with step-by-step UI  
+✅ Real-time pricing animation  
+✅ Lead capture (optional email before full quote)  
+✅ “Book a Free Consultation” CTA (custom link)  
+✅ PDF quote export or email delivery  
+✅ JSON-configurable services & pricing  
+✅ Embeddable iframe or JS widget
+
+---
+
+🚀 ADVANCED FEATURES:
+
+1. 🧠 **Natural Language Input (Optional):**  
+User types: “I want 3 sessions per week for weight loss, online, with a meal plan” → auto-fills form
+
+2. 🕐 **Quote Timer:**  
+“This quote is valid for 48 hours” with countdown and email prompt
+
+3. 🔍 **Smart Tooltips:**  
+Hover text e.g., “What’s in the Weekly Check-In Call?”
+
+4. 🌟 **Popular Combo Badges:**  
+“Most popular: 3x/week + meal plan + PDF”
+
+5. 🌍 **Language Selector:**  
+Dropdown for EN, DE, ES, FR
+
+6. 📤 **CRM Integration:**  
+Push email leads to Notion, Zapier, Google Sheets, etc.
+
+7. 📈 **Analytics Dashboard:**  
+Track quote activity, lead source, preferred package
+
+8. 📅 **Session Package Logic:**  
+Suggest bulk discount (e.g., 10% off for 12-session plan)
+
+---
+
+🎨 DESIGN STYLE:
+- Bold fitness theme: black, steel grey, neon green accents  
+- Large buttons, bold fonts, clean layout  
+- Smooth animations for price transitions  
+- Branding panel to upload logo + adjust CTA and color
+
+---
+
+⚙️ TECH STACK:
+- React + Tailwind CSS  
+- Supabase or Firebase (optional email storage)  
+- JSON logic config  
+- OpenAI API (optional natural language fill)  
+- Stripe for future deposits (optional)
+
+---
+
+📦 DELIVERABLE:
+- Fully working MVP  
+- Embeddable personal training quote widget  
+- Real-time branded quote breakdown  
+- Editable pricing logic + export features
+
+🔗 Example Embed Code:
+<iframe src="https://quotekit.ai/personaltrainer?user=fitgoalscoach" style="width:100%;height:600px;border:none;"></iframe>

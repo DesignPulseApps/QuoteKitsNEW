@@ -1,0 +1,147 @@
+Here’s your comprehensive Replit prompt to build the full authentication, subscription, and personalized deployment system for QuoteKit calculators. This prompt is structured for Replit’s AI or your developer to build and integrate user authentication, paid subscriptions, calculator instancing, and embed code/email delivery.
+
+🧠 Replit Prompt: Authentication, Subscription & Embeddable Calculator Instance System for QuoteKit.ai
+You are a full-stack engineer building the backend logic and user flow for QuoteKit.ai, a SaaS platform offering embeddable quote calculators for over 50 service-based industries. The calculators are fully functional demo versions, and now we are building the full subscription and user personalization system.
+
+✅ GOAL:
+Build the infrastructure that allows users to:
+
+Register/Login securely
+
+Purchase a subscription tier
+
+Choose a calculator type
+
+Receive a custom hosted copy of their calculator (isolated per user)
+
+Access a private Admin Panel to customize it
+
+Get an email with an embed script for their website
+
+Track their quote usage per month
+
+⚙️ TECH STACK:
+Frontend: React (Replit-hosted frontend UI already built)
+
+Backend: Supabase (auth, DB, storage), Stripe (subscriptions)
+
+Deployment: Replit + custom subdomains (e.g., userX.quotekit.ai/calculator-type)
+
+Email: Resend / SendGrid / Supabase functions
+
+Admin Panel: Hosted on secure subdirectory (e.g., quotekit.ai/admin/userX)
+
+🔐 AUTHENTICATION FLOW:
+1. User Auth:
+
+Use Supabase Auth (email/password)
+
+Store user metadata: name, email, selected calculator, subscription tier, start date
+
+2. OAuth Option (optional for Phase 2):
+
+Google / GitHub login
+
+💳 SUBSCRIPTION SYSTEM (Tied to Stripe):
+Tiers:
+
+Free: 5 quotes/month (no credit card)
+
+Starter: €5/month (paid annually, 5–20 quotes)
+
+Pro: €35/month (21–100 quotes)
+
+Enterprise: €95/month (100+ quotes)
+
+Actions to implement:
+
+Stripe checkout integration (Stripe Customer ID stored in Supabase)
+
+Quote count tracked in Supabase per user
+
+Lockout or warning message on quote overuse
+
+Allow plan upgrades/downgrades
+
+🧩 CALCULATOR INSTANCE CREATION:
+Upon successful checkout:
+
+Clone the selected calculator (copy files/config from template repo or folder)
+
+Host on a private instance or subroute (e.g., quotekit.ai/user123/hairstylist)
+
+Assign a unique ADMIN PANEL URL to configure pricing/colors/logo
+
+Auto-generate an EMBED SCRIPT:
+
+html
+Copy
+Edit
+<iframe src="https://quotekit.ai/embed/user123/hairstylist" style="width:100%;height:600px;border:none;"></iframe>
+📬 EMAIL DELIVERY (After Checkout):
+Send a branded welcome email with:
+
+Calculator type confirmation
+
+Admin Panel URL
+
+Embed Script
+
+Link to style editor/tutorial
+
+Support contact
+
+📊 ADMIN PANEL FEATURES:
+Update JSON config (pricing, labels, CTA text)
+
+Upload logo and adjust colors/fonts
+
+See quote count usage this month
+
+Update embed options (e.g., height, language toggle)
+
+📁 DATABASE SCHEMA (Supabase):
+sql
+Copy
+Edit
+users:
+- id (uuid)
+- email
+- name
+- selected_calculator
+- stripe_customer_id
+- subscription_tier
+- quotes_used_this_month
+- created_at
+
+calculator_instances:
+- id (uuid)
+- user_id (fk)
+- calculator_type
+- config_json
+- embed_url
+- admin_url
+- last_updated
+🧠 OPTIONAL FEATURES TO INCLUDE:
+Webhook listener for Stripe (plan changes, renewals, cancellations)
+
+PDF invoice access in dashboard
+
+Zapier/CRM export of captured leads
+
+Auto-reset quotes_used_this_month on the 1st of each month (cron)
+
+✅ PROMPT OBJECTIVE:
+Build all necessary backend functions and frontend logic to:
+
+Authenticate users
+
+Handle Stripe payments
+
+Deploy user-specific calculator instances
+
+Generate custom admin and embed links
+
+Track monthly usage
+
+Email access info upon subscription

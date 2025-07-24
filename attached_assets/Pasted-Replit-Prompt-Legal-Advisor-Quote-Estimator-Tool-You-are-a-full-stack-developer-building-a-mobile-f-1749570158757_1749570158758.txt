@@ -1,0 +1,178 @@
+Replit Prompt: Legal Advisor Quote Estimator Tool
+You are a full-stack developer building a mobile-first, embeddable AI-powered quote calculator tailored for legal advisors and law consultants. This widget will be sold as a plug-and-play tool that legal professionals can embed into their website (WordPress, Wix, Webflow, Squarespace, etc.).
+
+🎯 GOAL:
+Create a sleek and reliable quote calculator that:
+
+Collects key client needs
+
+Instantly estimates pricing based on service type
+
+Displays a professional quote breakdown
+
+Captures lead emails (optional)
+
+Embeds easily via iframe or JS
+
+Works beautifully on all modern devices
+
+⚖️ TARGET USERS:
+Freelance legal advisors
+
+Contract & business law consultants
+
+Family law specialists
+
+Estate planning attorneys
+
+Immigration, employment, or IP lawyers
+
+📥 INPUT OPTIONS (Editable via JSON):
+Legal Service Type
+
+Contract Drafting
+
+Business Setup Advice
+
+Family Law Consultation
+
+Immigration Services
+
+Estate & Will Planning
+
+IP / Trademark Advice
+
+Consultation Type
+
+Initial 30-min Call
+
+1-Hour Strategy Session
+
+Ongoing Retainer
+
+Urgency Level
+
+Flexible (within 1–2 weeks)
+
+Priority (within 3 days)
+
+Urgent (within 24h)
+
+Location / Jurisdiction
+
+Local / In-Country
+
+International (extra complexity)
+
+Add-ons
+
+Document Review
+
+Written Legal Summary
+
+Follow-up Email Support
+
+In-person Meeting
+
+Promo Code (optional)
+
+💰 SAMPLE PRICING LOGIC (Editable via JSON):
+Base: €120 for 30-min consult
+
+1-hour: +€80
+
+Urgent (24h): +€100
+
+Priority (3 days): +€50
+
+Document Review: +€90
+
+Legal Summary: +€70
+
+Email Support: +€40
+
+In-Person: +€120
+
+International Case: +€100
+
+Apply 10% discount for valid promo code
+
+🧩 CORE FEATURES:
+✅ Real-time quote estimate with branded display
+✅ Form logic with React and Tailwind CSS
+✅ Email capture before showing full quote (optional toggle)
+✅ Quote summary can be emailed or saved as PDF
+✅ Embeddable widget with iframe/script tag
+✅ JSON-configurable logic & text
+✅ CTA button: “Schedule My Consultation”
+
+🚀 ADVANCED FEATURES:
+🧠 Natural Language Input Toggle
+
+“I need urgent help drafting a contract for an international deal” → auto-fill the form
+
+⏳ Quote Lock Timer
+
+“Your price is valid for 72 hours.” + optional email capture
+
+📚 Smart Legal Term Tooltips
+
+“What’s a legal summary?” → hover popup explanation
+
+📊 Most Common Selection Taglines
+
+“Most popular: 1-Hour Consultation + Document Review”
+
+🌐 Language Toggle
+
+Dropdown for EN / DE / FR / ES
+
+🔗 CRM & Webhook Integration
+
+Send lead data to Google Sheets, Notion, HubSpot
+
+📈 Admin Dashboard Analytics
+
+Track lead submissions, quote trends, most-requested services
+
+🔁 Dynamic Logic Engine
+
+“Urgent + International” triggers surcharge
+Auto-suggest Legal Summary when Document Review selected
+
+🎨 DESIGN STYLE:
+Clean, minimal legal aesthetic
+
+Blue, white, and grey palette
+
+Serif fonts, square corners
+
+Mobile-optimized layout
+
+Upload firm logo + customize CTA text
+
+🛠️ TECH STACK:
+React + Tailwind CSS
+
+Supabase or Firebase for lead capture
+
+JSON config for logic customization
+
+Optional OpenAI/LangChain for NLP inputs
+
+Stripe for future direct payment integration
+
+📦 DELIVERABLE:
+Responsive legal advisor calculator MVP
+
+JSON-based logic with full branding control
+
+Lead capture system
+
+One-click embed + admin panel link
+
+💡 Example Embed Code:
+html
+Copy
+Edit
+<iframe src="https://quotekit.ai/legal-advisor?user=lexconsulting" style="width:100%;height:600px;bor

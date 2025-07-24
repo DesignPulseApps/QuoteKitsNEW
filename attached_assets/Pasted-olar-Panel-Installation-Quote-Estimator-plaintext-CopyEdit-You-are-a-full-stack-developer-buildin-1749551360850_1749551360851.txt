@@ -1,0 +1,141 @@
+olar Panel Installation Quote Estimator
+plaintext
+CopyEdit
+You are a full-stack developer building a responsive, embeddable AI-powered quote calculator for **solar panel installation businesses**. This widget will be sold as a standalone tool that can be embedded into any contractor’s website (WordPress, Webflow, Wix, Squarespace, etc.).
+
+---
+
+? GOAL:
+Create a modern, branded tool that:
+- Collects client property and power needs  
+- Instantly calculates an estimate  
+- Presents a breakdown with service options  
+- Optionally collects email for follow-up  
+- Can be embedded via iframe or script
+
+---
+
+? TARGET USERS:
+Solar installers targeting residential homeowners, small business owners, and eco-conscious commercial clients
+
+---
+
+? INPUT OPTIONS (Editable by Installer):
+1. **Property Type** –  
+   - House  
+   - Apartment Building  
+   - Commercial  
+
+2. **Roof Type** –  
+   - Flat  
+   - Sloped – South Facing  
+   - Sloped – East/West  
+   - Metal / Tile / Asphalt  
+
+3. **Monthly Power Usage** –  
+   - < 250 kWh  
+   - 250–500 kWh  
+   - 500–1000 kWh  
+   - 1000+ kWh  
+
+4. **Battery Storage Option** –  
+   - Yes / No  
+
+5. **Installation Timeline** –  
+   - As soon as possible  
+   - Within 3 months  
+   - Just researching  
+
+6. **Add-ons** –  
+   - Battery Storage  
+   - EV Charger  
+   - Smart Monitoring  
+   - Solar Roof Tiles  
+
+7. **Promo Code** – Optional
+
+---
+
+? PRICING LOGIC (Editable via JSON):
+- Base install: €5,000 (for 3 kW, no battery, easy access)  
+- + €1,000 per 1 kW above 3 kW  
+- Battery: + €3,000–€6,000  
+- EV Charger: + €1,200  
+- Smart Monitoring: + €400  
+- Roof Complexity/Access: +10–25%  
+- Promo: 10% discount with valid code
+
+---
+
+? CORE FEATURES:
+✅ Multi-step form with React + Tailwind UI  
+✅ Real-time live estimate updates  
+✅ Optional email capture before full breakdown  
+✅ Export to PDF / Email the quote  
+✅ Configurable “Book a Solar Assessment” CTA  
+✅ JSON-based pricing logic  
+✅ Embed code generator
+
+---
+
+? ADVANCED FEATURES:
+
+1. ? **AI Input (Optional):**  
+Client types: “I have a south-facing roof and use 600kWh/month” → form pre-fills
+
+2. ? **Quote Lock:**  
+“Price locked for 7 days” – with countdown and cookie
+
+3. ? **Tooltip Explainers:**  
+> “What is smart monitoring?” → Popup with diagram
+
+4. ? **Popular Setup Badges:**  
+> “Most homes choose 5kW + battery + EV charger”
+
+5. ? **Language Switcher:**  
+Multi-language support via dropdown or translation file
+
+6. ? **Webhook / CRM Integrations:**  
+Connect to Zapier, Google Sheets, Notion, Trello, Mailchimp
+
+7. ? **Lead Dashboard (Optional):**  
+Track number of quotes generated, emails collected, user flow analytics
+
+8. ?￯ﾸﾏ **Dynamic Pricing Logic:**  
+- Roof angle = flat → auto-include mounting system  
+- High usage + battery = suggest storage bundle  
+- EV charger + solar = bundle discount
+
+9. ? **Referral / Affiliate Unlocks:**  
+Activate special pricing when referred by a partner
+
+---
+
+? DESIGN STYLE:
+- Clean, eco-tech aesthetic  
+- Greens, whites, sun yellows  
+- Custom icon set for roof and equipment types  
+- Mobile-first with polished animations  
+- Style editor for logo, colors, and fonts
+
+---
+
+?￯ﾸﾏ TECH STACK:
+- React + Tailwind CSS  
+- Firebase or Supabase for lead storage  
+- Logic stored in JSON  
+- Optional OpenAI for NL input parsing  
+- Optional Stripe for deposit payment (Phase 2)
+
+---
+
+? DELIVERABLE:
+- Fully working quote calculator  
+- Embed-ready output  
+- Branded pricing breakdown  
+- Optional admin lead dashboard  
+- PDF/email quote functionality
+
+? Embed Example:
+```html
+<iframe src="https://quotekit.ai/solar?user=clearpower" style="width:100%;height:600px;border:none;"></iframe>

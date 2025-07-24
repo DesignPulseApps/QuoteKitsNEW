@@ -1,0 +1,132 @@
+You are a full-stack developer building a user-friendly, mobile-optimized, embeddable AI-powered quote calculator for **dog trainers**. This tool will be sold as a standalone widget and embedded into platforms like WordPress, Squarespace, Wix, Webflow, or Showit.
+
+---
+
+🎯 GOAL:
+Create a polished, intuitive dog training quote estimator that:
+- Collects session preferences from dog owners  
+- Calculates a tailored training quote instantly  
+- Shows a branded, itemized breakdown  
+- Captures leads via email (optional)  
+- Embeds easily via iframe or JS snippet  
+- Looks great and functions perfectly on mobile
+
+---
+
+🐶 TARGET USERS:
+- Freelance dog trainers  
+- Puppy schools and obedience classes  
+- Behavioral consultants  
+- In-home or mobile pet training services  
+- K9 professionals
+
+---
+
+📋 INPUT OPTIONS (Editable via JSON Config):
+1. **Dog’s Age & Size** –  
+   - Puppy (<1yr)  
+   - Adult (1–7yrs)  
+   - Senior (8+ yrs)  
+   - Small / Medium / Large / XL  
+
+2. **Training Type** –  
+   - Basic Obedience  
+   - Puppy Socialization  
+   - Behavioral Correction  
+   - Leash Training  
+   - Protection / Advanced K9  
+
+3. **Session Format** –  
+   - One-on-One  
+   - Group Class  
+   - At Owner’s Home  
+   - At Trainer’s Location  
+   - Online (Virtual Coaching)  
+
+4. **Session Frequency** –  
+   - One-off  
+   - Weekly  
+   - 2x per week  
+   - Full Program (6+ Sessions)  
+
+5. **Add-Ons** –  
+   - Written Training Plan  
+   - Progress Report  
+   - Leash/Collar Package  
+   - Emergency Weekend Session  
+   - Travel to Client  
+
+6. **Promo Code** – Optional
+
+---
+
+📊 SAMPLE PRICING LOGIC (Editable via JSON):
+- Base: €40 for 60min one-on-one obedience training for small adult dog  
+- +€10 for large breed  
+- +€20 for at-home session  
+- +€30 for advanced behavior correction  
+- Add-ons:  
+   - Plan: +€15  
+   - Travel: +€20  
+   - Gear: +€25  
+   - Emergency: +€35  
+- Promo: 10% off if code valid
+
+---
+
+✅ CORE FEATURES:
+- Multi-step or single-page layout  
+- Instant animated quote panel  
+- Lead capture before full breakdown (optional)  
+- CTA: “Schedule My Session” / “Talk to a Trainer”  
+- Option to email or save quote as PDF  
+- Easily customizable via JSON  
+- Embed via iframe/snippet
+
+---
+
+🚀 ADVANCED FEATURES:
+
+1. 🐕 **Natural Language Input (Optional):**  
+> “I need help with leash pulling for my 2-year-old lab at home” → Form auto-filled
+
+2. 🔁 **Dynamic Suggestions:**  
+> Select “Puppy” → Suggest “Socialization + Written Plan” combo
+
+3. ⏳ **Quote Validity Timer:**  
+“This price is locked for 48 hours” → Add email to save
+
+4. 🌍 **Multi-Language Support:**  
+Switch form language via dropdown (EN, DE, ES, FR)
+
+5. 📈 **CRM / Analytics:**  
+Track most requested services, client conversion data
+
+---
+
+🎨 DESIGN STYLE:
+- Friendly and professional: light blue, sage green, paw icons  
+- Rounded forms, subtle animations  
+- Mobile-first UI  
+- Upload logo + customize text/colors
+
+---
+
+🛠️ TECH STACK:
+- React + Tailwind CSS  
+- Supabase or Firebase for optional lead storage  
+- JSON config-based logic  
+- Optional OpenAI for natural language parsing  
+- Stripe-ready (future phase)
+
+---
+
+📦 DELIVERABLE:
+- MVP app  
+- Branded quote estimator with real-time logic  
+- Email/PDF quote option  
+- Easy embed code
+
+💡 Example Embed Code:
+```html
+<iframe src="https://quotekit.ai/dogtrainer?user=smartpawsacademy" style="width:100%;height:600px;border:none;"></iframe>

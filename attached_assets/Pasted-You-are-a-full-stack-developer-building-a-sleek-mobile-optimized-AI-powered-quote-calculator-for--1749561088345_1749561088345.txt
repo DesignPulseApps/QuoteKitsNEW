@@ -1,0 +1,127 @@
+You are a full-stack developer building a sleek, mobile-optimized, AI-powered quote calculator for **mobile car wash services**. This tool will be sold as a standalone embeddable widget that professionals can integrate into websites like WordPress, Squarespace, Wix, Webflow, or Showit.
+
+---
+
+🧼 GOAL:
+Create a stylish and user-friendly pricing estimator that:
+- Collects client preferences and car details  
+- Instantly shows a live quote for car wash packages  
+- Offers add-ons and upsells  
+- Captures leads through optional email input  
+- Can be embedded via iframe or JS snippet  
+- Works perfectly on mobile
+
+---
+
+🚗 TARGET USERS:
+- Mobile car wash & detailing professionals  
+- Waterless car wash providers  
+- Eco-friendly wash startups  
+- Fleet cleaning businesses
+
+---
+
+📝 INPUT OPTIONS (Editable via JSON Config):
+1. **Vehicle Size** –  
+   - Compact  
+   - Sedan  
+   - SUV  
+   - Truck / Van  
+
+2. **Service Package** –  
+   - Exterior Only  
+   - Exterior + Interior  
+   - Full Detail  
+   - Showroom Finish  
+
+3. **Add-Ons** –  
+   - Engine Bay Cleaning  
+   - Pet Hair Removal  
+   - Ceramic Coating  
+   - Wax & Polish  
+   - Headlight Restoration  
+
+4. **Service Location** –  
+   - Home  
+   - Work  
+   - Other (Manual Entry)
+
+5. **Urgency / Preferred Time** –  
+   - Next 24 Hours  
+   - 2–3 Days  
+   - Flexible  
+
+6. **Promo Code** – Optional
+
+---
+
+💰 SAMPLE PRICING LOGIC (Editable in JSON):
+- Base exterior wash: €30 (compact)  
+- Add €10–€30 for vehicle size  
+- Interior clean: +€20  
+- Full Detail: +€80  
+- Add-ons: €15–€100 each  
+- Rush fee (next 24h): +€25  
+- Promo Code: 10% off if valid
+
+---
+
+✅ CORE FEATURES:
+- Step-by-step React UI for smooth user flow  
+- Animated quote summary with real-time updates  
+- Optional lead capture: “Enter email to view estimate”  
+- Email or download quote as PDF  
+- “Book Now” CTA with configurable link  
+- Embed-ready via iframe or script  
+- JSON config for easy logic and UI edits
+
+---
+
+🚀 ADVANCED FEATURES:
+
+1. 🧠 **Natural Language Input (Optional):**  
+> “I need a full detail on my SUV at work tomorrow” → auto-fills selections
+
+2. ⏳ **Quote Validity Notice:**  
+“This estimate is locked for 48 hours — save via email”
+
+3. 📌 **Smart Combo Tags:**  
+> “Most popular: Full Detail + Pet Hair Removal”
+
+4. 🌐 **Multi-language Support:**  
+EN, DE, ES, FR via dropdown
+
+5. 🔗 **Zapier / CRM Integration:**  
+Auto-send leads to Sheets, Mailchimp, Notion, etc.
+
+6. 📊 **Analytics Dashboard:**  
+See quote volumes, conversions, most requested services
+
+---
+
+🎨 DESIGN STYLE:
+- Clean & modern: blues, whites, water droplet accents  
+- Rounded card layout with slide-in animations  
+- Car icons & sparkling clean visuals  
+- Mobile-first, with customizable brand style (colors, font, logo)
+
+---
+
+🧱 TECH STACK:
+- React + Tailwind CSS  
+- Supabase or Firebase (optional lead storage)  
+- JSON-configurable logic  
+- OpenAI NLP integration (optional)  
+- Stripe (for future booking deposits)
+
+---
+
+📦 DELIVERABLE:
+- Fully functioning MVP app  
+- Custom branded quote calculator  
+- Live quote preview + PDF/email export  
+- Embed script or iframe generator
+
+💡 Example Embed:
+```html
+<iframe src="https://quotekit.ai/carwash?user=splashpros" style="width:100%;height:600px;border:none;"></iframe>

@@ -1,0 +1,130 @@
+You are a full-stack developer building a mobile-ready, embeddable AI-powered quote calculator for **van rental services**. This tool will be sold as a standalone widget that van rental companies can easily embed into websites built with WordPress, Squarespace, Wix, Webflow, or Showit.
+
+---
+
+🎯 GOAL:
+Build a sleek and fast quote estimator that:
+- Collects trip preferences and rental options  
+- Instantly calculates a rental price estimate  
+- Shows a branded pricing summary  
+- Optionally captures email for lead generation  
+- Can be embedded via iframe or script snippet  
+- Looks sharp and responsive on mobile
+
+---
+
+🚐 TARGET USERS:
+- Local van rental companies  
+- Moving & delivery van rental firms  
+- Travel & adventure van hire businesses  
+- Self-drive commercial van services
+
+---
+
+📝 INPUT OPTIONS (Editable via JSON Config):
+1. **Rental Type** –  
+   - Cargo Van  
+   - Passenger Van  
+   - Luton/Box Van  
+   - Campervan  
+
+2. **Rental Duration** –  
+   - Half Day  
+   - Full Day  
+   - Weekend  
+   - Weekly  
+
+3. **Pickup Location** – Text input or postcode  
+4. **Return Location** – Text input (optional one-way fee)  
+5. **Extras** –  
+   - GPS / Navigation  
+   - Child/Baby Seat  
+   - Sack Trolley  
+   - Additional Driver  
+   - Insurance Upgrade  
+
+6. **Kilometre Limit** –  
+   - 100km/day  
+   - 200km/day  
+   - Unlimited  
+
+7. **Driver Age** – Dropdown (affects insurance)  
+8. **Promo Code** – Optional input
+
+---
+
+💰 SAMPLE PRICING LOGIC (Editable via JSON):
+- Base rate: €60–€200 depending on van type & duration  
+- Extra km (if limit exceeded): €0.25/km  
+- One-way fee: +€50  
+- GPS: +€10  
+- Baby Seat: +€15  
+- Insurance Upgrade: +€25  
+- Under 25 driver: +€20  
+- Promo: Apply 15% discount with valid code
+
+---
+
+✅ CORE FEATURES:
+- Smooth step-by-step React UI  
+- Live price update and animated estimate  
+- Optional lead capture before full quote shown  
+- PDF export/email of estimate  
+- "Reserve Now" CTA linked to custom booking page  
+- Configurable pricing JSON logic  
+- One-click embed script/iframe
+
+---
+
+🚀 ADVANCED FEATURES:
+
+1. 🧠 **Natural Language Input:**  
+> “I need a Luton van for the weekend, with GPS and extra driver” → Auto-fill form
+
+2. ⏱ **Mileage Meter UI:**  
+Display progress bar for km allowance
+
+3. 🧾 **Branded PDF Estimate:**  
+Export a logo-branded quote with client selections
+
+4. 🌍 **Live Availability API (Phase 2):**  
+Sync with inventory to show what’s in stock
+
+5. 📈 **Admin Panel Dashboard:**  
+Show quote conversions, top services, average revenue
+
+6. 🌐 **Language Toggle:**  
+Dropdown to switch interface language
+
+7. 🔗 **CRM Integration:**  
+Auto-send lead data to Notion, Zapier, Google Sheets
+
+---
+
+🎨 DESIGN STYLE:
+- Professional and clean: slate grey, royal blue, silver  
+- Van and road trip icons  
+- Rounded form elements with shadow hover states  
+- Mobile-first layout, modern transition effects  
+- Uploadable branding elements (logo, CTA text)
+
+---
+
+🧱 TECH STACK:
+- React + TailwindCSS  
+- JSON-based pricing rules  
+- Supabase or Firebase for email lead storage  
+- OpenAI or LangChain for optional NLP input  
+- Stripe integration (optional, for reservation deposit)
+
+---
+
+📦 DELIVERABLE:
+- Working MVP calculator  
+- Branded pricing output with summary  
+- Embeddable iframe/script  
+- Configurable options in JSON
+
+💡 Example Embed Code:
+```html
+<iframe src="https://quotekit.ai/vanrental?user=rentmyvanvienna" style="width:100%;height:600px;border:none;"></iframe>

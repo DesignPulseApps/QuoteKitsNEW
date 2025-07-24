@@ -1,0 +1,151 @@
+ Replit Prompt: Electrician AI Quote Estimator Tool
+plaintext
+CopyEdit
+You are a full-stack developer building a client-side, embeddable AI-powered pricing estimator tool for **electricians**. This app will be sold as a standalone widget and embedded into any website (WordPress, Wix, Squarespace, Webflow, etc.).
+
+---
+
+? GOAL:
+Build a professional, responsive, AI-enhanced quote calculator that:
+- Gathers a client’s job requirements
+- Instantly calculates a custom estimate for electrical services
+- Shows a branded, detailed price breakdown
+- Captures lead email (optional)
+- Embeds easily via iframe or JS script
+- Works smoothly on all devices
+
+---
+
+? TARGET NICHE:
+Independent electricians and small electrical contractors who want to reduce admin work, avoid manual quoting, and capture more leads via automation.
+
+---
+
+? INPUT OPTIONS (Editable by Electrician):
+1. **Service Type** –  
+   - New installation  
+   - Rewiring  
+   - Fault finding  
+   - Fuse box upgrade  
+   - Lighting installation  
+   - EV charger install  
+   - Smart home setup
+
+2. **Property Type** –  
+   - Apartment  
+   - House  
+   - Commercial Unit  
+   - Construction Site
+
+3. **Number of Rooms/Areas** – Dropdown: 1–10+
+
+4. **Urgency Level** –  
+   - Standard (1–3 days)  
+   - Next day  
+   - Emergency (same day)
+
+5. **Add-ons** –  
+   - Certificate of compliance  
+   - Cleanup/disposal  
+   - Materials included  
+   - Extra technician
+
+6. **Optional Promo Code** – Applies discount if valid
+
+---
+
+? PRICING LOGIC (Implemented in JS, editable via JSON):
+- Base call-out: €80  
+- + €60 per additional room/area  
+- + €120 for fuse box upgrade  
+- + €200 for EV charger  
+- +€150–€300 for smart home jobs (depending on complexity)  
+- Next day: +€50  
+- Emergency: +€100  
+- Certificate: +€40  
+- Materials: +€100  
+- Extra tech: +€70  
+- Apply 10% off if valid promo code
+
+---
+
+? CORE FEATURES:
+✅ Step-by-step form (React preferred)  
+✅ Estimate updates in real-time  
+✅ Animated display: “Your Electrical Job Estimate: €XXX”  
+✅ Clear breakdown of selections  
+✅ Optional CTA: "Request Job" or "Contact Me"  
+✅ Optional email required before full quote  
+✅ Save/download PDF  
+✅ JSON-configurable values  
+✅ Embed via iframe/snippet on any site
+
+---
+
+? ADVANCED EXTRAS TO INCLUDE:
+
+1. ? **Natural Language Input (toggle):**  
+Client types: “I need lighting in 4 rooms and a fuse box upgrade urgently” → parsed into structured inputs
+
+2. ? **Download or Email Quote PDF:**  
+Branded, itemized summary with logo, total, and contact info
+
+3. ? **Tooltip Help / Smart Chat:**  
+On hover, explain tech jargon or pricing logic  
+> “What’s a certificate of compliance?” → mini popup
+
+4. ⏳ **Quote Lock Timer:**  
+Display: “This price is locked for 24 hours” after estimate  
+→ Add email input to save the quote
+
+5. ? **Smart Suggestion Badges:**  
+> “Most popular: Lighting + Certificate + Materials Included”
+
+6. ? **Language Switcher:**  
+Dropdown to swap UI language (e.g., German, French, Italian)
+
+7. ? **CRM or Zapier/Webhook Integration:**  
+Push captured leads to Notion, Google Sheets, or HubSpot
+
+8. ? **Dashboard View for Admin:**  
+See quotes generated, selections, conversions  
+Highlight frequently requested services
+
+9. ?￯ﾸﾏ **Dynamic Logic Triggers:**  
+- Emergency adds €100  
+- Smart jobs enable "Extra tech" toggle  
+- Material-included disables some add-on options
+
+10. ? **Access Tier by Referral Code:**  
+Let electricians unlock hidden service bundles or pro-tier templates using a code
+
+---
+
+? DESIGN STYLE:
+- Clean, tech-forward UI with confidence-inspiring colors (blues, grays, greens)  
+- Modern icons for services  
+- Bold sans-serif fonts  
+- Glassmorphism for quote cards  
+- Fully responsive on mobile  
+- Customizable theme editor (colors, logo upload, CTA labels)
+
+---
+
+?￯ﾸﾏ TECH STACK:
+- React + Tailwind CSS  
+- Supabase or Firebase for optional data storage  
+- All logic runs locally for speed  
+- Optional AI/LLM integration for input parsing  
+- Stripe integration (Phase 2 for deposits)
+
+---
+
+? DELIVERABLE:
+- Fully functional MVP calculator  
+- Editable logic/config via JSON  
+- Custom preview of quote  
+- Embed code generator  
+- Admin panel for quote tracking and settings
+
+? Example embed code:
+<iframe src="https://electricianquoteapp.com/embed?user=powerplus" style="width:100%;height:600px;border:none;"></iframe>

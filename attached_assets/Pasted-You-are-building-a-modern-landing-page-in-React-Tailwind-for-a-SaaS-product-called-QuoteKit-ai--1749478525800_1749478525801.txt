@@ -1,0 +1,72 @@
+You are building a modern landing page in React + Tailwind for a SaaS product called **QuoteKit.ai**.
+
+🎯 GOAL:
+Create a responsive, scrollable homepage that presents QuoteKit as the #1 platform for embeddable AI quote calculators, built for 50+ service-based niches (like wedding photographers, personal trainers, landscapers, and more).
+
+---
+
+🧱 LAYOUT STRUCTURE:
+
+1. **Header**  
+   - Logo (QuoteKit.ai)  
+   - Nav Links: Home | Features | Niches | Pricing | Login  
+   - CTA Button: "Start Free Trial"
+
+2. **Hero Section**  
+   - Headline: “Let Your Website Do the Selling”  
+   - Subhead: “QuoteKit gives service businesses 24/7 AI-powered quote calculators that turn visitors into paying clients.”  
+   - CTA: “Explore Calculators” (scrolls to categories)  
+   - Background: looping animation or subtle AI-themed visuals
+
+3. **How It Works (3-step layout)**  
+   - Step 1: Choose your niche  
+   - Step 2: Embed the calculator  
+   - Step 3: Start converting leads automatically  
+   - Include animated icons and short 1-liner descriptions
+
+4. **Supported Niches (Category Grid with Icons)**  
+   Create a responsive grid of cards with category icons:  
+   - Photography  
+   - Fitness & Wellness  
+   - Home Services  
+   - Events  
+   - Legal/Consulting  
+   - Automotive  
+   Each card links to a dedicated subpage (or anchor) with a list of calculators (e.g., Wedding Photography Estimator, Boudoir Estimator…)
+
+5. **Live Demo CTA Section**  
+   - Preview: Show a quick mockup of a quote being generated (sliding UI widget)
+   - CTA Button: “Try a Live Demo”
+
+6. **Testimonials / Success Logos**  
+   - Add short testimonials from early users  
+   - OR display: “Trusted by 500+ service businesses and counting”
+
+7. **Pricing Section**  
+   - Free trial message  
+   - Plan comparison: Starter | Pro | Studio  
+   - Highlight: “No coding needed” / “Cancel anytime”
+
+8. **Footer**  
+   - Links: About | Contact | Affiliate Program | Terms | Privacy  
+   - Social media icons  
+   - Copyright: © 2025 QuoteKit.ai
+
+---
+
+🎨 STYLING:
+- Color Palette: Midnight blue, neon green, white  
+- Fonts: Inter or DM Sans  
+- Rounded buttons, glowing hover states  
+- Mobile-first layout, sticky header
+
+---
+
+🧠 TECHNICAL:
+- Framework: React + Tailwind CSS  
+- Anchor navigation for sections  
+- Placeholder subpage links (e.g., `/niches/wedding`, `/niches/fitness`)  
+- Embedded Calendly or signup form (optional)  
+- Sticky CTA button on mobile
+
+Build the full responsive layout for this homepage. The "Explore Calculators" section should use a card-based grid with icons and lead to future detail pages or embedded widgets.

@@ -1,0 +1,137 @@
+Below is a comprehensive Replit developer prompt to implement:
+
+✅ A scalable Supabase backend
+✅ Deep cloning of calculators (with logic, layout, styles, and prompts)
+✅ Unique, editable instances per user
+✅ Full integration into your Replit QuoteKit system
+🛠️ Replit Prompt: Full Supabase Integration + Deep Cloning for QuoteKit Calculators
+You are a full-stack developer working on QuoteKit, a SaaS platform that lets users deploy and customize embeddable quote calculators. The frontend is built in Replit, and the backend now needs to fully migrate to Supabase for scale.
+
+We want to:
+
+Integrate Supabase fully into the project
+
+Store all base calculators as master templates
+
+Create a user-owned clone when a calculator is selected
+
+Let users customize their own instance
+
+Retrieve their specific calculator everywhere it’s used (dashboard, preview, embed)
+
+🧠 STEP 1: Supabase Schema Design
+Create the following Supabase tables:
+
+calculator_templates
+Stores the master config of each niche.
+
+Field	Type	Notes
+id	UUID (PK)	
+slug	TEXT	e.g. wedding-photography
+name	TEXT	Display name
+layout_json	JSONB	Component layout, inputs, steps
+logic_json	JSONB	Pricing tiers, calculations
+style_json	JSONB	Colors, fonts, rounded, etc.
+prompt_md	TEXT	Natural language prompt block
+created_at	TIMESTAMP	
+
+user_calculators
+Stores cloned calculators unique to each user.
+
+Field	Type	Notes
+id	UUID (PK)	
+user_id	UUID (FK)	Authenticated Supabase user
+template_id	UUID (FK)	Links back to calculator_templates
+slug	TEXT	Unique URL path or embed slug
+layout_json	JSONB	Clone of layout
+logic_json	JSONB	Clone of logic
+style_json	JSONB	User-edited branding
+prompt_md	TEXT	User's custom LLM prompt
+logo_url	TEXT	From Supabase storage
+created_at	TIMESTAMP	
+
+⚙️ STEP 2: Replit Integration Tasks
+✅ 1. Setup Supabase SDK
+Install: @supabase/supabase-js
+
+Setup .env with SUPABASE_URL and SUPABASE_ANON_KEY
+
+js
+Copy
+Edit
+import { createClient } from '@supabase/supabase-js'
+export const supabase = createClient(
+  process.env.SUPABASE_URL,
+  process.env.SUPABASE_ANON_KEY
+)
+✅ 2. On Calculator Selection → Clone
+ts
+Copy
+Edit
+async function cloneCalculator(userId, templateId) {
+  const { data: template } = await supabase
+    .from('calculator_templates')
+    .select('*')
+    .eq('id', templateId)
+    .single()
+
+  const { data, error } = await supabase.from('user_calculators').insert({
+    user_id: userId,
+    template_id: template.id,
+    slug: `${template.slug}-${Date.now()}`,
+    layout_json: template.layout_json,
+    logic_json: template.logic_json,
+    style_json: template.style_json,
+    prompt_md: template.prompt_md,
+    created_at: new Date()
+  })
+
+  return data
+}
+✅ 3. Load User Calculator in Customizer + Preview
+ts
+Copy
+Edit
+async function getUserCalculator(userId, slug) {
+  const { data, error } = await supabase
+    .from('user_calculators')
+    .select('*')
+    .eq('user_id', userId)
+    .eq('slug', slug)
+    .single()
+
+  return data
+}
+Use data.layout_json, logic_json, and style_json to render preview + allow customization.
+
+✅ 4. Save Customizations
+ts
+Copy
+Edit
+async function updateUserCalculator(id, updates) {
+  const { error } = await supabase
+    .from('user_calculators')
+    .update(updates)
+    .eq('id', id)
+
+  return error ? false : true
+}
+Call this on Save button click (updates can include layout, style, logic, etc.)
+
+🧩 Optional Bonus Features
+🔁 Add version field to all rows (for future rollback/versioning)
+
+🔗 Generate public embed_url using slug:
+https://quotekit.ai/embed/wedding-photography-johnsmith
+
+📦 Store logo uploads using Supabase Storage + expose public CDN link
+
+✅ Outcome
+Each user now owns a real copy of the original calculator
+
+Every aspect — layout, inputs, logic, styling, prompt — is exactly duplicated
+
+Customizer + embed reflects the real version, not a mock
+
+Fully scalable storage and user session management via Supabase
+

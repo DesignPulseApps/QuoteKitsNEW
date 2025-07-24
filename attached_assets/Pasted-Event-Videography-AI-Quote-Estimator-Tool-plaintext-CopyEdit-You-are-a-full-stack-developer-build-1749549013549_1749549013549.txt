@@ -1,0 +1,161 @@
+Event Videography AI Quote Estimator Tool
+plaintext
+CopyEdit
+You are a full-stack developer building a client-side, embeddable AI-powered pricing estimator tool for **event videographers**. This tool will be sold as a plug-and-play widget, embeddable into any website (e.g. WordPress, Squarespace, Webflow).
+
+---
+
+? GOAL:
+Create a beautifully branded, mobile-optimized video quote calculator that:
+- Collects user input about the event
+- Instantly calculates a professional quote
+- Shows pricing breakdowns live
+- Captures email leads before displaying the quote (optional)
+- Embeds seamlessly via iframe or JS
+
+---
+
+? TARGET NICHE:
+Freelance videographers and production teams who cover weddings, corporate events, conferences, birthdays, and nightlife events — and want to stop quoting manually.
+
+---
+
+? INPUT OPTIONS (Editable by Videographer):
+1. **Event Type** –  
+   - Wedding  
+   - Corporate  
+   - Birthday / Private Party  
+   - Concert / Festival  
+   - Product Launch  
+   - Sports Event
+
+2. **Coverage Duration** –  
+   - Up to 2 hours  
+   - Half-day (4 hrs)  
+   - Full-day (8 hrs)  
+   - Multi-day
+
+3. **Deliverables** –  
+   - Full Event Video  
+   - Highlights Video  
+   - Raw Footage  
+   - Social Media Teasers  
+   - Drone Footage  
+   - Same-day Edit  
+
+4. **Crew Size** –  
+   - Solo Operator  
+   - 2 Videographers  
+   - Full Team (3+)
+
+5. **Add-ons** –  
+   - Voiceover  
+   - Licensed Music  
+   - On-screen Titles  
+   - Livestream Setup  
+   - Express Delivery (48h)
+
+6. **Location Type** –  
+   - Local (within 30km)  
+   - Regional (30–100km)  
+   - Destination (100km+)
+
+7. **Promo Code** – Optional field for discounts
+
+---
+
+? PRICING LOGIC (Editable via JSON):
+- Base event (2 hours, solo shooter): €450  
+- Half-day: +€300  
+- Full-day: +€600  
+- Multi-day: +€1200  
+- Highlights Video: +€250  
+- Social Teasers: +€120  
+- Drone: +€200  
+- Livestream: +€300  
+- Full Crew: +€400  
+- Regional Travel: +€100  
+- Destination: +€300  
+- Express Delivery: +€100  
+- Promo Code: -10% if valid
+
+---
+
+? CORE FEATURES:
+✅ Step-by-step form (React preferred)  
+✅ Real-time quote update  
+✅ Branded quote summary with animation: “Your Event Video Package: €XXX”  
+✅ Optional email lead capture  
+✅ PDF/email quote option  
+✅ Configurable CTA: “Book This Package”  
+✅ JSON-configurable logic for easy updates  
+✅ Iframe/JS embed code for websites
+
+---
+
+? ADVANCED EXTRAS TO INCLUDE:
+
+1. ? **Natural Language Input (Optional):**  
+Client writes: “Need full-day coverage for a wedding with drone and highlights video”  
+→ Parsed into structured config
+
+2. ? **PDF Export or Email the Quote:**  
+Create branded summary with pricing and selections
+
+3. ? **Tooltips for Feature Help:**  
+E.g., Hover over “Same-day edit” → shows brief explainer
+
+4. ⏳ **Quote Validity Timer:**  
+Shows: “Your price is locked for 48 hours”  
+→ Encourage client to save/email quote
+
+5. ? **Smart Combo Badges:**  
+> “Most popular: 8 hrs + highlights + drone”
+
+6. ? **Multilingual Toggle:**  
+Simple translation JSON file or Google Translate API
+
+7. ? **Webhook/CRM Integrations:**  
+Push captured leads into Notion, Mailchimp, or HubSpot
+
+8. ? **Admin Dashboard (Phase 2):**  
+Track quote stats, service trends, and user interest
+
+9. ?￯ﾸﾏ **Dynamic Conditions:**  
+- Drone not available for indoor-only events  
+- Express delivery not available for multi-day events  
+- Full Crew suggested for 8hrs+ or weddings
+
+10. ? **Private Tier Unlock:**  
+Enable exclusive bundles or custom rates with referral codes
+
+---
+
+? DESIGN STYLE:
+- Cinematic feel with dark tones, gold/silver accents  
+- Full-width background preview or hero video option  
+- Rounded cards, motion-friendly transitions  
+- Logo upload, font choice, and color customization
+
+---
+
+?￯ﾸﾏ TECH STACK:
+- React + Tailwind CSS  
+- Supabase or Firebase for lead/email storage  
+- Optional OpenAI integration for NL input  
+- No backend needed for pricing logic  
+- Stripe for booking/deposit (optional)
+
+---
+
+? DELIVERABLE:
+- Full working app with UI  
+- Live price breakdown  
+- Email or PDF output  
+- One-click embed link  
+- JSON-based configuration options  
+- Optional admin panel
+
+? Embed Example:
+```html
+<iframe src="https://eventvideocalc.ai/embed?user=visionfilms" style="width:100%;height:600px;border:none;"></iframe>

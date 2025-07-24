@@ -1,0 +1,326 @@
+🔥 HERE IT IS – THE FINAL, COMPLETE, ONE-PROMPT REPLIT BUILD BRIEF 🔥
+Copy-paste this entire prompt into Replit. Your dev will have everything to install, run, and deploy the full QuoteKits Admin Dashboard.
+
+✅ FINAL REPLIT ADMIN DASHBOARD BUILD PROMPT
+yaml
+Kopieren
+Bearbeiten
+### PROJECT TITLE
+QuoteKits.com – FULL ADMIN BACKEND DASHBOARD (Next.js + Supabase + Stripe + Tailwind)
+
+---
+
+### OBJECTIVE
+Build a **complete, secure, real-time ADMIN DASHBOARD** for QuoteKits.com.  
+This dashboard must give total control over **users, calculators, sales, affiliates, analytics, support, and system settings** – all from one clean, responsive interface.
+
+When complete, I should be able to:  
+✅ Monitor **signups, sales, calculator usage, churn**  
+✅ Manage **users, quotas, bans, refunds**  
+✅ Push **new calculators, pricing, promo codes**  
+✅ View **geo analytics & heatmaps**  
+✅ Export **reports to CSV/PDF**  
+✅ Reply to **support tickets**  
+✅ Rotate **API keys** and monitor logs  
+
+---
+
+## ✅ **TECH STACK**
+- **Frontend**: Next.js + TailwindCSS (clean SaaS-style UI, responsive)
+- **Backend**: Supabase (Auth + Database), Node.js/Express (for PDF/CSV & Stripe routes)
+- **Charts**: Chart.js + react-chartjs-2
+- **Maps**: Mapbox
+- **Payments**: Stripe API
+- **Exports**: PDFKit (PDF), CSV standard logic
+- **Deployment**: Vercel-ready
+
+---
+
+## ✅ **FILES & STRUCTURE TO CREATE**
+
+/ (root)
+├─ pages/
+│ ├─ admin/
+│ │ ├─ index.tsx <-- Dashboard overview
+│ │ ├─ users.tsx <-- User management CRUD
+│ │ ├─ calculators.tsx <-- Calculator CRUD
+│ │ ├─ sales.tsx <-- Stripe revenue & refunds
+│ │ ├─ support.tsx <-- Ticket system
+│ │ ├─ analytics.tsx <-- Geo + funnel + heatmap
+│ │ └─ settings.tsx <-- API keys + logs
+│ ├─ _app.tsx
+│ └─ api/
+│ ├─ stripe-refund.ts <-- Stripe refund handler
+│ ├─ export-pdf.ts <-- PDF export handler
+│ └─ export-csv.ts <-- CSV export handler
+│
+├─ components/
+│ ├─ AdminLayout.tsx
+│ ├─ DashboardCards.tsx
+│ ├─ DataTable.tsx
+│ ├─ ChartWidget.tsx
+│ ├─ GeoMap.tsx
+│ └─ QuickActions.tsx
+│
+├─ lib/
+│ ├─ supabaseClient.ts
+│ └─ stripeClient.ts
+│
+├─ scripts/
+│ └─ seedTestData.ts
+│
+├─ styles/
+│ └─ globals.css
+│
+├─ .env.local
+├─ tailwind.config.js
+├─ package.json
+└─ replit.nix
+
+pgsql
+Kopieren
+Bearbeiten
+
+---
+
+## ✅ **CONFIG FILES**
+
+### **package.json**
+
+```json
+{
+  "name": "quotekits-admin-dashboard",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "seed": "ts-node scripts/seedTestData.ts"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.42.0",
+    "chart.js": "^4.4.0",
+    "mapbox-gl": "^3.2.0",
+    "pdfkit": "^0.15.0",
+    "react": "^18.2.0",
+    "react-chartjs-2": "^5.2.0",
+    "react-dom": "^18.2.0",
+    "react-table": "^7.8.0",
+    "stripe": "^14.0.0",
+    "next": "^14.0.4",
+    "faker": "^5.5.3"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.3.0",
+    "typescript": "^5.2.2",
+    "ts-node": "^10.9.2"
+  }
+}
+replit.nix
+nix
+Kopieren
+Bearbeiten
+{ pkgs }: {
+  deps = [
+    pkgs.nodejs-18_x
+    pkgs.yarn
+  ];
+}
+tailwind.config.js
+js
+Kopieren
+Bearbeiten
+module.exports = {
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}"
+  ],
+  theme: { extend: {} },
+  plugins: []
+};
+styles/globals.css
+css
+Kopieren
+Bearbeiten
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-100 text-gray-800;
+}
+.env.local (sample)
+ini
+Kopieren
+Bearbeiten
+NEXT_PUBLIC_SUPABASE_URL=https://YOUR_SUPABASE_URL
+NEXT_PUBLIC_SUPABASE_KEY=YOUR_SUPABASE_ANON_KEY
+STRIPE_SECRET_KEY=sk_test_YOUR_STRIPE_KEY
+MAPBOX_TOKEN=pk.YOUR_MAPBOX_TOKEN
+✅ SUPABASE DATABASE (RUN IN SQL EDITOR)
+pgsql
+Kopieren
+Bearbeiten
+-- USERS
+create table users (
+  id uuid primary key default gen_random_uuid(),
+  email text unique not null,
+  business_type text,
+  location text,
+  usage_quota int default 0,
+  signup_date timestamp default now(),
+  last_login timestamp,
+  banned boolean default false
+);
+
+-- CALCULATORS
+create table calculators (
+  id uuid primary key default gen_random_uuid(),
+  name text not null,
+  category text,
+  formula_config jsonb,
+  last_updated timestamp default now(),
+  active boolean default true
+);
+
+-- USAGE LOGS
+create table usage_logs (
+  id uuid primary key default gen_random_uuid(),
+  user_id uuid references users(id),
+  calculator_id uuid references calculators(id),
+  timestamp timestamp default now(),
+  conversion_status text
+);
+
+-- PAYMENTS
+create table payments (
+  id uuid primary key default gen_random_uuid(),
+  user_id uuid references users(id),
+  amount numeric(10,2),
+  currency text default 'USD',
+  payment_status text,
+  stripe_invoice_id text,
+  date timestamp default now()
+);
+
+-- AFFILIATES
+create table affiliates (
+  id uuid primary key default gen_random_uuid(),
+  email text unique not null,
+  referral_code text unique,
+  referrals_count int default 0,
+  payout_due numeric(10,2) default 0,
+  last_payout timestamp
+);
+
+-- PROMO CODES
+create table promo_codes (
+  id uuid primary key default gen_random_uuid(),
+  code text unique not null,
+  discount_value numeric(5,2),
+  expiry_date timestamp,
+  usage_count int default 0
+);
+
+-- SUPPORT TICKETS
+create table support_tickets (
+  id uuid primary key default gen_random_uuid(),
+  user_id uuid references users(id),
+  subject text,
+  message text,
+  priority text default 'normal',
+  status text default 'open',
+  created_at timestamp default now(),
+  resolved_at timestamp
+);
+
+-- ADMIN LOGS
+create table admin_logs (
+  id uuid primary key default gen_random_uuid(),
+  admin_id uuid,
+  action text,
+  timestamp timestamp default now()
+);
+✅ SEED SCRIPT (scripts/seedTestData.ts)
+ts
+Kopieren
+Bearbeiten
+import { supabase } from "../lib/supabaseClient";
+import faker from "faker";
+
+async function seed() {
+  for (let i = 0; i < 50; i++) {
+    await supabase.from("users").insert({
+      email: faker.internet.email(),
+      business_type: faker.company.bs(),
+      location: faker.address.country(),
+      usage_quota: faker.datatype.number({ min: 0, max: 100 })
+    });
+  }
+  console.log("Seed complete!");
+}
+
+seed();
+Run in Replit:
+
+bash
+Kopieren
+Bearbeiten
+npm run seed
+✅ KEY PAGES & COMPONENTS
+All pages (index.tsx, users.tsx, sales.tsx, etc.), components, and API routes are to be built exactly as outlined:
+
+Dashboard (index.tsx): Total users, active subs, revenue, tickets, weekly revenue graph.
+
+Users (users.tsx): Table with edit, ban, quota reset, export CSV/PDF.
+
+Calculators (calculators.tsx): CRUD with JSON editor + preview toggle.
+
+Sales (sales.tsx): Stripe revenue + refund buttons (call /api/stripe-refund).
+
+Support (support.tsx): Ticket table, reply modal, mark resolved.
+
+Analytics (analytics.tsx): GeoMap (Mapbox), funnel chart, heatmap placeholder.
+
+Settings (settings.tsx): API key rotation, admin logs viewer.
+
+Use components:
+
+AdminLayout.tsx for sidebar navigation
+
+DataTable.tsx for reusable tables
+
+ChartWidget.tsx for graphs
+
+GeoMap.tsx for maps
+
+✅ INSTALL & RUN IN REPLIT
+Paste this full prompt to Replit
+
+Run the following commands:
+
+bash
+Kopieren
+Bearbeiten
+npm install
+npm run dev
+Add your .env.local with Supabase, Stripe, and Mapbox keys.
+
+Seed with test data: npm run seed.
+
+Visit /admin in browser → login with your Supabase admin email.
+
+✅ EXPECTED DELIVERY
+Fully functional, tested admin dashboard
+
+Clean, modular Next.js + Tailwind code
+
+Stripe refunds & invoices working with test keys
+
+Geo analytics live
+
+Export buttons tested
+
+Think: Clean SaaS-style admin where you can literally run your whole QuoteKits business from one screen.

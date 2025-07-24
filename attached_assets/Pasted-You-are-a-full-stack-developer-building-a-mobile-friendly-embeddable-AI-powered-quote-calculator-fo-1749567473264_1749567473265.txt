@@ -1,0 +1,155 @@
+You are a full-stack developer building a mobile-friendly, embeddable AI-powered quote calculator for video editors. This widget will be sold as a standalone tool, embeddable into websites built with WordPress, Squarespace, Wix, Webflow, or Showit.
+
+🎯 GOAL:
+Develop a responsive, user-friendly quote calculator that:
+
+Gathers key project details
+
+Instantly generates an estimated editing price
+
+Displays a branded breakdown
+
+Captures lead info via email (optional)
+
+Embeds easily via iframe or JS snippet
+
+Works beautifully on desktop and mobile
+
+🧑‍💻 TARGET USERS:
+Freelance video editors
+
+YouTube & social media content editors
+
+Wedding & event video editors
+
+Corporate video post-production freelancers
+
+📥 INPUT OPTIONS (Editable via JSON Config):
+Project Type –
+
+Wedding Video
+
+YouTube Vlog
+
+Corporate Promo
+
+Event Recap
+
+Short Film
+
+Video Duration –
+
+Under 2 mins
+
+2–5 mins
+
+5–10 mins
+
+Over 10 mins
+
+Footage Provided –
+
+Yes (Raw Files)
+
+No (Need Filming Too)
+
+Turnaround Time –
+
+Standard (5–7 Days)
+
+Rush (48 Hours)
+
+Add-ons –
+
+Motion Graphics
+
+Color Grading
+
+Subtitles / Captions
+
+Licensed Music
+
+Voiceover Sourcing
+
+Promo Code – Optional
+
+💸 SAMPLE PRICING LOGIC (JSON Editable):
+Base: €100 (for under 2-min wedding video, raw footage provided, standard turnaround)
+
+€50–€100 for longer durations
+
+€75 if filming required
+
+Rush edit: +€80
+
+Add-ons: Graphics (€40), Grading (€30), Captions (€25), Music (€20), Voiceover (€60)
+
+Promo code: 10% off if valid
+
+⚙️ CORE FEATURES:
+✅ React step-by-step UI
+✅ Animated quote preview updates
+✅ Optional email capture
+✅ PDF quote export / email quote option
+✅ "Book My Edit" CTA (link configurable)
+✅ JSON-powered customization
+✅ Embeddable via iframe or script
+
+💎 ADVANCED FEATURES:
+🧠 Natural Language Input:
+
+“I need a 5-minute corporate edit with motion graphics and voiceover” → Auto-form fill
+
+⏱️ Quote Lock Timer:
+
+“Valid for 72 hours” with countdown + email follow-up
+
+💬 Smart Tooltips:
+
+Hover over “Motion Graphics” for sample explanation
+
+🔥 Popular Combos:
+
+“Most booked: Vlog + Captions + Grading”
+
+🌍 Multi-language Toggle:
+
+EN, ES, FR, DE support
+
+📈 Admin Dashboard:
+
+Track leads, most requested services, average quote value
+
+🔄 CRM/Webhook Integration:
+
+Export to Notion, Google Sheets, Mailchimp, etc.
+
+🎨 DESIGN STYLE:
+Modern, cinematic tones (dark mode + gold or teal)
+
+Rounded video icons, smooth animations
+
+Mobile-first transitions
+
+Upload logo, adjust CTA text, font, and color via editor
+
+🛠️ TECH STACK:
+React + Tailwind
+
+Supabase or Firebase (optional lead storage)
+
+JSON config for services/pricing
+
+OpenAI or LangChain optional for NLP
+
+Stripe integration (future release)
+
+📦 DELIVERABLE:
+Working MVP with quote output
+
+Fully embeddable widget
+
+Admin settings & preview
+
+Download/email quote option
+

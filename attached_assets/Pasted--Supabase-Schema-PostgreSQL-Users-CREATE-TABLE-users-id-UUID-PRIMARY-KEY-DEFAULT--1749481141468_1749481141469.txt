@@ -1,0 +1,94 @@
+// 🚀 Supabase Schema (PostgreSQL)
+
+-- Users
+CREATE TABLE users (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  email TEXT NOT NULL,
+  full_name TEXT,
+  subscription_status TEXT,
+  created_at TIMESTAMP DEFAULT NOW()
+);
+
+-- Calculators (pre-defined list of all available calculators)
+CREATE TABLE calculators (
+  id SERIAL PRIMARY KEY,
+  name TEXT NOT NULL,
+  slug TEXT UNIQUE NOT NULL, -- e.g., 'wedding', 'boudoir'
+  default_config JSONB
+);
+
+-- User Calculators (user-specific embed & config)
+CREATE TABLE user_calculators (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  user_id UUID REFERENCES users(id) ON DELETE CASCADE,
+  calculator_id INTEGER REFERENCES calculators(id) ON DELETE CASCADE,
+  embed_id TEXT UNIQUE NOT NULL, -- e.g., 'abc123xyz'
+  config JSONB,
+  created_at TIMESTAMP DEFAULT NOW()
+);
+
+-- Leads (optional: save captured leads from embedded calculators)
+CREATE TABLE leads (
+  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+  user_calculator_id UUID REFERENCES user_calculators(id) ON DELETE CASCADE,
+  name TEXT,
+  email TEXT,
+  quote_data JSONB,
+  created_at TIMESTAMP DEFAULT NOW()
+);
+
+
+// 🚀 Node.js Stripe Webhook + Supabase Insert Example
+
+app.post("/webhook", async (req, res) => {
+  const event = req.body;
+  if (event.type === 'checkout.session.completed') {
+    const session = event.data.object;
+    const userEmail = session.customer_email;
+    const selectedCalculatorSlug = session.metadata.calculator_slug; // From Checkout metadata
+
+    // 1. Look up user
+    const { data: user } = await supabase
+      .from("users")
+      .select("id")
+      .eq("email", userEmail)
+      .single();
+
+    // 2. Look up calculator
+    const { data: calculator } = await supabase
+      .from("calculators")
+      .select("id")
+      .eq("slug", selectedCalculatorSlug)
+      .single();
+
+    // 3. Generate embed_id
+    const embedId = crypto.randomUUID().slice(0, 10);
+
+    // 4. Create user_calculator record
+    await supabase.from("user_calculators").insert({
+      user_id: user.id,
+      calculator_id: calculator.id,
+      embed_id: embedId,
+      config: calculator.default_config || {}
+    });
+
+    // 5. Email user with embed + admin links
+    const embedURL = `https://quotekit.ai/embed/${selectedCalculatorSlug}/${embedId}`;
+    const adminURL = `https://quotekit.ai/dashboard/${user.id}/${selectedCalculatorSlug}`;
+
+    await sendEmail({
+      to: userEmail,
+      subject: "Your QuoteKit Calculator is Ready",
+      html: `<p>Thanks for signing up!<br><br>
+        Embed it using:<br>
+        <code>&lt;iframe src=\"${embedURL}\" style=\"width:100%;height:600px;border:none;\"&gt;&lt;/iframe&gt;</code><br><br>
+        Manage your calculator here:<br>
+        <a href=\"${adminURL}\">${adminURL}</a>
+      `
+    });
+
+    res.status(200).send("Handled checkout.session.completed");
+  } else {
+    res.status(400).send("Unhandled event");
+  }
+});

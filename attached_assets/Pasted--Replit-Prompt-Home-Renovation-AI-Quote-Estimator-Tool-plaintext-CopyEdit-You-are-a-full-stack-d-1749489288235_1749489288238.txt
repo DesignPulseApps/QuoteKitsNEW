@@ -1,0 +1,158 @@
+ Replit Prompt: Home Renovation AI Quote Estimator Tool
+plaintext
+CopyEdit
+You are a full-stack developer building a client-side, embeddable AI-powered pricing estimator tool for **home renovation companies**. This app will be sold as a standalone widget and embedded into any website (WordPress, Wix, Webflow, Squarespace, etc.).
+
+---
+
+? GOAL:
+Build a high-quality, responsive quote calculator that:
+- Gathers renovation preferences from homeowners
+- Instantly calculates a price estimate with a clear breakdown
+- Captures potential client leads
+- Can be embedded seamlessly into contractor or architect websites
+- Works perfectly on mobile and desktop
+
+---
+
+? TARGET NICHE:
+Home renovation and remodeling companies that want to reduce manual quoting, attract more qualified leads, and automate top-of-funnel engagement.
+
+---
+
+? INPUT OPTIONS (Editable by Renovation Company):
+1. **Project Type** –  
+   - Kitchen Remodel  
+   - Bathroom Remodel  
+   - Full Home Makeover  
+   - Flooring  
+   - Painting  
+   - Basement Conversion  
+   - Attic Renovation  
+
+2. **Property Size** –  
+   - Under 50m²  
+   - 50–100m²  
+   - 100–200m²  
+   - Over 200m²
+
+3. **Property Type** –  
+   - Apartment  
+   - House  
+   - Duplex  
+   - Commercial Space  
+
+4. **Finish Quality** –  
+   - Standard  
+   - Premium  
+   - Luxury  
+
+5. **Timeframe** –  
+   - Flexible  
+   - Next 3 months  
+   - ASAP / Urgent  
+
+6. **Extras/Add-ons** –  
+   - Interior Design Consultation  
+   - Project Management  
+   - Cleanup & Disposal  
+   - Permit Assistance  
+
+7. **Promo Code** (optional) – to apply discounts
+
+---
+
+? PRICING LOGIC (editable via JSON):
+- Base: €500 consultation fee  
+- Kitchen Remodel: +€6,000–€15,000  
+- Bathroom: +€4,000–€10,000  
+- Full Home: +€20,000+  
+- Flooring: +€2,000–€8,000  
+- Painting: +€1,000–€5,000  
+- Premium Finish: +20%  
+- Luxury Finish: +35%  
+- Interior Design: +€800  
+- Project Management: +€1,200  
+- Cleanup: +€400  
+- Permits: +€350  
+- ASAP surcharge: +€500  
+- Promo Code: -10% discount
+
+---
+
+? CORE FEATURES:
+✅ Responsive React UI  
+✅ Real-time estimate updates  
+✅ Branded total with animated result: “Your Renovation Estimate: €XX,XXX”  
+✅ Optional email entry to unlock full breakdown  
+✅ CTA: “Schedule a Site Visit” or “Book a Consultation”  
+✅ Option to download/email quote PDF  
+✅ Easily editable via JSON  
+✅ Copy/paste embed code or script tag
+
+---
+
+? ADVANCED EXTRAS TO INCLUDE:
+
+1. ? **Natural Language Input (optional):**  
+Clients can type “I want to redo my kitchen and paint my apartment (80m²)”  
+→ Parsed into config automatically
+
+2. ? **Email Quote / Save as PDF:**  
+Professional branded estimate sent to client inbox
+
+3. ? **Tooltip Descriptions / Hover Help:**  
+Explain each option clearly:  
+> “Premium finish = Custom fixtures, branded tiles, etc.”
+
+4. ⏳ **Quote Timer Feature:**  
+“Your quote is valid for 3 days” (triggers lead urgency)
+
+5. ? **Smart Selection Badges:**  
+> “Most clients choose Kitchen + Premium Finish + Project Management”
+
+6. ? **Multilingual Interface Toggle**  
+Translation-ready or dynamic API-based language switch
+
+7. ? **CRM / Zapier / Webhook Integration**  
+Leads can flow to Notion, Mailchimp, or HubSpot
+
+8. ? **Admin Dashboard Add-on**  
+Track quote requests, conversion %, most requested services
+
+9. ?￯ﾸﾏ **Logic Triggers Based on Input**  
+- Over 100m² + Premium → suggest project manager  
+- Urgent timeframe → auto-add fast-track fee
+
+10. ? **Access Tier Codes**  
+Enable upgraded feature sets based on referral or subscription level
+
+---
+
+? DESIGN STYLE:
+- Clean, modern builder aesthetic: white, charcoal, blue, gold  
+- Large icons, clear layout, project thumbnails  
+- Animated transitions, mobile-first  
+- Style editor: logo, button color, CTA text
+
+---
+
+?￯ﾸﾏ TECH STACK:
+- React + Tailwind CSS  
+- Optional Supabase/Firebase for lead storage  
+- Optional OpenAI API for natural language parsing  
+- Stripe integration for deposit in Phase 2  
+- JSON-configurable inputs & logic
+
+---
+
+? DELIVERABLE:
+- Functional MVP  
+- Real-time pricing UI  
+- Download/email option  
+- Embed code generator  
+- Admin panel for edits & lead tracking
+
+? Example embed code:
+```html
+<iframe src="https://renovationquote.ai/embed?user=renoMasters" style="width:100%;height:600px;border:none;"></iframe>

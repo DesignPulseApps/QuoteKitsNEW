@@ -1,0 +1,128 @@
+You are a full-stack developer building a responsive, embeddable AI-powered quote calculator for **massage therapists**. This app will be sold as a standalone widget and embedded into websites like WordPress, Squarespace, Wix, Webflow, or Showit.
+
+---
+
+🎯 GOAL:
+Develop a modern, mobile-friendly estimator that:
+- Collects massage session preferences
+- Calculates a live estimate based on services and add-ons
+- Shows a branded pricing breakdown
+- Optionally captures email leads
+- Is embeddable via iframe or script
+- Works seamlessly on mobile and tablet
+
+---
+
+🧘 TARGET USERS:
+- Solo massage therapists
+- Day spas and wellness studios
+- Mobile massage businesses
+- High-end health resorts
+
+---
+
+📝 INPUT OPTIONS (Editable via JSON Config):
+1. **Massage Type** –  
+   - Swedish  
+   - Deep Tissue  
+   - Sports  
+   - Prenatal  
+   - Hot Stone  
+
+2. **Session Length** –  
+   - 30 minutes  
+   - 60 minutes  
+   - 90 minutes  
+   - 120 minutes  
+
+3. **Add-Ons** –  
+   - Aromatherapy  
+   - Hot Stones  
+   - Cupping  
+   - CBD Oil Treatment  
+   - Head/Scalp Focus  
+
+4. **Session Location** –  
+   - In Studio  
+   - Mobile / At-Home  
+
+5. **Preferred Date & Time** – Optional
+
+6. **Promo Code** – Optional
+
+---
+
+💶 SAMPLE PRICING LOGIC (Editable via JSON):
+- Base Rate (60 min Swedish in-studio): €65  
+- Add €25 for each extra 30 mins  
+- Deep Tissue or Hot Stone: +€20  
+- Mobile: +€30 travel fee  
+- Add-ons: €10–€25 depending on selection  
+- Promo Code: 10% discount if valid
+
+---
+
+🧠 CORE FEATURES:
+✅ React UI with step-by-step form  
+✅ Real-time estimate updates  
+✅ Optional email field before full breakdown  
+✅ PDF download or email quote option  
+✅ “Book Now” CTA button (customizable URL)  
+✅ JSON-configurable pricing for therapist edits  
+✅ Embed-ready with script/iframe
+
+---
+
+✨ ADVANCED FEATURES:
+
+1. 💬 **Natural Language Input (Optional):**  
+User types: “I want 90-minute deep tissue with hot stones at home” → auto-fills form
+
+2. 🕒 **Quote Lock Timer:**  
+Displays: “This quote is valid for 48 hours” with countdown
+
+3. 🧠 **Smart Tooltips:**  
+E.g., hover: “What is CBD oil treatment?” → Show mini-explanation
+
+4. ⭐ **Popular Choices Badges:**  
+E.g., “Most popular: 60min Swedish + Aromatherapy”
+
+5. 🌐 **Language Toggle:**  
+Allow users to select language (EN, DE, ES, FR)
+
+6. 🔗 **CRM Integration:**  
+Send captured leads to Google Sheets, Notion, or Mailchimp
+
+7. 📊 **Admin Dashboard (Optional):**  
+Tracks average session type, quote values, peak request times
+
+8. 🧩 **Dynamic Pricing Logic:**  
+E.g., add mobile fee only if “at-home” is selected
+
+---
+
+🎨 DESIGN STYLE:
+- Soft wellness theme: earthy tones, gentle gradients  
+- Rounded UI components  
+- Calming animations  
+- Upload logo, change font/colors via style panel
+
+---
+
+⚙️ TECH STACK:
+- React + Tailwind CSS  
+- JSON-based pricing logic  
+- Supabase or Firebase for lead capture (optional)  
+- OpenAI or LangChain (for NLP)  
+- Stripe integration (optional, phase 2)
+
+---
+
+📦 DELIVERABLE:
+- Full working MVP  
+- Embeddable quote estimator widget  
+- Branded price breakdown output  
+- Admin dashboard or config file for editing logic
+
+🔗 Example Embed Code:
+<iframe src="https://quotekit.ai/massage?user=tranquilhands" style="width:100%;height:600px;border:none;"></iframe>

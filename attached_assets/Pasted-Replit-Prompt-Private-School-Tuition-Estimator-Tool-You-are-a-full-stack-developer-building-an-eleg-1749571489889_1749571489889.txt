@@ -1,0 +1,183 @@
+Replit Prompt: Private School Tuition Estimator Tool
+You are a full-stack developer building an elegant, mobile-friendly, embeddable AI-powered tuition calculator for private schools. This estimator will be sold as a standalone widget that schools can embed on their websites (WordPress, Wix, Squarespace, Webflow, Showit, etc.).
+
+🎯 GOAL:
+Create a branded tuition quote calculator that:
+
+Collects information about the child and enrollment options
+
+Instantly calculates estimated annual or monthly fees
+
+Displays a polished cost breakdown
+
+Captures parent email (optional)
+
+Is embeddable via iframe or JavaScript
+
+Is easy to customize and mobile-first
+
+🏫 TARGET USERS:
+Montessori & Waldorf schools
+
+International and bilingual schools
+
+Religious-based schools
+
+Boarding and day schools
+
+Early learning centers to secondary schools
+
+📝 INPUT OPTIONS (Editable via JSON):
+Grade Level / Age
+
+Pre-K / Kindergarten
+
+Primary (1–5)
+
+Middle School (6–8)
+
+High School (9–12)
+
+Enrollment Type
+
+Full-Time
+
+Part-Time
+
+Boarding
+
+Day School
+
+Sibling Discount
+
+First Child
+
+Second Child
+
+Third+ Child
+
+Optional Programs
+
+After-School Care
+
+Lunch Plan
+
+Transportation
+
+International Baccalaureate / Advanced Curriculum
+
+Payment Plan
+
+Annual
+
+Monthly
+
+Quarterly
+
+Promo Code / Scholarship Code – Optional
+
+💰 SAMPLE PRICING LOGIC (Editable via JSON):
+Base Tuition:
+
+Pre-K: €5,000/year
+
+Primary: €7,500/year
+
+Middle School: €9,000/year
+
+High School: €11,000/year
+
+Boarding Add-On: +€8,000/year
+
+Part-Time: -30%
+
+Sibling Discount:
+
+Second child: -10%
+
+Third+: -15%
+
+Add-Ons:
+
+After-School: €900
+
+Lunch Plan: €750
+
+Transport: €1,200
+
+IB/Advanced: €1,500
+
+Monthly Plans: +5% fee
+
+Promo/Scholarship Code: apply % or fixed discount
+
+🔧 CORE FEATURES:
+✅ Multi-step React form with real-time updates
+✅ Animated tuition result + breakdown view
+✅ Optional email entry to view final cost
+✅ PDF export or email delivery
+✅ "Apply Now" or "Book a Tour" CTA (editable link)
+✅ Easy pricing config with JSON
+✅ Embed-ready via iframe or JS
+
+🚀 ADVANCED FEATURES:
+🧠 Natural Language Input (Optional)
+
+“My daughter is 10, full-time, with aftercare and lunch” → auto-fills fields
+
+⏳ Quote Validity Countdown
+
+“This quote is locked for 7 days” + reminder email
+
+📚 Program Highlights
+
+“Most enrolled: Primary + after-school + transport”
+
+🌐 Language Toggle
+
+Supports English, German, French, Spanish
+
+📝 Admin Dashboard
+
+View lead info, common quote patterns, estimated enrollments
+
+📥 CRM / Lead Integration
+
+Export leads to Notion, Google Sheets, HubSpot, Mailchimp
+
+🎨 DESIGN STYLE:
+Academic and trustworthy look: navy, white, beige
+
+School crest/logo upload area
+
+Rounded cards, clean layout, readable fonts
+
+Mobile-first design with clear form steps
+
+🛠️ TECH STACK:
+React + Tailwind CSS
+
+Supabase or Firebase for leads
+
+Optional OpenAI or LangChain for NLP
+
+JSON config for pricing logic
+
+Stripe for future fee deposit integration
+
+📦 DELIVERABLE:
+Embeddable tuition calculator
+
+Custom quote result
+
+Lead capture option
+
+Admin-configurable settings
+
+Embed-ready and styled to match school branding
+
+💡 Example Embed:
+html
+Copy
+Edit
+<iframe src="https://quotekit.ai/privateschool?user=greenoakacademy" style="width:100%;height:600px;border:none;"><

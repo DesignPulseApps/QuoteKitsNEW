@@ -1,0 +1,147 @@
+ Lifestyle Influencer Quote Estimator Tool
+plaintext
+CopyEdit
+You are a full-stack developer creating a responsive, embeddable AI-powered pricing calculator for **lifestyle influencers**. This widget will help influencers quote branded collaborations, and can be embedded on platforms like Linktree, WordPress, Squarespace, or a personal site.
+
+---
+
+? GOAL:
+Build a sleek, mobile-friendly quote tool that:
+- Captures campaign goals and deliverables
+- Instantly calculates a branded quote
+- Optionally collects lead data (brand rep email)
+- Offers output that looks professional and on-brand
+- Is embeddable via iframe or script
+
+---
+
+? TARGET NICHE:
+Lifestyle, beauty, fashion, wellness, and travel influencers on Instagram, TikTok, YouTube, and blogs—ready to pitch brands with accurate rates.
+
+---
+
+? INPUT OPTIONS (Editable by Influencer):
+1. **Platform** –  
+   - Instagram  
+   - TikTok  
+   - YouTube  
+   - Blog / Website  
+   - Pinterest  
+
+2. **Campaign Deliverables** –  
+   - 1 Post  
+   - 1 Post + 3 Stories  
+   - 1 Reel / TikTok  
+   - Full Campaign (multi-platform)  
+   - Product Unboxing / Review  
+
+3. **Usage Rights Required** –  
+   - Organic Only  
+   - Paid Ads (3 months / 6 months / 12 months)  
+   - Whitelisting  
+
+4. **Exclusivity Period** –  
+   - None  
+   - 30 days  
+   - 3 months  
+   - 6 months  
+
+5. **Add-ons** –  
+   - Photography + Video Production  
+   - Blog Write-up  
+   - Link in Bio  
+   - Dedicated Giveaway  
+   - Behind-the-Scenes Content  
+
+6. **Promo Code or Gifted Product** –  
+   - Yes (10% discount)  
+   - No  
+
+---
+
+? PRICING LOGIC (Editable via JSON):
+- Base (1 Post, 10K–50K followers): €250  
+- Each Story: +€50  
+- Reel/TikTok: +€100  
+- Blog Feature: +€150  
+- Usage Rights: +€150–€300  
+- Exclusivity: +€100–€400  
+- Photography/Video: +€150  
+- Giveaway: +€75  
+- Promo code = 10% off total  
+
+---
+
+? CORE FEATURES:
+✅ React form UI with smooth transitions  
+✅ Live price preview with quote animation  
+✅ Email capture for brand inquiries  
+✅ PDF or email export of breakdown  
+✅ Call-to-action: “Send Me a Proposal” or “Let's Collaborate”  
+✅ JSON config for easy updates  
+✅ Embed via iframe/snippet
+
+---
+
+? ADVANCED FEATURES:
+
+1. ? **Natural Language Toggle:**  
+Brand rep types: “We want a TikTok and IG post with usage rights” → auto-filled form
+
+2. ? **PDF/Email Export:**  
+Branded quote sheet with pricing, services, contact details
+
+3. ? **Info Tooltips:**  
+E.g. “What’s whitelisting?” → popup explanation
+
+4. ⏳ **Quote Lock Feature:**  
+> “This rate is valid for 7 days”
+
+5. ? **Smart Combo Tags:**  
+> “Top booked combo: IG Reel + Stories + Usage”
+
+6. ? **Language Switcher:**  
+Simple switch for German, Spanish, etc.
+
+7. ? **Zapier/Webhook Support:**  
+Push brand lead to Notion, Airtable, Trello, etc.
+
+8. ? **Admin Dashboard (Optional):**  
+Track leads, quotes, popular campaign types
+
+9. ?￯ﾸﾏ **Dynamic Logic:**  
+- Brand requests blog post = suggest multi-platform  
+- Usage + exclusivity = trigger higher rate floor
+
+10. ? **Referral Unlocks:**  
+Special packages revealed when code is entered (e.g. from agency partner)
+
+---
+
+? DESIGN STYLE:
+- Clean influencer-friendly UI (pastels, modern serif fonts, bold CTAs)  
+- Rounded cards, mobile-first layout  
+- User’s logo, colors, fonts configurable  
+- Great for embedding in Linktree or custom brand sites
+
+---
+
+?￯ﾸﾏ TECH STACK:
+- React + Tailwind CSS  
+- Supabase or Firebase for lead storage  
+- JSON-config for logic and content  
+- Optional OpenAI integration  
+- Stripe for future deposits (phase 2)
+
+---
+
+? DELIVERABLE:
+- Fully functional influencer quote calculator  
+- Branded output + price logic  
+- Lead capture  
+- One-click embed code generator  
+- Optional PDF/email output
+
+? Embed Example:
+```html
+<iframe src="https://influencerquote.ai/embed?user=lifestylebabe" style="width:100%;height:600px;border:none;"></iframe>

@@ -1,0 +1,132 @@
+You are a full-stack developer building a mobile-friendly, embeddable AI-powered quote calculator for **plumbing professionals**. This widget will be sold as a standalone tool and embedded into any website, including WordPress, Squarespace, Wix, Webflow, and Showit.
+
+---
+
+🛠️ GOAL:
+Develop a professional, responsive quote estimator that:
+- Gathers details about plumbing needs
+- Instantly provides an estimated price
+- Offers a clear breakdown of service elements
+- Optionally captures leads via email
+- Is embeddable with iframe or JS snippet
+- Works beautifully on mobile devices
+
+---
+
+👷‍♂️ TARGET USERS:
+- Independent plumbers  
+- Plumbing service companies  
+- Emergency repair providers  
+- Kitchen & bathroom renovation pros
+
+---
+
+🚰 INPUT OPTIONS (Editable via JSON Config):
+1. **Service Type** –  
+   - Leak Repair  
+   - Pipe Installation  
+   - Water Heater Installation/Repair  
+   - Toilet / Faucet Repair  
+   - Bathroom/Kitchen Renovation  
+   - Emergency Callout  
+
+2. **Property Type** –  
+   - Apartment  
+   - House  
+   - Commercial Property  
+
+3. **Urgency Level** –  
+   - Flexible  
+   - Within 48 hours  
+   - Emergency (Same-day)  
+
+4. **Location Details** –  
+   - City dropdown  
+   - Floor number (if applicable)  
+
+5. **Add-Ons** –  
+   - Full Inspection  
+   - Written Report  
+   - Warranty Extension  
+
+6. **Promo Code** – Optional field
+
+---
+
+💰 SAMPLE PRICING LOGIC (Editable via JSON):
+- Base job (standard fix, flexible time): €80  
+- Emergency surcharge: +€100  
+- Water heater install: €350–€600 depending on size  
+- Add-ons: Inspection (+€60), Report (+€40), Warranty (+€30)  
+- Floor surcharge: +€10 per floor above 1st (if no lift)  
+- Apply 10% off if promo code is valid
+
+---
+
+📋 CORE FEATURES:
+✅ React step-by-step form  
+✅ Animated, live price estimate  
+✅ Optional lead capture before full quote shown  
+✅ “Request Appointment” CTA with configurable URL  
+✅ PDF summary download or email delivery  
+✅ JSON-configurable price logic  
+✅ One-click embed iframe/snippet
+
+---
+
+🔧 ADVANCED FEATURES:
+
+1. 🧠 **Natural Language Input (Optional):**  
+> “Need emergency leak fix in 3rd-floor apartment” → auto-fill form
+
+2. 🕒 **Quote Timer:**  
+“This quote is valid for 48 hours” — with countdown, lead email, and optional reminder
+
+3. 🛎️ **Smart Tooltips:**  
+Hover or tap “What’s included in inspection?”
+
+4. 🛠️ **Popular Combo Badges:**  
+> “Most requested: Leak Repair + Inspection”
+
+5. 🌍 **Language Selector:**  
+Multi-language support (EN, DE, FR, ES)
+
+6. 📤 **CRM Integration:**  
+Push leads to Google Sheets, Notion, Mailchimp, etc.
+
+7. 📊 **Dashboard Analytics:**  
+Track average quote, top services, time-to-book
+
+8. ⚙️ **Dynamic Logic:**  
+If “Emergency” selected → auto-add surcharge  
+If “Commercial” → adjust base prices + inspection suggestion
+
+---
+
+🎨 DESIGN STYLE:
+- Clean and industrial: navy, grey, white, blue accents  
+- Iconography: pipe wrench, faucet, water drop symbols  
+- Bold input buttons, responsive transitions  
+- Configurable theme: logo, color, button labels
+
+---
+
+⚙️ TECH STACK:
+- React + Tailwind CSS  
+- Firebase or Supabase for optional storage  
+- Optional OpenAI or LangChain for natural language processing  
+- JSON pricing logic  
+- Stripe integration (optional for future deposits)
+
+---
+
+📦 DELIVERABLE:
+- Fully functional embeddable plumber quote tool  
+- Live quote engine with editable inputs  
+- Responsive UI and mobile-friendly layout  
+- PDF/email export  
+- Lead storage and embed code
+
+💡 Example Embed:
+```html
+<iframe src="https://quotekit.ai/plumber?user=aquadashservices" style="width:100%;height:600px;border:none;"></iframe>

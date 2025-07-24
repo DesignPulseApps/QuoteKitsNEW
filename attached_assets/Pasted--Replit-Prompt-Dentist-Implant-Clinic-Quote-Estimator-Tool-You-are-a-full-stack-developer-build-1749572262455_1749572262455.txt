@@ -1,0 +1,178 @@
+🦷 Replit Prompt: Dentist & Implant Clinic Quote Estimator Tool
+You are a full-stack developer building a mobile-friendly, embeddable AI-powered quote calculator for dentists and implant clinics. This widget will be sold as a standalone tool that clinics can embed on their website (WordPress, Wix, Webflow, Squarespace, Showit, etc.).
+
+🎯 GOAL:
+Develop a clean, clinic-branded price estimator that:
+
+Collects patient treatment preferences
+
+Instantly calculates estimated treatment costs
+
+Shows a professional, itemized pricing breakdown
+
+Optionally captures lead email
+
+Embeds via iframe or JS snippet
+
+Is mobile-first and editable via JSON
+
+👩‍⚕️ TARGET USERS:
+Private dental clinics
+
+Implantology practices
+
+Cosmetic dentistry providers
+
+Orthodontic and restorative dentists
+
+High-end dental tourism practices
+
+📝 INPUT OPTIONS (Editable via JSON Config):
+Treatment Type
+
+Dental Implant (Single / Multiple)
+
+Veneers (Single / Full Set)
+
+Teeth Whitening
+
+Invisalign / Braces
+
+Dental Cleaning / Scaling
+
+Root Canal
+
+Urgency / Consultation
+
+Regular Booking
+
+Express Consultation (within 48h)
+
+Virtual Consultation
+
+Add-Ons / Extras
+
+3D X-Ray Imaging
+
+Sedation / Anaesthesia
+
+Post-Treatment Care Package
+
+Multi-Treatment Discount
+
+Payment Plan Options
+
+Pay in Full
+
+Monthly Plan
+
+Insurance Coverage (yes/no)
+
+Promo Code / Referral Code – Optional
+
+💰 SAMPLE PRICING LOGIC (Editable in JSON):
+Dental Implant:
+
+Single = €1,200
+
+Multiple = €1,000 each
+
+Veneers:
+
+Single = €450
+
+Full Set (10) = €4,000
+
+Invisalign: Starting at €3,500
+
+Teeth Whitening = €300
+
+Cleaning = €90
+
+Root Canal = €400
+
+X-Ray Imaging = €120
+
+Anaesthesia = €200
+
+Care Package = €150
+
+Express Booking: +€75
+
+Multi-Treatment Discount: 10% off total
+
+Promo Code: 10–20% off, if valid
+
+🛠️ CORE FEATURES:
+✅ React step-by-step form with real-time updates
+✅ Animated quote with itemized summary
+✅ Optional lead capture before full price is shown
+✅ PDF export or email delivery
+✅ CTA: “Book Consultation” (configurable link)
+✅ One-click embed code generation
+✅ Clinic-customized pricing via JSON
+
+🚀 ADVANCED FEATURES:
+💬 Natural Language Input (Optional)
+
+“I want veneers and whitening with full payment” → Auto-filled form
+
+⏳ Quote Validity Timer
+
+“This quote is valid for 72 hours” with email reminder
+
+📈 Smart Suggestions
+
+Choosing “Implant” suggests “X-Ray + Care Package”
+
+🌍 Language Toggle
+
+Supports English, German, Spanish, French
+
+📊 Admin Panel
+
+View leads, treatment demand trends, quote history
+
+🔗 CRM / Email Automation Support
+
+Send lead data to Notion, Mailchimp, or Google Sheets
+
+🎨 DESIGN STYLE:
+Clinical and premium: white, soft grey, aqua blue
+
+Rounded corners, dental icons (tooth, brush, smile)
+
+Clean typography, high trust UI design
+
+Clinic logo upload + brand color customization
+
+Smooth transitions and mobile-first layout
+
+⚙️ TECH STACK:
+React + Tailwind CSS
+
+Supabase or Firebase for lead storage
+
+Optional OpenAI or LangChain for NLP
+
+JSON-configurable pricing
+
+Stripe (future: deposits or consultation fees)
+
+📦 DELIVERABLE:
+Full MVP calculator
+
+Real-time quote estimator with breakdown
+
+Custom email PDF delivery
+
+Embeddable iframe/script
+
+Custom branding for each clinic
+
+💡 Example Embed:
+html
+Copy
+Edit
+<iframe src="https://quotekit.ai/dentalclinic?user=smileplusvienna" style="width:100%;height:600px;border:none;"></iframe>
+Would you like the next one for Physiotherapy Clinics, Dermatologists, or another niche?

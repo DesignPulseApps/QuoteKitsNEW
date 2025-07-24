@@ -1,0 +1,124 @@
+You are a full-stack developer building a mobile-optimized, embeddable AI-powered quote calculator for **driving instructors**. This tool will be offered as a standalone widget that instructors can embed on websites built with WordPress, Wix, Squarespace, Showit, or Webflow.
+
+---
+
+🚗 GOAL:
+Build a modern, responsive price estimator that:
+- Collects student lesson preferences  
+- Instantly generates a tailored estimate  
+- Shows a clear and branded pricing breakdown  
+- Optionally captures email leads  
+- Works perfectly on mobile  
+- Is embeddable via iframe or script
+
+---
+
+🎯 TARGET USERS:
+- Independent driving instructors  
+- Driving schools  
+- Specialized test prep instructors (manual & automatic)  
+- Defensive and refresher lesson providers  
+
+---
+
+📥 INPUT OPTIONS (Editable via JSON):
+1. **Transmission Type** –  
+   - Manual  
+   - Automatic  
+
+2. **Lesson Type** –  
+   - Beginner Package  
+   - Intensive Course  
+   - Refresher Lessons  
+   - Test Preparation  
+
+3. **Number of Lessons** – Dropdown (1–40)  
+4. **Lesson Duration** –  
+   - 45 minutes  
+   - 60 minutes  
+   - 90 minutes  
+
+5. **Pick-up Location** –  
+   - Instructor’s location  
+   - Student address (extra fee)  
+
+6. **Preferred Days** – Checkbox: Mon–Sun  
+7. **Add-Ons** –  
+   - Theory Support  
+   - Mock Test  
+   - Evening/Weekend Lessons  
+
+8. **Promo Code** – Optional  
+
+---
+
+💶 SAMPLE PRICING LOGIC (Editable via JSON):
+- Base 60-min lesson: €50  
+- Manual: no surcharge  
+- Automatic: +€5  
+- Extra €10 for pick-up at student address  
+- Weekend/Evening: +€10  
+- Theory Support: +€30  
+- Valid promo code: -10%
+
+---
+
+💡 CORE FEATURES:
+✅ Smooth React UI with progress steps  
+✅ Real-time quote update as options are selected  
+✅ Optional email form before final quote  
+✅ Download or email quote option  
+✅ “Book My Lessons” CTA  
+✅ JSON config for easy updates  
+✅ Embed with one-click script or iframe
+
+---
+
+🧠 ADVANCED FEATURES:
+
+1. 💬 **Natural Language Input (Optional):**  
+> “I need 10 lessons in automatic on weekends at my home” → auto-filled form
+
+2. ⏱️ **Quote Expiry Countdown:**  
+Display: “Valid for 72 hours” + email reminder option
+
+3. 📄 **Branded PDF Summary:**  
+Includes logo, estimate breakdown, and contact link
+
+4. 🧠 **AI Suggestions:**  
+If user selects “Refresher Lessons” → suggest mock test add-on
+
+5. 🌐 **Multi-Language Support:**  
+EN, DE, ES, FR via translation file
+
+6. 📊 **Dashboard View (Optional):**  
+Tracks email leads, top packages, conversion data
+
+---
+
+🎨 DESIGN STYLE:
+- Calm, trustworthy vibe: soft blue, grey, white  
+- Clear fonts, large step cards, driving icons  
+- Smooth transitions, mobile-first UX  
+- Upload logo + customize palette
+
+---
+
+🛠️ TECH STACK:
+- React + Tailwind CSS  
+- JSON logic for pricing  
+- Supabase or Firebase for lead capture  
+- OpenAI for optional NLP input  
+- Stripe integration (optional)
+
+---
+
+📦 DELIVERABLE:
+- Fully working MVP app  
+- Branded breakdown of selected inputs and total  
+- Export/share quote  
+- Embed-ready code for any website
+
+🔗 Example Embed:
+```html
+<iframe src="https://quotekit.ai/drivinginstructor?user=topgearacademy" style="width:100%;height:600px;border:none;"></iframe>

@@ -1,0 +1,144 @@
+You are a full-stack developer building a clean, modern, embeddable AI-powered quote calculator for **marketing consultants**. This tool will be sold as a standalone widget for use on WordPress, Squarespace, Wix, Webflow, Showit, or Framer websites.
+
+---
+
+🎯 GOAL:
+Create a fully responsive pricing estimator that:
+- Gathers client marketing needs  
+- Instantly generates a pricing quote  
+- Shows a smart, brandable breakdown  
+- Captures leads via email (optional)  
+- Embeds easily via iframe or JS  
+- Helps consultants pre-qualify leads and boost conversions
+
+---
+
+🧠 TARGET USERS:
+- Freelance marketing consultants  
+- Social media marketers  
+- SEO/PPC specialists  
+- Boutique marketing agencies  
+- Brand strategists
+
+---
+
+📥 INPUT OPTIONS (Editable via JSON Config):
+1. **Marketing Goal** –  
+   - Increase website traffic  
+   - Grow social media audience  
+   - Launch a new product  
+   - Improve branding  
+   - Generate leads
+
+2. **Service Focus** –  
+   - SEO  
+   - Google Ads / PPC  
+   - Social Media Strategy  
+   - Email Marketing  
+   - Branding & Positioning
+
+3. **Business Size** –  
+   - Solo / Startup  
+   - Small Business  
+   - Mid-size  
+   - Enterprise
+
+4. **Engagement Type** –  
+   - One-time audit  
+   - Monthly consulting  
+   - Full strategy & execution
+
+5. **Add-Ons** –  
+   - Content Plan  
+   - Competitor Audit  
+   - Analytics Setup  
+   - Marketing Automation  
+   - Social Ads Management
+
+6. **Timeline** –  
+   - Immediate  
+   - Within a month  
+   - Flexible  
+   - Not sure yet
+
+7. **Promo Code** – Optional
+
+---
+
+💶 SAMPLE PRICING LOGIC (Editable via JSON):
+- Base consulting fee (solo biz): €400  
+- Add €200 for small biz, €500 for mid-size, €1000 for enterprise  
+- Strategy & execution: +€700  
+- Add-ons range from €100–€400 each  
+- Apply 15% off if promo code is valid
+
+---
+
+🧩 CORE FEATURES:
+✅ Step-by-step form layout (React preferred)  
+✅ Live pricing breakdown and total  
+✅ Optional email required to see full quote  
+✅ Export or email PDF quote  
+✅ Configurable CTA (“Schedule Discovery Call”)  
+✅ JSON config editable by consultant  
+✅ Embeddable via iframe or JS snippet
+
+---
+
+🚀 ADVANCED FEATURES:
+
+1. ✍️ **AI Input Parser (Optional):**  
+> “I want SEO + social media growth for my startup” → auto-fills form
+
+2. ⏳ **Quote Validity Countdown:**  
+“Locked in for 48 hours” + timer, with lead capture
+
+3. ❓ **Interactive Help Bubbles:**  
+> “What’s a content plan?” → Tap for popup with explanation
+
+4. 💡 **Popular Package Tags:**  
+> “Top Choice: Monthly SEO + Analytics Setup”
+
+5. 🌐 **Language Toggle Support:**  
+Multi-language UI toggle with JSON or API-powered translation
+
+6. 📊 **Admin Dashboard & Analytics:**  
+Tracks popular services, quote frequency, avg quote value
+
+7. 🔗 **CRM + Zapier Hooks:**  
+Send leads to Airtable, Notion, Mailchimp, or HubSpot
+
+8. 💳 **Stripe Payment Integration (Optional Phase 2):**  
+Enable upfront payments or deposits
+
+---
+
+🎨 DESIGN STYLE:
+- Sleek, professional, and trust-building  
+- White with brand accent options  
+- Modern sans-serif fonts  
+- Animated progress indicators  
+- Fully responsive, mobile-first  
+- Style panel for brand customization
+
+---
+
+🛠️ TECH STACK:
+- React + Tailwind CSS  
+- Firebase or Supabase for lead capture (optional)  
+- JSON logic config  
+- OpenAI or LangChain (optional) for AI input  
+- Stripe (planned)
+
+---
+
+📦 DELIVERABLE:
+- Fully functional quote calculator  
+- Live breakdown  
+- Optional PDF/email output  
+- Config file for easy updates  
+- One-click embed script
+
+💡 Example Embed:
+```html
+<iframe src="https://quotekit.ai/marketingconsultant?user=brandygenius" style="width:100%;height:600px;border:none;"></iframe>

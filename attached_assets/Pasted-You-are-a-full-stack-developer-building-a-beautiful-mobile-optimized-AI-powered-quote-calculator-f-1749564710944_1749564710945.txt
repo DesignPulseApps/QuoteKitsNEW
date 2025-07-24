@@ -1,0 +1,129 @@
+You are a full-stack developer building a beautiful, mobile-optimized, AI-powered quote calculator for **boat charter services**. This tool will be packaged as a standalone widget that boat rental companies and private captains can embed into their websites (WordPress, Wix, Squarespace, Webflow, Showit).
+
+---
+
+🎯 GOAL:
+Develop an elegant, embeddable quote estimator that:
+- Collects trip preferences and charter options  
+- Calculates a tailored price instantly  
+- Shows a branded and professional pricing summary  
+- Optionally captures leads with email  
+- Can be embedded via iframe or JS snippet  
+- Functions perfectly on mobile and desktop
+
+---
+
+🛥️ TARGET USERS:
+- Private yacht & sailboat charters  
+- Party boat or event boat rental companies  
+- Fishing charters  
+- Day cruise and tour operators  
+- Luxury crewed charters
+
+---
+
+📝 INPUT OPTIONS (Editable via JSON Config):
+1. **Boat Type** –  
+   - Sailboat  
+   - Catamaran  
+   - Motor Yacht  
+   - Speedboat  
+   - Fishing Boat  
+   - Party Boat  
+
+2. **Charter Duration** –  
+   - 2 Hours  
+   - Half Day  
+   - Full Day  
+   - Sunset Cruise  
+   - Multi-Day  
+
+3. **Number of Guests** – Dropdown: 1–50+  
+4. **Departure Location** – Text or dropdown  
+5. **Extras / Add-ons** –  
+   - Captain & Crew  
+   - Catering / Drinks  
+   - Water Toys (Jetski, Paddleboards)  
+   - Photographer / Drone Footage  
+   - Live DJ / Music System  
+
+6. **Preferred Date** – Date picker  
+7. **Special Requests** – Text input  
+8. **Promo Code** – Optional
+
+---
+
+💰 SAMPLE PRICING LOGIC (Editable via JSON):
+- Base rate: Varies by boat type (e.g. Sailboat Half Day = €500)  
+- + €100/hour beyond base duration  
+- + €150 for captain/crew  
+- + €250 for catering  
+- + €75 per jetski  
+- Party boat surcharge (after 15 guests): +€20/person  
+- Discount 10% for valid promo code  
+
+---
+
+✅ CORE FEATURES:
+- React-based dynamic form with transitions  
+- Real-time price estimator and summary panel  
+- Lead capture (optional email before full quote shown)  
+- PDF export or auto-send quote via email  
+- Configurable CTA button ("Reserve Your Boat")  
+- Easily editable via JSON  
+- Embeddable via iframe or one-line script
+
+---
+
+🌊 ADVANCED FEATURES:
+
+1. 🌐 **Natural Language Input:**  
+> “I want a catamaran for 12 people, sunset cruise, drinks included” → Auto-fills form
+
+2. 🧭 **Weather API Integration (Phase 2):**  
+Warn if weather looks bad for selected date
+
+3. ⏱️ **Quote Expiry Clock:**  
+“This quote is valid for 48 hours” → timer and email reminder
+
+4. 🧾 **PDF Estimate Output:**  
+Logo + selections + summary pricing + contact info
+
+5. 🔗 **CRM & Lead Capture Integration:**  
+Send lead data to Notion, Zapier, Sheets, Mailchimp
+
+6. 💡 **Smart Suggestions Engine:**  
+> If party size > 15 → suggest Party Boat with DJ
+
+7. 📊 **Admin Panel Dashboard (Optional):**  
+Track quotes, bookings, average spend, and conversion rate
+
+---
+
+🎨 DESIGN STYLE:
+- Luxury nautical: midnight blue, seafoam green, gold  
+- Crisp modern icons (anchor, waves, compass)  
+- Sleek transitions, parallax effects  
+- Upload logo + color/style adjuster  
+- Responsive across all devices
+
+---
+
+🧱 TECH STACK:
+- React + TailwindCSS  
+- JSON logic file for pricing  
+- Supabase or Firebase (for optional lead capture)  
+- OpenAI or LangChain for NLP features  
+- Stripe integration for deposit payments (Phase 2)
+
+---
+
+📦 DELIVERABLE:
+- Fully working MVP app  
+- Custom pricing logic  
+- Branded quote summary output  
+- One-click embed functionality
+
+💡 Example Embed Code:
+```html
+<iframe src="https://quotekit.ai/boatcharters?user=seasplashvienna" style="width:100%;height:600px;border:none;"></iframe>

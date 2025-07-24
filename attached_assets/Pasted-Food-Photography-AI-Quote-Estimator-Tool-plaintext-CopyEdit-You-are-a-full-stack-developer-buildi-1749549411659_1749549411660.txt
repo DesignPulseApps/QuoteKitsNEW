@@ -1,0 +1,159 @@
+Food Photography AI Quote Estimator Tool
+plaintext
+CopyEdit
+You are a full-stack developer building a responsive, embeddable AI-powered pricing calculator for **food photographers**. This tool will be sold as a standalone widget, embeddable on platforms like WordPress, Squarespace, Webflow, Showit, or Shopify.
+
+---
+
+? GOAL:
+Develop a visually appealing, mobile-first food photography quote calculator that:
+- Gathers client needs and preferences
+- Calculates a real-time price estimate
+- Displays a branded breakdown
+- Captures lead info (email optional)
+- Can be embedded via iframe or JavaScript snippet
+
+---
+
+? TARGET NICHE:
+Professional food photographers serving:
+- Restaurants & Cafés  
+- Food Bloggers & Influencers  
+- Cooks & Chefs  
+- Food Product Brands  
+- Cookbooks & Editorial Clients
+
+---
+
+? INPUT OPTIONS (Editable by Photographer):
+1. **Client Type** –  
+   - Restaurant  
+   - Chef / Personal Brand  
+   - Product Brand  
+   - Magazine / Editorial  
+   - Social Media Campaign  
+
+2. **Number of Dishes / Shots** –  
+   - 1–5  
+   - 6–10  
+   - 11–20  
+   - 20+  
+
+3. **Location** –  
+   - In-studio  
+   - On-location (restaurant/kitchen)  
+   - Outdoor / Natural Light  
+
+4. **Image Style** –  
+   - Overhead  
+   - Lifestyle / Table Setting  
+   - Studio Lighting  
+   - Process Shots (e.g. cooking, chopping)  
+
+5. **Add-ons** –  
+   - Food Stylist Required  
+   - Props Included  
+   - Fast Turnaround (48 hrs)  
+   - Raw Files Provided  
+   - Commercial License  
+
+6. **Delivery Format** –  
+   - Edited JPEGs  
+   - Social Media Format  
+   - High-Res TIFF  
+   - Web-Optimized Versions  
+
+7. **Promo Code** – Optional
+
+---
+
+? PRICING LOGIC (Editable via JSON):
+- Base: €180 (in-studio, 1–5 dishes, edited JPEGs)  
+- +€100 per every 5 dishes  
+- On-location: +€75  
+- Outdoor setup: +€50  
+- Lifestyle setup: +€80  
+- Food Stylist: +€150  
+- Props: +€100  
+- Commercial License: +€200  
+- Fast Turnaround: +€80  
+- Raw Files: +€50  
+- Social Media Crops: +€40  
+- Promo Code: 10% discount if valid
+
+---
+
+? CORE FEATURES:
+✅ React form UI with real-time price update  
+✅ Branded output: “Your Food Shoot Estimate: €XXX”  
+✅ Optional email input to reveal full breakdown  
+✅ CTA: “Book My Shoot” or “Contact for Booking”  
+✅ PDF/email export of quote  
+✅ JSON-configurable price and UI settings  
+✅ Embed via iframe/snippet
+
+---
+
+? ADVANCED FEATURES TO INCLUDE:
+
+1. ? **Natural Language Input (Optional):**  
+Client types: “I need 15 dishes shot with props and fast delivery” → auto-filled form
+
+2. ? **PDF/Email Export:**  
+Stylish, branded summary for the quote
+
+3. ? **Hover Tooltips:**  
+Explain terms like “commercial license” or “raw file delivery”
+
+4. ⏳ **Quote Lock Message:**  
+> “This price is locked for 72 hours”
+
+5. ? **Smart Suggest Badges:**  
+> “Most food brands book 10 dishes with props & social media edits”
+
+6. ? **Language Toggle (Optional)**  
+Localize into other languages with toggle switch
+
+7. ? **Zapier/Webhook Integration:**  
+Send lead data to CRM or Airtable
+
+8. ? **Admin Analytics Dashboard:**  
+See what packages are most quoted and requested
+
+9. ?￯ﾸﾏ **Dynamic Logic Conditions:**  
+- Over 10 dishes = recommend food stylist  
+- Commercial license adds mandatory usage clause  
+- Outdoor = suggest fast turnaround
+
+10. ? **Code-Based Package Unlock:**  
+Offer special deals or hidden tiers unlocked via affiliate codes
+
+---
+
+? DESIGN STYLE:
+- Clean, editorial look with food-friendly tones (cream, black, olive, copper)  
+- Elegant serif headings + rounded input cards  
+- Responsive mobile UI with transitions  
+- Custom style editor (fonts, logo, colors)
+
+---
+
+?￯ﾸﾏ TECH STACK:
+- React + Tailwind CSS  
+- Firebase or Supabase for lead storage  
+- OpenAI/LangChain optional for NL input  
+- JSON config for pricing logic  
+- Stripe integration (optional) for booking deposit
+
+---
+
+? DELIVERABLE:
+- Working food photography calculator  
+- Real-time estimates  
+- Email + PDF delivery  
+- Copy/paste embed code  
+- Admin view for quote logs and analytics (optional)
+
+? Embed Example:
+```html
+<iframe src="https://foodquote.ai/embed?user=forkandlens" style="width:100%;height:600px;border:none;"></iframe>

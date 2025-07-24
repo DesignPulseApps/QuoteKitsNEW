@@ -1,0 +1,141 @@
+? Replit Prompt: Pest Control Pricing Calculator
+plaintext
+CopyEdit
+You are a full-stack developer building a client-side, embeddable AI-powered pricing estimator tool for **pest control services**. This tool will be sold as a standalone widget and can be embedded into any pest control business website (WordPress, Wix, Webflow, Squarespace, etc.).
+
+---
+
+? GOAL:
+Create a modern, responsive, mobile-first calculator that:
+- Gathers property and pest info from users  
+- Instantly generates an estimated service quote  
+- Captures optional client email for lead follow-up  
+- Offers clean design, fast performance, and easy embedding
+
+---
+
+? TARGET USERS:
+- Residential and commercial pest control companies  
+- Exterminators specializing in insects, rodents, and seasonal prevention  
+- Local home service providers seeking to automate initial quotes
+
+---
+
+? INPUT OPTIONS (Editable by Admin via JSON):
+1. **Pest Type** –  
+   - Cockroaches  
+   - Ants  
+   - Wasps/Bees  
+   - Bedbugs  
+   - Rodents (mice/rats)  
+   - Termites  
+   - General Pest Prevention  
+
+2. **Infestation Level** –  
+   - Light  
+   - Moderate  
+   - Severe  
+
+3. **Property Type** –  
+   - Apartment  
+   - Detached House  
+   - Commercial Unit  
+   - Warehouse / Industrial  
+
+4. **Service Type** –  
+   - One-Time Treatment  
+   - Monthly Maintenance  
+   - Quarterly Prevention  
+
+5. **Add-ons** –  
+   - Eco-Friendly Chemicals  
+   - Same-Day Service  
+   - Follow-Up Visit  
+   - Pet-Safe Treatment  
+
+6. **Promo Code** – Optional
+
+---
+
+? PRICING LOGIC (Editable via JSON):
+- Base Visit (1 pest, light infestation): €100  
+- Add €50–€150 for moderate to severe levels  
+- Add €75–€250 depending on pest type (e.g. termites, bedbugs)  
+- Commercial property surcharge: +20%  
+- Same-day service: +€80  
+- Follow-up: +€50  
+- Eco-safe or pet-safe products: +€40  
+- Promo: 10% discount if valid
+
+---
+
+? CORE FEATURES:
+✅ Step-by-step React interface with dropdowns, toggles, and badges  
+✅ Live quote updates with animated result card  
+✅ Email capture before showing full estimate (optional)  
+✅ Export or email the estimate as a branded PDF  
+✅ Embed with one-line iframe or script  
+✅ "Book My Service" CTA configurable by business owner  
+✅ Easy-to-update pricing and logic via JSON or dashboard
+
+---
+
+? ADVANCED FEATURES:
+
+1. ? **AI Natural Language Input (Optional):**  
+Client types: “I have a mice problem in my warehouse” → autofills form
+
+2. ? **Quote Validity Timer:**  
+“This quote is valid for 3 days” – with countdown and optional reminder email
+
+3. ? **Smart Tooltips / Explainers:**  
+> “What is pet-safe treatment?” → Hover info panel
+
+4. ? **Best Seller Tags:**  
+> “Most popular: Ant control + follow-up visit + eco-safe”
+
+5. ? **Language Toggle:**  
+Translate UI into other languages (EN, DE, ES, etc.)
+
+6. ? **CRM/Webhook Integrations:**  
+Send lead data to Notion, Sheets, Trello, or Zapier workflows
+
+7. ? **Optional Admin Dashboard:**  
+See top pest types, average quote size, conversion rates
+
+8. ?￯ﾸﾏ **Smart Bundling Logic:**  
+- Select "Rodents" → Recommend follow-up visits  
+- Choose “Termites” → Automatically add inspection fee
+
+9. ? **Referral/Promo Unlocks:**  
+Show special pricing when user enters affiliate or promo code
+
+---
+
+? DESIGN STYLE:
+- Clean, professional with nature/green tones  
+- Icon-based interface for pests  
+- Custom fonts and brand logo upload  
+- Mobile-optimized with subtle animations  
+- Inline theme customizer for local businesses
+
+---
+
+?￯ﾸﾏ TECH STACK:
+- React + Tailwind CSS  
+- Optional Supabase or Firebase for storing leads  
+- OpenAI or LangChain integration for natural input (optional)  
+- Local JSON pricing config  
+- Stripe integration for deposits (Phase 2)
+
+---
+
+? DELIVERABLE:
+- Working MVP prototype with live price estimator  
+- Lead capture, PDF export  
+- Embed-ready script or iframe  
+- Admin dashboard (optional)
+
+? Embed Example:
+```html
+<iframe src="https://quotekit.ai/pestcontrol?user=bioDefender" style="width:100%;height:600px;border:none;"></iframe>

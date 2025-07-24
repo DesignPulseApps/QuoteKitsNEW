@@ -1,0 +1,135 @@
+You are a full-stack developer building an elegant, embeddable AI-powered quote calculator for **wedding photographers**. This tool will be sold as a standalone widget that photographers can embed into websites built with WordPress, Squarespace, Wix, Showit, or Webflow.
+
+---
+
+💍 GOAL:
+Build a polished and responsive quote estimator that:
+- Collects key wedding shoot details  
+- Instantly calculates a custom photography quote  
+- Captures lead email addresses (optional)  
+- Shows a branded pricing breakdown  
+- Can be embedded via iframe or JS script  
+- Runs seamlessly on mobile
+
+---
+
+📸 TARGET USERS:
+- Independent wedding photographers  
+- Studio-based photo teams  
+- Destination wedding specialists  
+- Elopement photographers  
+- Hybrid photo + video pros
+
+---
+
+📝 INPUT OPTIONS (Editable via JSON Config):
+1. **Package Type** –  
+   - Elopement / Small Ceremony  
+   - Half-Day Coverage  
+   - Full-Day Coverage  
+   - Destination Wedding  
+
+2. **Number of Hours** –  
+   - 4  
+   - 6  
+   - 8  
+   - 10+  
+
+3. **Number of Locations** –  
+   - 1  
+   - 2  
+   - 3+  
+
+4. **Add-Ons** –  
+   - Engagement Session  
+   - Second Photographer  
+   - Drone Coverage  
+   - Album & Prints  
+   - Rehearsal Dinner Coverage  
+   - Express Turnaround  
+
+5. **Delivery Options** –  
+   - Online Gallery Only  
+   - USB + Album  
+   - Video Highlights Add-On  
+
+6. **Wedding Date + Location** – Optional (datepicker + input)
+
+7. **Promo Code** – Optional
+
+---
+
+💸 SAMPLE PRICING LOGIC (Editable via JSON):
+- Base: €950 for Elopement / 4hr coverage  
+- +€150 per additional hour  
+- Second Photographer: +€250  
+- Drone: +€150  
+- Album: +€200  
+- Express Turnaround: +€175  
+- Apply 15% discount with valid promo
+
+---
+
+⚙️ CORE FEATURES:
+✅ Step-by-step form UX (React preferred)  
+✅ Real-time price preview with animated counter  
+✅ Email required to see full quote (optional)  
+✅ PDF export and email delivery  
+✅ “Check My Date” or “Book Me” CTA link  
+✅ Simple embed via iframe/snippet  
+✅ Configurable pricing via JSON
+
+---
+
+✨ ADVANCED FEATURES:
+
+1. 🧠 **AI Text-to-Quote (Optional):**  
+> “We’re getting married in June in Santorini with two venues and want video too” → auto-fill form
+
+2. 🕒 **Quote Validity Countdown:**  
+“This quote is valid for 72 hours” with timer and email capture
+
+3. 🔍 **Hover Tooltips / Info Tags:**  
+> “What’s included in a full-day package?” → mini popup
+
+4. 💡 **Popular Choices Prompt:**  
+> “Most couples choose Full-Day + Second Shooter + Album”
+
+5. 🌐 **Language Switch Dropdown:**  
+Support for EN, DE, IT, FR
+
+6. 🧩 **Smart Logic Triggers:**  
+- Add travel surcharge for distance over 50km  
+- Suggest Drone when “2+ Locations” selected  
+- Highlight Express Turnaround if wedding < 2 weeks away
+
+7. 📊 **Admin Dashboard (Optional):**  
+Lead collection + quote stats + conversion insights
+
+---
+
+🎨 DESIGN STYLE:
+- Luxurious yet clean: whites, soft golds, blush tones  
+- Elegant serif typeface (e.g. Playfair Display or Cormorant)  
+- Soft card transitions, smooth hover effects  
+- Custom branding: logo, primary/secondary colors, CTA text
+
+---
+
+🛠️ TECH STACK:
+- React + TailwindCSS  
+- Supabase / Firebase for storing leads  
+- Optional OpenAI API or LangChain for NLP input  
+- Stripe integration (optional future)  
+- JSON for pricing config
+
+---
+
+📦 DELIVERABLE:
+- MVP quote estimator for wedding photographers  
+- Real-time output and lead capture  
+- Embeddable widget + customization options
+
+💡 Example Embed Code:
+```html
+<iframe src="https://quotekit.ai/weddingphotography?user=lovelightvienna" style="width:100%;height:600px;border:none;"></iframe>

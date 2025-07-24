@@ -1,0 +1,117 @@
+You are a full-stack developer building a sleek, embeddable AI-powered quote calculator for **airport transfer services**. The tool will be offered as a standalone widget, embeddable into sites built with WordPress, Wix, Webflow, Squarespace, or Showit.
+
+---
+
+🎯 GOAL:
+Create a smooth and responsive estimator that:
+- Gathers key travel info (pickup, drop-off, time, passengers)  
+- Instantly shows an estimated price with branded styling  
+- Offers upsells like baby seats or luggage service  
+- Optionally captures leads by email  
+- Is fully embeddable (iframe or script)  
+- Optimized for mobile and instant use
+
+---
+
+🛫 TARGET USERS:
+- Local taxi or limo companies  
+- Airport shuttle services  
+- Luxury executive car services  
+- Hotel & hospitality transport providers
+
+---
+
+📝 INPUT OPTIONS (Editable via JSON Config):
+1. **Pickup Location** – Text/zip input  
+2. **Destination Airport** – Dropdown or text input  
+3. **Passengers** – 1–8 passengers  
+4. **Vehicle Type** –  
+   - Economy Car  
+   - Executive Sedan  
+   - SUV  
+   - Van  
+   - Shuttle Bus  
+
+5. **Pickup Time & Date** – Calendar and time picker  
+6. **Add-Ons** –  
+   - Baby Seat  
+   - Extra Luggage  
+   - Meet & Greet  
+   - Flight Tracking  
+
+7. **Return Trip?** – Yes/No toggle  
+8. **Promo Code** – Optional
+
+---
+
+💰 SAMPLE PRICING LOGIC (Editable via JSON):
+- Base fare (city to airport): €35–€80 depending on vehicle and distance  
+- Add €5–€10 per extra passenger (after 3)  
+- Return trip: 1.8× single fare  
+- Baby Seat: +€10  
+- Meet & Greet: +€15  
+- Promo: Apply 10% off with valid code
+
+---
+
+✅ CORE FEATURES:
+- Multi-step responsive React UI  
+- Live price display with estimated total  
+- Optional email capture before final price  
+- Export/email PDF estimate  
+- Booking CTA: “Book Airport Transfer”  
+- One-click embeddable snippet  
+- Easily editable via JSON
+
+---
+
+🚀 ADVANCED FEATURES:
+
+1. 🧠 **Natural Language Input (Optional):**  
+> “Pickup from hotel in city center to Vienna airport, 4 people, baby seat” → auto-fill fields
+
+2. 🕒 **Time-Sensitive Pricing Logic:**  
+> Late night surcharge from 22:00–06:00
+
+3. 🌍 **Live Flight Lookup (Future):**  
+> Optional field to add flight number for real-time tracking integration
+
+4. 📌 **Popular Routes:**  
+> Auto-suggestions: “City Center → Vienna Airport”
+
+5. 📊 **Admin Dashboard (Optional):**  
+> View frequent routes, avg. fare, conversion
+
+6. 🌐 **Language Toggle:**  
+> EN, DE, FR, ES support
+
+7. 🔗 **CRM Integration:**  
+> Zapier, Notion, or Google Sheets webhook
+
+---
+
+🎨 DESIGN STYLE:
+- Clean & professional: white, deep blue, and silver  
+- Airport iconography (planes, terminals, clocks)  
+- Clean sans-serif font and elegant shadows  
+- Mobile-first layout, animation on results panel
+
+---
+
+🧱 TECH STACK:
+- React + TailwindCSS  
+- JSON logic for fare config  
+- Firebase / Supabase optional for lead capture  
+- NLP via OpenAI (optional)  
+- Stripe for future deposit/payment features
+
+---
+
+📦 DELIVERABLE:
+- Working calculator MVP  
+- Branded output with optional PDF  
+- One-click copy embed snippet
+
+💡 Example Embed Code:
+```html
+<iframe src="https://quotekit.ai/airporttransfer?user=airvipvienna" style="width:100%;height:600px;border:none;"></iframe>

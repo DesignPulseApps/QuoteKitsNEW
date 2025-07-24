@@ -1,0 +1,139 @@
+Window & Door Installation Pricing Estimator
+plaintext
+CopyEdit
+You are a full-stack developer creating a lightweight, embeddable AI-powered quote calculator for **window and door installation businesses**. This app will be sold as a standalone embeddable tool that integrates with websites built on WordPress, Squarespace, Wix, Webflow, etc.
+
+---
+
+? GOAL:
+Build a stylish, responsive widget that:
+- Lets customers specify window/door installation needs  
+- Instantly generates an estimated quote  
+- Captures email leads (optional)  
+- Can be embedded on any website via iframe or JS snippet
+
+---
+
+? TARGET AUDIENCE:
+Homeowners, renovation clients, and property managers interested in replacing or installing:
+- Windows (single, double, bay, sliding)  
+- Exterior/interior doors  
+- Patio doors, French doors  
+- Custom frames
+
+---
+
+? INPUT OPTIONS (Editable by Admin via JSON):
+1. **Service Type** –  
+   - Window Installation  
+   - Door Installation  
+   - Both  
+
+2. **Number of Units** – 1 to 20+ (with stepper)  
+
+3. **Product Type** –  
+   - Standard  
+   - Energy Efficient  
+   - Premium Custom  
+
+4. **Material Type** –  
+   - PVC / uPVC  
+   - Wood  
+   - Aluminum  
+   - Composite  
+
+5. **Access Type** –  
+   - Ground Floor  
+   - First/Second Floor  
+   - Scaffolding Required  
+
+6. **Add-ons** –  
+   - Old Frame Removal  
+   - Disposal of Waste  
+   - Fast Track Install  
+   - Extra Locking Features  
+
+7. **Promo Code** – Optional
+
+---
+
+? PRICING LOGIC (JSON Editable):
+- Base Window Install (Standard, Ground): €300/unit  
+- Premium Material: +€100–€300  
+- Doors: Start at €450/unit  
+- Extra Floors: +€75 per unit  
+- Waste Disposal: +€50 flat  
+- Express Install: +€120  
+- Promo: 10% discount if valid
+
+---
+
+? CORE FEATURES:
+✅ Step-by-step React layout with progress bar  
+✅ Animated price calculation  
+✅ Optional email capture before full quote shown  
+✅ "Book Installation" or “Request Callback” CTA  
+✅ PDF quote export and email option  
+✅ JSON-powered config  
+✅ Iframe and JS embed ready  
+✅ Quote lock: “Price valid for 3 business days”
+
+---
+
+? ADVANCED FEATURES:
+
+1. ? **AI Input (Optional):**  
+Client types: “I need 3 aluminum windows and 2 sliding doors upstairs” → auto-fills fields  
+
+2. ? **Popular Choice Tags:**  
+> “Most selected: PVC windows + waste removal”  
+
+3. ? **Tooltips & Hover Definitions:**  
+> “What’s composite material?” → Mini explainer popup  
+
+4. ? **Multi-language Toggle:**  
+Switch UI language (EN, DE, ES, FR, etc.)
+
+5. ? **CRM/Webhook Support:**  
+Send new leads to Google Sheets, Notion, HubSpot, etc.
+
+6. ? **Admin Analytics Dashboard:**  
+View total quotes, average spend, conversion rates  
+
+7. ?￯ﾸﾏ **Dynamic Logic Suggestions:**  
+- If “Premium Custom” is selected → Recommend fast install  
+- If door type = front → Suggest extra locking features
+
+8. ? **Code-Based Tier Unlocks:**  
+Allow partners/referrals to reveal hidden pricing tiers or discounts
+
+---
+
+? DESIGN STYLE:
+- Clean, pro contractor aesthetic  
+- Light gray, navy, dark green palette  
+- Sharp icons for windows, frames, locks  
+- Mobile-optimized UI  
+- Style editor: upload logo, set brand fonts/colors
+
+---
+
+?￯ﾸﾏ TECH STACK:
+- React + Tailwind CSS  
+- Firebase or Supabase for optional data capture  
+- JSON-based pricing logic  
+- Optional: OpenAI parsing for natural language inputs  
+- Stripe integration (Phase 2)
+
+---
+
+? DELIVERABLE:
+- Responsive working prototype  
+- Real-time estimation logic  
+- Branded UI output  
+- PDF/email export  
+- One-click embed script or iframe  
+
+? Embed Example:
+```html
+<iframe src="https://quotekit.ai/windows?user=ClearViewInstalls" style="width:100%;height:600px;border:none;"></iframe>

@@ -1,0 +1,143 @@
+You are a full-stack developer building a mobile-friendly, embeddable AI-powered quote calculator for **tattoo artists**. This tool will be sold as a standalone widget that tattoo professionals can embed in websites made with WordPress, Squarespace, Wix, Webflow, or Showit.
+
+---
+
+🎯 GOAL:
+Develop a sleek, responsive price estimator that:
+- Gathers client tattoo preferences
+- Instantly calculates a custom quote estimate
+- Shows a branded breakdown of pricing
+- Optionally captures lead details (email, etc.)
+- Can be embedded via iframe or script tag
+- Works beautifully on desktop and mobile
+
+---
+
+👤 TARGET USERS:
+- Independent tattoo artists
+- Studio-based professionals
+- Traveling or guest artists
+- Custom, fine-line, realism, and traditional specialists
+
+---
+
+🖋️ INPUT OPTIONS (Editable via JSON Config):
+1. **Tattoo Size** –  
+   - XS (fingertip-sized)  
+   - Small (palm-sized)  
+   - Medium (forearm or calf)  
+   - Large (full sleeve or back)  
+
+2. **Placement Area** –  
+   - Arm / Leg / Back / Chest / Neck / Hand / Face  
+
+3. **Design Style** –  
+   - Fine Line  
+   - Realism  
+   - Traditional  
+   - Blackwork  
+   - Color / Watercolor  
+
+4. **Color or Black & Grey**
+
+5. **Custom Artwork Needed?**  
+   - Yes / No  
+
+6. **Preferred Session** –  
+   - One-shot / Multiple sessions  
+   - Hourly / Flat rate  
+
+7. **Add-ons** –  
+   - Priority booking  
+   - Aftercare kit  
+   - Touch-up session included  
+
+8. **Upload Sample or Reference (Optional)**
+9. **Promo Code** – Optional field
+
+---
+
+💶 SAMPLE PRICING LOGIC (Editable via JSON):
+- Base price: €100 (XS tattoo, black & grey, in studio)
+- Size increases: Small (+€50), Medium (+€150), Large (+€400)
+- Custom artwork: +€75
+- Color tattoos: +15% total price
+- Touch-up included: +€40
+- Priority booking: +€60
+- Promo code: -10% discount if valid
+
+---
+
+🔧 CORE FEATURES:
+✅ Step-by-step form (React UI)  
+✅ Real-time estimate updates  
+✅ Optional lead capture (email required to unlock full quote)  
+✅ Quote breakdown display with itemized selections  
+✅ Optional PDF export or email delivery  
+✅ “Book Now” CTA with configurable link  
+✅ Embed code generator with iframe or JS snippet  
+✅ Configurable pricing via JSON file
+
+---
+
+💡 ADVANCED FEATURES:
+
+1. 🧠 **Natural Language Input (Optional):**  
+> Client types: “A medium color tattoo of a snake on my arm” → auto-fills form
+
+2. ⏳ **Quote Lockdown Countdown:**  
+“This estimate is valid for 72 hours” → email reminder trigger
+
+3. 📌 **Smart Popups & Tooltips:**  
+> Hover over “Fine Line” to see example thumbnails or definitions
+
+4. 🏆 **Popular Combo Badges:**  
+> “Most booked: Medium Color + Custom Art”
+
+5. 🌍 **Language Toggle:**  
+Supports EN / DE / ES / IT via toggle
+
+6. 🧾 **CRM/Webhook Integration:**  
+Connects with Notion, Google Sheets, ConvertKit, etc.
+
+7. 📊 **Admin Panel Dashboard:**  
+View most booked styles, common placements, revenue estimates
+
+8. 🔀 **Smart Logic Enhancements:**  
+If “Large + Custom + Color” → Suggest multiple sessions + higher pricing logic
+
+9. 🎟️ **Promo Code Logic:**  
+Trigger upsell offers or discount deals for affiliate links
+
+---
+
+🎨 DESIGN STYLE:
+- Urban, bold, inked aesthetic
+- Use of black, gray, crimson, and gold tones
+- Tattoo-style iconography (needles, skulls, roses, ink)
+- Smooth transitions and shadowed cards
+- Style editor to upload logo, change fonts/colors
+
+---
+
+🛠️ TECH STACK:
+- React + Tailwind CSS
+- Supabase or Firebase for optional data storage
+- JSON-based config for pricing and inputs
+- OpenAI/LangChain for NLP-style form filling (optional)
+- Stripe integration for future deposit collection
+
+---
+
+📦 DELIVERABLE:
+- MVP web app with real-time pricing display
+- Responsive layout
+- PDF/email quote option
+- Lead capture
+- Admin link (optional)
+- Embed code for websites
+
+---
+
+🔗 Example Embed:
+<iframe src="https://quotekit.ai/tattoo?user=inkmastervienna" style="width:100%;height:600px;border:none;"></iframe>

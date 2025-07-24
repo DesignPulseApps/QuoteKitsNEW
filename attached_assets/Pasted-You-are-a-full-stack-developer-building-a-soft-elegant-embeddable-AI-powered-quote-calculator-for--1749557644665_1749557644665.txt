@@ -1,0 +1,135 @@
+You are a full-stack developer building a soft, elegant, embeddable AI-powered quote calculator for **maternity photographers**. This calculator will be sold as a standalone widget that can be embedded into websites built with WordPress, Squarespace, Wix, Webflow, or Showit.
+
+---
+
+🤰 GOAL:
+Build a graceful, responsive price estimator that:
+- Collects session preferences from expecting mothers  
+- Calculates an instant quote based on session details  
+- Displays a beautifully branded pricing breakdown  
+- Captures lead emails (optional)  
+- Is fully embeddable via iframe or script  
+- Works flawlessly on mobile devices  
+
+---
+
+🎯 TARGET USERS:
+- Boutique maternity photographers  
+- Studio-based and lifestyle pregnancy portrait artists  
+- High-end hybrid maternity + newborn photographers  
+- Photographers offering pregnancy milestone packages  
+
+---
+
+📥 INPUT OPTIONS (Editable via JSON Config):
+1. **Session Type** –  
+   - Classic Studio  
+   - Outdoor / Lifestyle  
+   - Artistic (milk bath, fabric toss)  
+   - Studio + Outdoor Combo  
+
+2. **Gestation Week at Time of Shoot** –  
+   - 25–29 Weeks  
+   - 30–34 Weeks  
+   - 35–38 Weeks  
+
+3. **Who Is Included** –  
+   - Mom-to-be only  
+   - Mom + Partner  
+   - Mom + Family (up to 5)  
+
+4. **Add-Ons** –  
+   - Professional Makeup  
+   - Flowing Dress Rental  
+   - Hair Styling  
+   - Partner Portraits  
+   - Retouched Image Set  
+   - Printed Album  
+   - Wall Art or Canvas  
+
+5. **Location** –  
+   - In-Studio  
+   - Outdoor Location (park, forest)  
+   - In-Home Session  
+
+6. **Promo Code** – Optional  
+
+7. **Preferred Date** – Optional Picker  
+
+---
+
+📊 SAMPLE PRICING LOGIC (Editable via JSON):
+- Base: Studio Session = €280  
+- + €75 for outdoor or artistic sessions  
+- Add €60 for dress rental, €80 for makeup  
+- Album: €140 | Canvas: €120 | Hair: €60  
+- Partner or family add-on: +€40  
+- Retouching: €50–€80  
+- Promo code: 10% discount if valid  
+
+---
+
+✨ CORE FEATURES:
+✅ React form with gentle, multi-step UI  
+✅ Instant animated quote panel  
+✅ Email capture before full quote shown (optional)  
+✅ PDF/Email export of quote  
+✅ CTA: “Reserve My Session” or “Send My Quote”  
+✅ Brand styling (logo upload, colors, fonts)  
+✅ One-click iframe or JS snippet embed  
+
+---
+
+🎁 ADVANCED FEATURES:
+
+1. 🧠 **Natural Language Input (Optional):**  
+> “Outdoor shoot at 32 weeks with makeup and album” → auto-fills fields  
+
+2. ⏳ **Quote Validity Timer:**  
+> “This quote is locked for 72 hours” with countdown and email capture  
+
+3. ❓ **Smart Popups & Tips:**  
+> “When is the best time to schedule my shoot?” → tooltip with advice  
+
+4. 💬 **Popular Combos / Highlighted Packages:**  
+> “Most loved: Studio + Makeup + Dress Rental”  
+
+5. 🌍 **Language Switch:**  
+Multi-language toggle: EN, DE, ES, FR  
+
+6. 📈 **Lead & Booking Analytics:**  
+View most popular sessions, average quote value, new leads  
+
+7. 🧩 **Dynamic Add-on Triggers:**  
+- Add makeup automatically when dress rental selected  
+- Add travel surcharge for distant outdoor locations  
+- Show upsell message for newborn + maternity bundle  
+
+---
+
+🎨 DESIGN STYLE:
+- Feminine and timeless: warm neutrals, champagne, blush  
+- Soft animations, floating cards, rounded corners  
+- Gentle iconography (pregnancy silhouettes, flowers, fabric)  
+- Mobile-first UI with editable branding options  
+
+---
+
+🛠️ TECH STACK:
+- React + Tailwind CSS  
+- Supabase or Firebase for optional lead capture  
+- Optional OpenAI or LangChain for NLP input  
+- JSON config for easy updates  
+- Stripe integration (optional future version)  
+
+---
+
+📦 DELIVERABLE:
+- Working MVP of maternity quote calculator  
+- Live pricing preview with logic  
+- Branded display  
+- Easy embed + admin customization options  
+
+💡 Example Embed Code:
+```html
+<iframe src="https://quotekit.ai/maternity?user=viennabumpstudio" style="width:100%;height:600px;border:none;"></iframe>

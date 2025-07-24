@@ -1,0 +1,161 @@
+Replit Prompt: Childcare Services Quote Estimator Tool
+You are a full-stack developer building a warm, mobile-friendly, embeddable AI-powered quote calculator for childcare clinics and daycare providers. This widget will be used by nurseries, kindergartens, and child development centers to give parents instant pricing estimates. It should be embeddable into any modern website platform (WordPress, Squarespace, Webflow, Wix, Showit).
+
+🎯 GOAL:
+Create a secure and parent-friendly estimator that:
+
+Collects essential details about childcare needs
+
+Instantly returns a clear, branded quote
+
+Captures parent emails (optional)
+
+Offers a stress-free, mobile-optimized experience
+
+Is embeddable via iframe or JS widget
+
+👶 TARGET USERS:
+Daycare centers
+
+Montessori schools
+
+Child development clinics
+
+Private nurseries & kindergartens
+
+After-school care providers
+
+📝 INPUT OPTIONS (Editable via JSON Config):
+Child Age Group
+
+Infant (0–2 yrs)
+
+Toddler (2–3 yrs)
+
+Preschool (3–5 yrs)
+
+School Age (6–10 yrs)
+
+Care Schedule
+
+Full-Time (5 days/week)
+
+Part-Time (3 days/week)
+
+After School Only
+
+Holiday Care
+
+Care Duration
+
+Monthly
+
+Quarterly
+
+Annual
+
+Additional Services
+
+Meals & Snacks
+
+Transportation
+
+Early Drop-Off / Late Pick-Up
+
+Special Learning Support
+
+Number of Children – Input field (1–4)
+
+Promo Code – Optional
+
+💰 SAMPLE PRICING LOGIC (Editable via JSON):
+Infant Full-Time: €950/month
+
+Toddler Part-Time: €650/month
+
+Meals & Snacks: +€80/month
+
+Transport: +€120/month
+
+Early/Late: +€60/month
+
+Learning Support: +€150/month
+
+Discount: -10% with valid promo code
+
+Additional child discount: 15% per sibling
+
+🛠️ CORE FEATURES:
+✅ Step-by-step React UI with icons and child-safe design
+✅ Real-time animated price update
+✅ Optional lead capture before showing breakdown
+✅ PDF or email quote option
+✅ JSON-driven config for pricing logic
+✅ Embed with 1-click iframe or JS snippet
+✅ “Enroll Now” CTA configurable per center
+
+🚀 ADVANCED FEATURES:
+🧠 Natural Language Input
+
+“I need full-time care for my toddler with meals and transport” → auto-fill fields
+
+⏳ Quote Lock Timer
+
+“This price is valid for 5 days” with email capture option
+
+❓ Smart Popups
+
+Hover: “What’s learning support?” → small definition
+
+💬 Language Toggle
+
+Support for EN, DE, FR, ES
+
+📊 Admin Dashboard
+
+Tracks leads, average quote, most common requests
+
+🔗 CRM Integration
+
+Connect to Mailchimp, Notion, Google Sheets
+
+💡 Siblings Auto-Suggestion
+
+Add logic to suggest sibling discount if more than 1 child
+
+🎨 DESIGN STYLE:
+Bright, playful theme: pastel greens, yellows, baby blue
+
+Rounded UI cards, soft animations
+
+Cartoon icons (teddy bears, school bags, crayons)
+
+Mobile-first, calming UI
+
+Editable style config (colors, logo, fonts)
+
+⚙️ TECH STACK:
+React + Tailwind CSS
+
+Supabase or Firebase for lead storage
+
+JSON-configured pricing logic
+
+Optional OpenAI NLP support
+
+Stripe support for deposit payments (future release)
+
+📦 DELIVERABLE:
+Fully responsive quote tool
+
+Branded pricing estimate output
+
+Lead capture
+
+Embed-ready link for website usage
+
+💡 Example Embed Code:
+html
+Copy
+Edit
+<iframe src="https://quotekit.ai/childcare?user=happystepsvienna" style="width:100%;height:650px;border:no

@@ -1,0 +1,159 @@
+Replit Prompt: Plastic Surgery Quote Estimator Tool
+You are a full-stack developer building a sleek, mobile-optimized, embeddable AI-powered quote calculator for plastic surgery clinics. This tool will be deployed as a standalone widget that clients can embed into their websites (WordPress, Wix, Squarespace, Webflow, or Showit).
+
+🎯 GOAL:
+Build a premium-feeling quote calculator that:
+
+Collects aesthetic procedure preferences
+
+Instantly returns a branded price estimate
+
+Captures leads via email (optional)
+
+Is fully responsive and easy to embed
+
+Works on mobile, tablet, and desktop
+
+🧑‍⚕️ TARGET USERS:
+Plastic surgeons
+
+Cosmetic surgery clinics
+
+Aesthetic treatment centers
+
+Medical spas offering surgical and non-surgical options
+
+📝 INPUT OPTIONS (Editable via JSON Config):
+Procedure Type
+
+Rhinoplasty
+
+Breast Augmentation
+
+Liposuction
+
+Facelift
+
+Tummy Tuck
+
+Eyelid Surgery
+
+Anesthesia Type
+
+Local
+
+General
+
+Additional Treatments
+
+Fat Transfer
+
+Injectables (Botox, Fillers)
+
+Post-Op Aftercare Package
+
+Compression Garments
+
+Hospital Stay
+
+None
+
+1 Night
+
+2+ Nights
+
+Consultation Preference
+
+In-Person
+
+Online
+
+Promo Code – Optional
+
+💰 SAMPLE PRICING LOGIC (Editable via JSON):
+Rhinoplasty: €4,500
+
+Breast Augmentation: €5,800
+
+Liposuction: starts at €3,000 (varies by area)
+
+Anesthesia: +€600 (General), +€250 (Local)
+
+Fat Transfer: +€1,200
+
+Injectables: +€300
+
+Post-Op Package: +€450
+
+Hospital Stay: +€400/night
+
+Valid promo code: -10% off total
+
+🛠️ CORE FEATURES:
+✅ React step-by-step UI
+✅ Real-time animated price display
+✅ Lead email capture before full breakdown
+✅ Optional “Request Consultation” CTA
+✅ PDF download or email summary
+✅ Editable via JSON for easy clinic customization
+✅ One-click embed code
+
+🚀 ADVANCED FEATURES:
+🧠 Natural Language Input (Optional)
+
+“I want a nose job with general anesthesia and one night stay” → auto-fills form
+
+⏳ Quote Lock Timer
+
+“This quote is valid for 72 hours”
+
+🔍 Smart Tooltips
+
+Hover over "Fat Transfer" → “Transfers fat from one area to another for shaping”
+
+📈 Admin Dashboard
+
+View quote volume, procedures requested, email leads
+
+🌐 Language Toggle
+
+EN, DE, FR, ES via dropdown
+
+🔗 CRM/Analytics Integration
+
+Google Sheets, Notion, HubSpot, Mailchimp
+
+🎨 DESIGN STYLE:
+Sleek and modern: monochrome with accents of gold, teal, or rose
+
+Clean serif headers, clinical yet luxurious aesthetic
+
+Fade transitions, smooth sliders
+
+Clinic can upload logo and adjust brand color
+
+⚙️ TECH STACK:
+React + Tailwind CSS
+
+Supabase or Firebase for lead data
+
+JSON-configured logic engine
+
+Optional OpenAI/NLP for natural input parsing
+
+Stripe for future deposits
+
+📦 DELIVERABLE:
+Functional quote tool
+
+Branding customization
+
+Email/PDF delivery option
+
+Embed-ready snippet
+
+💡 Example Embed:
+html
+Copy
+Edit
+<iframe src="https://quotekit.ai/plasticsurgery?user=viennaaesthetics" style="width:100%;height:600px;border:no

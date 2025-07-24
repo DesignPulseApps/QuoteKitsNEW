@@ -1,0 +1,161 @@
+Commercial Photography Quote Estimator Tool
+plaintext
+CopyEdit
+You are a full-stack developer creating a client-side, embeddable AI-powered quote calculator for **commercial photographers**. This tool is sold as a standalone widget and can be easily embedded on websites using WordPress, Squarespace, Webflow, Wix, Showit, etc.
+
+---
+
+? GOAL:
+Build a clean, responsive, professional AI quote tool that:
+- Collects shoot requirements
+- Instantly generates a detailed estimate
+- Optionally captures user email
+- Is embeddable via iframe or JavaScript
+- Styled to match brand identity
+
+---
+
+? TARGET NICHE:
+Photographers who specialize in:
+- Product Photography  
+- Brand Campaigns  
+- Lifestyle & Advertising Shoots  
+- Corporate Headshots  
+- Commercial Editorials
+
+---
+
+? INPUT OPTIONS (Editable by Photographer):
+1. **Project Type** –  
+   - Product Photography  
+   - Branding & Lifestyle  
+   - Corporate Headshots  
+   - Editorial / Magazine  
+   - Advertising Campaign  
+
+2. **Number of Final Images Required** –  
+   - 1–5  
+   - 6–15  
+   - 16–30  
+   - 30+  
+
+3. **Location** –  
+   - In-Studio  
+   - On-location (office, warehouse, outdoors)  
+   - Hybrid (multiple)  
+
+4. **Shoot Duration** –  
+   - Up to 1 hour  
+   - Half-day (4 hours)  
+   - Full-day (8 hours)  
+   - Multi-day  
+
+5. **Add-ons** –  
+   - Creative Director / Art Direction  
+   - Wardrobe Stylist  
+   - Retouching: Basic / Advanced  
+   - Model/Actor Casting  
+   - Set Design / Props  
+   - Usage Rights: Local / National / Global  
+
+6. **Delivery Speed** –  
+   - Standard (3–5 days)  
+   - Rush (48 hours)  
+   - Same-Day Preview  
+
+7. **Promo Code** – Optional field
+
+---
+
+? PRICING LOGIC (Editable via JSON):
+- Base: €350 (product shoot, 1hr, in-studio, 5 images)  
+- Each additional image: +€30  
+- Half-day: +€250 | Full-day: +€600 | Multi-day: +€1200  
+- On-location: +€100  
+- Creative Direction: +€200  
+- Advanced Retouching: +€100  
+- Casting: +€300  
+- Global usage rights: +€500  
+- Rush delivery: +€90  
+- Same-day: +€150  
+- Valid promo code = 10% discount
+
+---
+
+? CORE FEATURES:
+✅ Branded React form UI  
+✅ Live quote display with animation  
+✅ Optional lead capture field (email)  
+✅ Breakdown of services and total  
+✅ PDF/Email output of quote  
+✅ Configurable CTA: “Book This Shoot”  
+✅ JSON logic for all inputs  
+✅ Copy-paste iframe embed
+
+---
+
+? ADVANCED EXTRAS TO INCLUDE:
+
+1. ? **Natural Language Input (Optional):**  
+User types: “Lifestyle brand shoot, full day, with props and 20 final images” → autofills form
+
+2. ? **PDF or Email Export:**  
+Stylish branded summary with quote details
+
+3. ? **Hover Definitions:**  
+“Global usage” → tooltip explains licensing scope
+
+4. ⏳ **Quote Timer Lock:**  
+“Price locked for 72 hours” banner post-quote
+
+5. ? **Smart Popular Combos:**  
+> “Most booked: Full-day lifestyle + casting + creative director”
+
+6. ? **Language Toggle**  
+Translate fields via simple JSON
+
+7. ? **CRM Integration Support:**  
+Push to Google Sheets, Airtable, Notion, Mailchimp
+
+8. ? **Admin Dashboard:**  
+View quote logs, popular services, conversion analytics
+
+9. ?￯ﾸﾏ **Smart Logic Triggers:**  
+- If 30+ images → suggest full-day shoot  
+- If usage = national/global → require licensing clause  
+- Advanced retouching → minimum 6 images
+
+10. ? **Private Package Unlock by Code:**  
+Hidden tiers or discounts revealed by referral or partner code
+
+---
+
+? DESIGN STYLE:
+- Sleek, neutral corporate palette (black, grey, white, navy)  
+- Grid layout, rounded corners, card-based steps  
+- Customizable fonts, logo uploader  
+- Light/dark mode support  
+- Mobile-first smooth transitions
+
+---
+
+?￯ﾸﾏ TECH STACK:
+- React + Tailwind CSS  
+- Supabase or Firebase for optional lead capture  
+- JSON-config logic for pricing  
+- Optional: OpenAI for parsing natural language  
+- Stripe integration (for deposits, phase 2)
+
+---
+
+? DELIVERABLE:
+- Fully functional quote calculator  
+- Dynamic quote rendering  
+- Embed code generator  
+- PDF/email output  
+- JSON-based config  
+- Optional dashboard and analytics view
+
+? Embed Example:
+```html
+<iframe src="https://quotecommercial.ai/embed?user=lightstudio" style="width:100%;height:600px;border:none;"></iframe>

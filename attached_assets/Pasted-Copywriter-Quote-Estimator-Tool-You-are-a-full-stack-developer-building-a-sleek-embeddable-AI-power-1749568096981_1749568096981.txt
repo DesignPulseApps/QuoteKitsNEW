@@ -1,0 +1,159 @@
+Copywriter Quote Estimator Tool
+You are a full-stack developer building a sleek, embeddable AI-powered quote calculator for copywriters. This standalone widget will be embeddable into sites built with WordPress, Squarespace, Wix, Webflow, or Showit.
+
+🎯 GOAL:
+Create a user-friendly quote calculator that:
+
+Gathers client project specs
+
+Calculates estimated copywriting fees
+
+Presents a branded pricing breakdown
+
+Captures leads via email (optional)
+
+Embeds via iframe or JS snippet
+
+Runs perfectly on mobile and desktop
+
+👩‍💼 TARGET USERS:
+Freelance copywriters
+
+SEO blog writers
+
+Ad & sales page writers
+
+Email marketers
+
+B2B / SaaS copywriters
+
+📥 INPUT OPTIONS (Editable via JSON Config):
+Project Type –
+
+Website Copy
+
+Blog Post
+
+Sales Page
+
+Product Description
+
+Email Sequence
+
+Word Count –
+
+Under 500
+
+500–1,000
+
+1,000–2,000
+
+Over 2,000
+
+Tone of Voice –
+
+Professional
+
+Friendly
+
+Persuasive
+
+Witty
+
+Urgency –
+
+Standard (5 days)
+
+Express (48 hours)
+
+Add-ons –
+
+Keyword Research
+
+SEO Optimization
+
+Competitor Analysis
+
+Upload-ready Format (Google Doc / HTML)
+
+Revisions Package (up to 3x)
+
+Promo Code – Optional
+
+💸 SAMPLE PRICING LOGIC (Editable via JSON):
+Base: €75 for 500-word blog post, standard delivery
+
+€30–€100 based on word count
+
+Express: +€50
+
+Add-ons: SEO (€40), Keywords (€30), Format Prep (€20), Revisions (€25), Competitor Analysis (€50)
+
+Promo Code: 10% off if valid
+
+⚙️ CORE FEATURES:
+✅ React UI with step-by-step form
+✅ Real-time animated quote preview
+✅ Optional lead capture via email
+✅ Export quote as PDF or email it
+✅ “Request Project” or “Get in Touch” CTA
+✅ JSON-configurable logic
+✅ Fully embeddable with iframe or script
+
+💎 ADVANCED FEATURES:
+🧠 Natural Language Input:
+
+“I need a witty 1,000-word sales page optimized for SEO” → Auto-fill form
+
+⏳ Quote Validity Timer:
+
+“This quote is valid for 72 hours” → Add urgency and email lock-in
+
+💬 Tooltip Descriptions:
+
+“What’s SEO optimization?” → Tooltip with explanation
+
+🧠 Popular Combos:
+
+“Most booked: Sales Page + SEO + Revisions”
+
+🌍 Language Toggle:
+
+Multi-language support (EN, DE, ES, FR)
+
+📊 Admin Dashboard:
+
+View quotes created, average value, popular services
+
+🔗 CRM Integration:
+
+Send leads to Airtable, Mailchimp, Notion, etc.
+
+🎨 DESIGN STYLE:
+Clean and modern: white, charcoal, and soft blue accents
+
+Serif and mono fonts (think editorial and pro)
+
+Minimal icons, subtle animations
+
+Customizable via simple JSON or style editor
+
+🛠️ TECH STACK:
+React + Tailwind CSS
+
+Firebase or Supabase (for lead capture)
+
+Optional OpenAI/NLP input parser
+
+JSON-powered logic
+
+Stripe integration (optional future upgrade)
+
+📦 DELIVERABLE:
+Fully responsive calculator MVP
+
+Live quote preview + branded breakdown
+
+Embed code & admin config
+
+Optional quote download/email function

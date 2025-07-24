@@ -1,0 +1,139 @@
+You are a full-stack developer building a responsive, embeddable AI-powered quote calculator for **nutritionists and dietitians**. This widget will be sold as a standalone tool that can be embedded on websites built with WordPress, Squarespace, Webflow, Showit, or Wix.
+
+---
+
+🥦 GOAL:
+Develop a sleek, user-friendly pricing tool that:
+- Collects client health & goal preferences  
+- Instantly estimates nutrition plan pricing  
+- Presents a clean, branded cost breakdown  
+- Optionally captures emails for follow-up  
+- Embeds easily into any modern website  
+- Is responsive and mobile-first
+
+---
+
+🎯 TARGET USERS:
+- Registered dietitians  
+- Holistic nutritionists  
+- Weight-loss coaches  
+- Sports & fitness nutrition consultants  
+- Functional medicine practitioners
+
+---
+
+📝 INPUT OPTIONS (Editable via JSON Config):
+1. **Goal Type** –  
+   - Weight Loss  
+   - Muscle Gain  
+   - Digestive Health  
+   - General Wellness  
+   - Sports Nutrition  
+
+2. **Plan Type** –  
+   - One-time Meal Plan  
+   - 4-Week Program  
+   - 8-Week Program  
+   - Ongoing Monthly Coaching  
+
+3. **Diet Preference** –  
+   - Balanced  
+   - Vegetarian  
+   - Vegan  
+   - Keto  
+   - Gluten-Free  
+   - Custom  
+
+4. **Add-Ons** –  
+   - Grocery List  
+   - Supplement Plan  
+   - WhatsApp Support  
+   - Zoom Check-ins (Weekly)  
+   - Food Diary Review  
+
+5. **Client Type** –  
+   - New Client  
+   - Returning Client  
+
+6. **Promo Code** – Optional
+
+---
+
+📊 SAMPLE PRICING LOGIC (Editable via JSON):
+- One-time Meal Plan: €90  
+- 4-Week Plan: €180  
+- 8-Week Plan: €300  
+- Monthly Coaching: €120/month  
+- Add Grocery List: +€25  
+- Supplement Plan: +€35  
+- Weekly Check-ins: +€20/week  
+- WhatsApp Support: +€15/week  
+- Returning Client: -10%  
+- Valid Promo Code: -10%
+
+---
+
+🧩 CORE FEATURES:
+✅ React form flow with live updating price  
+✅ Optional email input to unlock full quote  
+✅ PDF export or email delivery of estimate  
+✅ CTA: “Book My Plan” or “Schedule Consultation”  
+✅ JSON-config logic file for full customization  
+✅ One-click iframe or JS embed snippet
+
+---
+
+🚀 ADVANCED FEATURES:
+
+1. 🧠 **AI Language Input (Optional):**  
+> “I want a 4-week keto plan with Zoom calls” → form autofill
+
+2. ⏳ **Quote Validity Timer:**  
+> “This quote is locked for 72 hours” with email reminder
+
+3. 💬 **Smart Tips & Definitions:**  
+> Hover “Grocery List” → small tooltip: “A personalized weekly shopping list”
+
+4. 📈 **Most Popular Combo Tags:**  
+> “Most clients choose: 8-Week Plan + Check-ins”
+
+5. 🌍 **Language Toggle:**  
+EN, DE, FR, ES via dropdown selector
+
+6. 📊 **Admin Dashboard:**  
+Tracks leads, plan selection trends, revenue forecast
+
+7. 🔁 **Smart Logic Additions:**  
+- If “New Client” → suggest 8-week plan  
+- If “Vegan” selected → show supplement plan suggestion  
+- If “Sports Nutrition” → suggest Zoom Check-ins
+
+---
+
+🎨 DESIGN STYLE:
+- Modern wellness aesthetic: green tones, off-white, tan, clean lines  
+- Rounded cards, soft shadowing, calming font pair  
+- Health-themed icons (apple, clipboard, dumbbell)  
+- Logo uploader + customizable CTA buttons  
+- Soft entrance animations, fluid transitions
+
+---
+
+🛠️ TECH STACK:
+- React + Tailwind CSS  
+- Optional Firebase/Supabase for lead collection  
+- JSON-driven logic  
+- Stripe integration for future deposit/booking  
+- OpenAI for NLP enhancements (optional)
+
+---
+
+📦 DELIVERABLE:
+- MVP app with full quote flow  
+- Price display with breakdown  
+- Optional PDF/email export  
+- JSON config + embed script
+
+💡 Example Embed Code:
+```html
+<iframe src="https://quotekit.ai/nutritionist?user=fitfuelcoaching" style="width:100%;height:600px;border:none;"></iframe>

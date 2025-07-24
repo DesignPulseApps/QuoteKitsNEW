@@ -1,0 +1,150 @@
+Drone & Aerial Photography AI Quote Estimator Tool
+plaintext
+CopyEdit
+You are a full-stack developer building a client-side, embeddable AI-powered pricing estimator tool for **drone and aerial photography businesses**. The app will be sold as a standalone widget and embedded into websites (WordPress, Webflow, Showit, etc.).
+
+---
+
+? GOAL:
+Build a sleek, mobile-first AI quote calculator that:
+- Collects job-specific preferences
+- Instantly calculates a tailored quote
+- Displays a breakdown of services and pricing
+- Captures leads through optional email
+- Embeds easily via iframe or JavaScript snippet
+
+---
+
+? TARGET NICHE:
+Drone pilots and aerial content providers who want to automate quoting for real estate, events, construction, agriculture, and more.
+
+---
+
+? INPUT OPTIONS (Editable by Operator):
+1. **Project Type** –  
+   - Real Estate Shoot  
+   - Event Coverage  
+   - Construction Site  
+   - Roof/Property Inspection  
+   - Agricultural Mapping  
+   - Custom Job (text input)
+
+2. **Duration Needed** –  
+   - Under 1 hour  
+   - Half-day (3–4 hrs)  
+   - Full-day (6–8 hrs)
+
+3. **Output Required** –  
+   - Video Only  
+   - Stills Only  
+   - Both  
+   - Edited Highlights  
+   - Raw Footage  
+
+4. **Location Type** –  
+   - Urban / Suburban  
+   - Rural / Open Field  
+   - Restricted Airspace (requires permit)
+
+5. **Add-ons** –  
+   - Voiceover / Narration  
+   - Licensed Background Music  
+   - Edited Promo Video  
+   - Cloud Delivery & Backup  
+   - Express Delivery (48hr turnaround)
+
+6. **Promo Code** – Optional discount
+
+---
+
+? PRICING LOGIC (Editable via JSON):
+- Base shoot (1hr, stills only, open field): €200  
+- Add:  
+  - +€100 for video  
+  - +€150 for both video & stills  
+  - +€75 for urban or suburban flight  
+  - +€200 for restricted airspace  
+  - +€150 for highlight edit  
+  - +€80 for licensed music  
+  - +€50 for voiceover  
+  - +€100 for express delivery  
+  - -10% with valid promo code
+
+---
+
+? CORE FEATURES:
+✅ React UI with form and live estimate  
+✅ Breakdown with “Your Drone Quote: €XXX”  
+✅ Optional email input for full quote reveal  
+✅ CTA: “Book My Flight” or “Contact Me”  
+✅ Save quote as PDF or email  
+✅ Copy/paste embeddable snippet  
+✅ JSON-configurable logic for operators
+
+---
+
+? ADVANCED EXTRAS TO INCLUDE:
+
+1. ? **Natural Language Input (optional):**  
+User types “I need a real estate shoot in the city with a short promo video” → AI parses into selections
+
+2. ? **Quote PDF / Email Lead:**  
+Professional branded document with job breakdown
+
+3. ? **Tooltip Glossary / Explainers:**  
+Hover on "Restricted Airspace" to show:  
+> “Permits may be required and add time to delivery”
+
+4. ⏳ **Quote Lock Timer**  
+> “Locked for 72 hours” – triggers urgency and saves quote if email entered
+
+5. ? **Smart Badges:**  
+> “Most clients choose 1hr + edited video + music”
+
+6. ? **Multilingual UI**  
+Optional translation toggle
+
+7. ? **Zapier/Webhook CRM Sync**  
+Send new leads to Airtable, Notion, Google Sheets
+
+8. ? **Admin Dashboard (Phase 2)**  
+Quote logs, top selected services, conversion data
+
+9. ?￯ﾸﾏ **Dynamic Logic Conditions:**  
+- If "Urban + Video" → suggest cloud backup  
+- If "Construction + Full-day" → auto-add “Raw Footage”
+
+10. ? **Affiliate Unlocks / Code-Only Packages**  
+Hidden pricing tiers or regional bundles unlock via special codes
+
+---
+
+? DESIGN STYLE:
+- Tech-forward and cinematic: charcoal, neon blue, lens flare accents  
+- Full-width hero background option  
+- Iconography for each service type  
+- Bold typography, smooth transitions  
+- Style editor for user to upload logo & pick brand color
+
+---
+
+?￯ﾸﾏ TECH STACK:
+- React + Tailwind CSS  
+- Firebase or Supabase for lead storage  
+- Local JS for price logic  
+- OpenAI or LangChain for natural language parsing (optional)  
+- Stripe integration for deposits or bookings (optional)
+
+---
+
+? DELIVERABLE:
+- Functional embeddable quote app  
+- Configurable via JSON  
+- Live estimate UI  
+- PDF/email generator  
+- One-click embed link  
+- Optional admin panel for dashboard analytics
+
+? Embed Example:
+```html
+<iframe src="https://aerialquote.ai/embed?user=skyshots" style="width:100%;height:600px;border:none;"></iframe>

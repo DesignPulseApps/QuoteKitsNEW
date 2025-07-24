@@ -1,0 +1,130 @@
+You are a full-stack developer creating a mobile-ready, embeddable AI-powered quote calculator for **auto mechanics**. This tool will be sold as a standalone widget that car repair professionals can embed into websites built with WordPress, Squarespace, Wix, Webflow, or Showit.
+
+---
+
+🔧 GOAL:
+Build an intuitive, fast-loading price estimator that:
+- Collects vehicle and issue details from the user  
+- Instantly calculates an estimated repair quote  
+- Presents a clean, branded cost breakdown  
+- Captures leads via email (optional)  
+- Is easily embeddable via iframe or script  
+- Works smoothly on all mobile devices
+
+---
+
+🚙 TARGET USERS:
+- Independent car repair shops  
+- Mobile mechanics  
+- Tire & brake specialists  
+- Full-service garages  
+- Auto diagnostic techs
+
+---
+
+📋 INPUT OPTIONS (Editable via JSON):
+1. **Vehicle Type** –  
+   - Sedan  
+   - SUV  
+   - Truck  
+   - Van  
+   - Electric / Hybrid  
+
+2. **Service Needed** –  
+   - Oil Change  
+   - Brake Replacement  
+   - Tire Rotation / Replacement  
+   - Engine Diagnostics  
+   - Battery Replacement  
+   - Suspension / Alignment  
+
+3. **Urgency** –  
+   - Flexible / Book Anytime  
+   - Within 3 Days  
+   - Emergency / ASAP  
+
+4. **Location of Service** –  
+   - At Shop  
+   - Mobile (at customer’s location)  
+
+5. **Add-Ons** –  
+   - Pickup & Drop-off  
+   - Premium Parts  
+   - Car Wash After Service  
+   - Extended Warranty  
+
+6. **Promo Code** – Optional
+
+---
+
+💰 SAMPLE PRICING LOGIC:
+- Base Inspection: €40  
+- Oil Change: €60  
+- Brakes: €120–€250 depending on vehicle type  
+- Tire service: €15–€25 per wheel  
+- Mobile surcharge: +€35  
+- Premium Parts: +15%  
+- Promo code: 10% off if valid  
+
+(All editable via a JSON config)
+
+---
+
+✅ CORE FEATURES:
+- Live quote preview as user selects options  
+- Optional email capture before showing estimate  
+- “Book Appointment” or “Contact Mechanic” CTA  
+- Export quote to PDF or send via email  
+- Easily adjustable pricing logic in config  
+- Copy-paste embed snippet or script tag
+
+---
+
+🚀 ADVANCED FEATURES:
+
+1. 🔍 **Natural Language Input (Optional):**  
+> “Need an emergency brake job on an SUV” → auto-fill options
+
+2. ⏱️ **Quote Validity Timer:**  
+> “This estimate is locked for 48 hours – enter email to save!”
+
+3. 🛠️ **Smart Suggestions:**  
+Select “Battery Replacement” → suggest “Diagnostics Check” as add-on
+
+4. 🌍 **Language Selector:**  
+Multi-language UI (EN, DE, ES, FR)
+
+5. 📊 **Admin Analytics Dashboard:**  
+Track quote requests, popular services, conversion rate
+
+6. 🔗 **CRM & Zapier Integration:**  
+Send leads to Google Sheets, Notion, Mailchimp, etc.
+
+---
+
+🎨 DESIGN STYLE:
+- Industrial clean look: graphite grey, cobalt blue, sharp edges  
+- Vehicle & tool icons, smooth animation  
+- Mobile-first interface  
+- Custom logo, color, and font editor
+
+---
+
+🧱 TECH STACK:
+- React + Tailwind CSS  
+- Firebase or Supabase (for optional lead storage)  
+- JSON-based logic config  
+- OpenAI integration for NLP input (optional)  
+- Stripe integration (future roadmap)
+
+---
+
+📦 DELIVERABLE:
+- MVP with fully working live quote calculator  
+- Clean, branded price output  
+- PDF/email delivery (optional)  
+- One-click embed code generation
+
+💡 Example Embed:
+```html
+<iframe src="https://quotekit.ai/automechanic?user=wrenchbrosgarage" style="width:100%;height:600px;border:none;"></iframe>

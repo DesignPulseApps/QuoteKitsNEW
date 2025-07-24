@@ -1,0 +1,166 @@
+💻 Replit Prompt: Virtual Assistant Quote Estimator Tool
+You are a full-stack developer building a mobile-friendly, AI-powered quote calculator specifically designed for virtual assistants (VAs). This widget will be sold as a standalone embeddable tool for use on WordPress, Squarespace, Wix, Webflow, Showit, and other client websites.
+
+🎯 GOAL:
+Develop a polished, responsive estimator tool that:
+
+Collects info about VA service needs
+
+Instantly calculates an estimated price
+
+Shows a branded breakdown with custom CTA
+
+Optionally captures email before showing the full quote
+
+Can be embedded via iframe or script
+
+Works seamlessly on mobile
+
+👩‍💼 TARGET USERS:
+Freelance virtual assistants
+
+VA agencies
+
+Administrative support freelancers
+
+Executive/personal assistants working remotely
+
+📥 INPUT OPTIONS (Editable via JSON Config):
+Service Type
+
+Inbox Management
+
+Calendar & Booking
+
+Social Media Scheduling
+
+Data Entry
+
+Customer Support
+
+Hours Per Week
+
+1–5
+
+6–10
+
+11–20
+
+20+
+
+Availability Preference
+
+Mornings
+
+Afternoons
+
+Evenings
+
+Flexible
+
+Urgency / Start Date
+
+ASAP
+
+Within 2 Weeks
+
+Next Month
+
+Contract Type
+
+One-off Project
+
+Monthly Retainer
+
+Ongoing Hourly
+
+Promo Code (optional)
+
+💰 SAMPLE PRICING LOGIC (Editable in JSON):
+Base Rate: €30/hour
+
+Discounts:
+
+Retainer of 10+ hours/week: -10%
+
+Monthly commitment: -15%
+
+Rush Start (ASAP): +€50 fee
+
+Promo Code: Applies 10% off
+
+🧩 CORE FEATURES:
+✅ Clean, React-based UI (step-by-step or card layout)
+✅ Live quote updates
+✅ Optional lead capture (email required to view full quote)
+✅ "Book a Discovery Call" or "Hire Me Now" CTA
+✅ PDF export or email the quote
+✅ JSON-config-driven pricing logic
+✅ One-click embed code (iframe or JS)
+
+🚀 ADVANCED FEATURES:
+🧠 Natural Language Input (optional toggle)
+
+Example: “I need inbox management for 5 hours/week, starting ASAP” → auto-fills form
+
+⏱️ Quote Lock Timer
+
+“This quote is valid for 48 hours” with countdown and email save option
+
+🧠 Smart Tooltip Assistant
+
+Hover or click: “What’s included in inbox management?” → small pop-up explanation
+
+🌍 Language Switcher
+
+Supports EN, DE, FR, ES via dropdown or auto-detect
+
+📊 Popular Service Badge
+
+“Most clients choose: Calendar + Social Media 10hr/week”
+
+🔗 CRM/Webhook Integration
+
+Send leads to Google Sheets, Notion, Mailchimp, or Zapier
+
+📈 Admin Analytics Panel
+
+Track leads, top quote combos, most selected hours/services
+
+🧩 Dynamic Logic Triggers
+
+Selecting “Monthly Retainer” triggers long-term discount
+Choosing “ASAP” auto-adds rush fee
+
+🎨 DESIGN STYLE:
+Minimal, modern interface
+
+Feminine, productivity-based color palette (lavender, teal, white)
+
+Rounded inputs, clean fonts (e.g. Inter, Nunito)
+
+Mobile-first, soft transitions
+
+Easy branding (logo upload + color control)
+
+🛠️ TECH STACK:
+React + TailwindCSS
+
+Supabase for auth + quote logging (optional)
+
+JSON for pricing logic
+
+OpenAI/LangChain for NLP (optional)
+
+Stripe integration for upgrade plans (future phase)
+
+📦 DELIVERABLE:
+Working MVP for Virtual Assistant quote calculator
+
+Admin-configurable pricing logic
+
+Optional lead capture
+
+Embed code generator
+
+Hosted via Replit, export-ready

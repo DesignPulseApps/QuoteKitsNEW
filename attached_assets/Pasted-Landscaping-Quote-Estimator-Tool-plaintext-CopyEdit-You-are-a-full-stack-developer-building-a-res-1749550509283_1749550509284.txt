@@ -1,0 +1,156 @@
+Landscaping Quote Estimator Tool
+plaintext
+CopyEdit
+You are a full-stack developer building a responsive, embeddable AI-powered pricing calculator for **landscaping professionals**. This app will be used by landscapers to generate instant estimates and capture leads, and can be embedded into websites (WordPress, Squarespace, Wix, Webflow, etc.).
+
+---
+
+? GOAL:
+Create a modern, mobile-friendly quote calculator that:
+- Collects project preferences  
+- Instantly estimates landscaping costs  
+- Offers a branded breakdown with services  
+- Optionally captures email leads  
+- Is embeddable via iframe or JavaScript snippet
+
+---
+
+? TARGET NICHE:
+Landscaping companies or independent contractors offering:
+- Lawn care & maintenance  
+- Garden design  
+- Outdoor installations (patios, fencing, lighting)  
+- Tree trimming & removal  
+- Seasonal clean-ups
+
+---
+
+? INPUT OPTIONS (Editable by Landscaper):
+1. **Property Type** –  
+   - Residential Front Yard  
+   - Backyard  
+   - Full Property  
+   - Commercial Property  
+
+2. **Service Type** –  
+   - Lawn Mowing / Edging  
+   - Tree Trimming  
+   - Garden Design & Planting  
+   - Irrigation Installation  
+   - Patio / Deck Build  
+   - Outdoor Lighting  
+   - Fence Installation  
+   - Seasonal Cleanup  
+
+3. **Property Size** –  
+   - Small (up to 200m²)  
+   - Medium (200–500m²)  
+   - Large (500–1000m²)  
+   - Very Large (1000m²+)  
+
+4. **Frequency (if applicable)** –  
+   - One-time  
+   - Weekly  
+   - Bi-weekly  
+   - Monthly  
+
+5. **Add-ons** –  
+   - Soil & Fertilizer Treatment  
+   - Sod Installation  
+   - Pressure Washing  
+   - Mulching  
+   - Garden Bed Redesign  
+
+6. **Promo Code** – Optional
+
+---
+
+? PRICING LOGIC (JSON Editable):
+- Base: €120 (small residential, lawn mowing)  
+- +€60 per additional service  
+- Tree Trimming: +€100  
+- Irrigation System: +€300  
+- Patio Build: +€900  
+- Fence Installation: +€800  
+- Property size increases base by +€50 to €150+  
+- Recurring service discounts: Weekly -10%, Monthly -5%  
+- Add-ons: €50–€200 range  
+- Promo code = 10% discount
+
+---
+
+? CORE FEATURES:
+✅ Step-by-step React interface  
+✅ Live pricing estimate and animation  
+✅ Optional email field for quote access  
+✅ Branded quote PDF or email export  
+✅ Configurable CTA: “Schedule My Landscaping”  
+✅ JSON-configurable logic  
+✅ Embed-ready code output
+
+---
+
+? ADVANCED FEATURES:
+
+1. ? **Natural Language Quote Input (optional):**  
+Client types: “Backyard cleanup and tree trimming, medium-sized garden” → auto-filled form
+
+2. ? **Download/Email Quote:**  
+Generate a printable PDF quote with brand logo and breakdown
+
+3. ? **Tooltip Info Panels:**  
+E.g. “What’s mulching?” → Show definition with example image
+
+4. ⏳ **Quote Lock Countdown:**  
+“Your quote is valid for 72 hours”
+
+5. ? **Popular Packages Badges:**  
+> “Most selected: Lawn mowing + tree trimming + cleanup”
+
+6. ? **Multilingual Toggle**  
+Support for local language options (German, Spanish, French)
+
+7. ? **CRM & Zapier Integration:**  
+Push leads to Google Sheets, Notion, Trello, etc.
+
+8. ? **Admin Panel (optional):**  
+Tracks form completions, popular services, and lead details
+
+9. ?￯ﾸﾏ **Smart Triggers:**  
+- If property size = large → recommend irrigation  
+- Patio = auto-add pressure washing  
+- Garden design + lighting = bundled discount
+
+10. ? **Partner Code Unlock:**  
+Enable special discount tiers for realtors, builders, or affiliates
+
+---
+
+? DESIGN STYLE:
+- Clean and earthy color palette (greens, beiges, natural tones)  
+- Card-style step UI with progress bar  
+- Iconography for services (lawn, tree, patio, light)  
+- Mobile-first, fluid animations  
+- Branding: upload logo, set primary/secondary color
+
+---
+
+?￯ﾸﾏ TECH STACK:
+- React + Tailwind CSS  
+- Supabase or Firebase (optional lead capture)  
+- Pricing via local JSON  
+- Optional OpenAI integration for NL input  
+- Stripe setup for deposits (phase 2)
+
+---
+
+? DELIVERABLE:
+- Fully responsive quote calculator  
+- Branded summary with live pricing  
+- Embed code generation  
+- JSON configuration  
+- Admin lead dashboard (optional)
+
+? Embed Example:
+```html
+<iframe src="https://landscapekit.ai/embed?user=greenroots" style="width:100%;height:650px;border:none;"></iframe>

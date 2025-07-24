@@ -1,0 +1,131 @@
+You are a full-stack developer building a sleek, responsive, embeddable AI-powered quote calculator for **car detailing services**. This tool will be sold as a standalone widget that detailing professionals can embed in websites built with WordPress, Squarespace, Wix, Webflow, or Showit.
+
+---
+
+🚘 GOAL:
+Create a car detailing quote estimator that:
+- Collects details about the vehicle and desired services  
+- Instantly displays an estimated price  
+- Provides a branded, itemized breakdown  
+- Optionally collects the client’s email  
+- Works flawlessly on mobile  
+- Embeds easily using an iframe or JS snippet
+
+---
+
+🧼 TARGET USERS:
+- Mobile detailing professionals  
+- Auto spa businesses  
+- Ceramic coating specialists  
+- Independent car valeters  
+- Premium in-garage detailing services
+
+---
+
+📋 INPUT OPTIONS (Editable via JSON Config):
+1. **Vehicle Type** –  
+   - Sedan  
+   - SUV  
+   - Truck  
+   - Van  
+   - Coupe  
+   - Motorcycle  
+
+2. **Service Level** –  
+   - Exterior Wash Only  
+   - Full Interior Clean  
+   - Full Detail (Interior + Exterior)  
+   - Engine Bay Clean  
+   - Ceramic Coating  
+
+3. **Condition of Vehicle** –  
+   - Light Dirt  
+   - Average  
+   - Heavy Soiling / Pet Hair  
+
+4. **Add-Ons** –  
+   - Headlight Restoration  
+   - Leather Conditioning  
+   - Odor Elimination  
+   - Stain Removal  
+   - Water Spot Treatment  
+
+5. **Service Location** –  
+   - At Detailer’s Shop  
+   - At Customer’s Address  
+
+6. **Promo Code** – Optional input field
+
+---
+
+💰 SAMPLE PRICING LOGIC (Editable via JSON):
+- Base: €60 for sedan, exterior wash  
+- Add €15–€30 for larger vehicle types  
+- Full detail: +€90  
+- Heavy condition surcharge: +€20  
+- Ceramic coating: +€150  
+- Add-ons: €10–€40 per service  
+- Mobile visit surcharge: +€25  
+- Promo code: Apply 10% off if valid
+
+---
+
+✅ CORE FEATURES:
+- Clean, step-by-step React UI  
+- Live quote with animations  
+- Email capture before full estimate (optional)  
+- Save as PDF or email quote  
+- CTA: “Book My Detail” / “Get in Touch”  
+- JSON-configured logic for quick edits  
+- Easy-to-copy embed code
+
+---
+
+⚙️ ADVANCED EXTRAS:
+
+1. 🧠 **Natural Language Parser (Optional):**  
+> “I need full detail for my SUV, plus stain removal at my house” → pre-filled form
+
+2. 🧽 **Suggested Packages:**  
+If SUV + full detail → Suggest “Headlight + Odor Add-On Combo”
+
+3. 🕒 **Quote Lock Message:**  
+> “Locked for 48 hours – save your quote via email!”
+
+4. 🌐 **Language Switcher:**  
+Support English, German, Spanish, French (configurable)
+
+5. 📊 **Lead Dashboard (Optional):**  
+Admin view to monitor submitted quotes, average spend, top add-ons
+
+6. 🔄 **Webhook Integration:**  
+Send lead data to Mailchimp, Notion, Google Sheets, or CRM
+
+---
+
+🎨 DESIGN STYLE:
+- Clean and modern: dark grey, teal accents, polished icons  
+- Rounded cards, animated checkboxes and price panel  
+- Mobile-first experience  
+- Custom style editor: update logo, primary color, fonts
+
+---
+
+🧱 TECH STACK:
+- React + Tailwind CSS  
+- Supabase or Firebase for optional lead collection  
+- JSON-driven logic  
+- Optional NLP via OpenAI for typed input parsing  
+- Stripe (future release)
+
+---
+
+📦 DELIVERABLE:
+- Fully working MVP  
+- Embedded estimator component  
+- Live quote breakdown and email/PDF feature  
+- Embed snippet for user websites
+
+💡 Example Embed:
+```html
+<iframe src="https://quotekit.ai/cardetailing?user=glossgarage" style="width:100%;height:600px;border:none;"></iframe>

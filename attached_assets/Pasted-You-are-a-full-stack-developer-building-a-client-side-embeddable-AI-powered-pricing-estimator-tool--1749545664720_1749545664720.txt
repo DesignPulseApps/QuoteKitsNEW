@@ -1,0 +1,129 @@
+You are a full-stack developer building a client-side, embeddable AI-powered pricing estimator tool for **boudoir photographers**. This app will be sold as a standalone widget and embedded into any website (WordPress, Showit, Wix, Squarespace, etc.).
+
+---
+
+🎯 GOAL:
+Build a beautiful, responsive, AI-enhanced quote calculator that:
+- Collects client preferences
+- Instantly calculates a custom boudoir photography price
+- Shows the user a branded breakdown
+- Captures leads via email
+- Embeds easily via iframe or script
+- Feels premium, smooth, and mobile-friendly
+
+---
+
+👗 TARGET NICHE:
+Boudoir photographers who want to streamline their quote requests, eliminate back-and-forth, and capture leads effortlessly.
+
+---
+
+📥 INPUT OPTIONS (Editable by Photographer):
+1. **Session Type** – Classic / Lingerie / Nude / Glamour  
+2. **Duration** – 1hr / 2hr / 3hr  
+3. **Location** – In-studio / On-location / Hotel suite  
+4. **Number of Outfits** – Dropdown 1–5  
+5. **Add-ons** –  
+   - Professional Makeup  
+   - Printed Album  
+   - Retouching Level: Standard / Deluxe  
+6. **Optional Promo Code** – Applies discount if valid
+
+---
+
+🧮 PRICING LOGIC (Implemented in JS, editable via JSON):
+- Base: €250 (1hr in-studio, 1 outfit)
+- + €75 per extra hour
+- + €50 per additional outfit
+- + €100 for hotel or on-location
+- Makeup: +€60
+- Album: +€120
+- Deluxe Retouching: +€75
+- Promo code: 10% discount if valid
+
+---
+
+🧠 CORE FEATURES:
+✅ Step-by-step form (React preferred)  
+✅ Estimate updates live as inputs change  
+✅ Animated “Your Boudoir Experience: €XXX” with breakdown  
+✅ Optional CTA button: "Book My Session"  
+✅ Optional email required to see full estimate (lead capture)  
+✅ Save estimate as PDF or email to client  
+✅ Simple JSON config for easy customization by photographer  
+✅ Embed via iframe/snippet
+
+---
+
+💎 ADVANCED EXTRAS TO INCLUDE:
+
+1. 🧠 **Natural Language Input (optional toggle):**  
+Let clients type: “I want a 2-hour shoot at a hotel with 3 outfits and makeup”  
+→ Parse into structured config and auto-fill form
+
+2. 📥 **Download or Email Quote PDF:**  
+Create branded summary with selected options, prices, logo, and contact info
+
+3. 💬 **Floating Tooltip Assistant:**  
+Tiny AI chatbot or tooltip on hover:  
+> “Not sure what deluxe retouching means?” → Shows definition or mini popup
+
+4. ⏳ **Quote Lock Timer:**  
+After quote is shown, display:  
+> “This price is locked for 48 hours.”  
+→ Add email field to save quote and set timer cookie
+
+5. 📊 **Smart Badges:**  
+Highlight most popular selections:  
+> “Most clients choose 2 hours + makeup + 3 outfits”
+
+6. 🌐 **Instant Language Switch:**  
+Dropdown to switch to other languages (German, Spanish, etc.) using simple translation file or API
+
+7. 🔗 **CRM / Webhook Support (optional):**  
+Push new leads to Zapier, HubSpot, Notion, or Google Sheets
+
+8. 📈 **Dashboard View (for admin panel):**  
+Shows lead data: emails, selections, timestamp  
+Optional analytics on most selected options
+
+9. 🎛️ **Dynamic Logic Triggers:**  
+- Auto-add hotel fee if "hotel" is mentioned  
+- Suggest discounts for off-peak days  
+- Modify prices by number of people or day of the week
+
+10. 🔐 **Pricing Toggle by Code Access:**  
+Enable photographers to unlock private package tiers with a code or affiliate referral
+
+---
+
+🎨 DESIGN STYLE:
+- Elegant and feminine: soft pinks, beige, ivory, gold accents  
+- Rounded corners, serif fonts (like Playfair Display)  
+- Animated form transitions, glassmorphism for price card  
+- Works beautifully on mobile  
+- Style editor (colors, font, logo upload)
+
+---
+
+🛠️ TECH STACK:
+- React + Tailwind CSS  
+- Supabase or Firebase for optional lead storage  
+- Local state for pricing config (editable via JSON)  
+- OpenAI or LangChain for natural language parsing (optional)  
+- Stripe integration (optional future release)
+
+---
+
+📦 DELIVERABLE:
+A working MVP prototype with:
+- Responsive, embeddable calculator
+- Branded pricing output with logic
+- Live preview
+- Admin dashboard link (optional)
+- One-click embed script output for photographers
+
+💡 Example embed code:
+<iframe src="https://yourboudoircalculator.com/embed?user=studioXYZ" style="width:100%;height:600px;border:none;"></iframe>
+
+---

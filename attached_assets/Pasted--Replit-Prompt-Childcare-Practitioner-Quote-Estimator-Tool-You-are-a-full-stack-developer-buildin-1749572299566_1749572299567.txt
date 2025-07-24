@@ -1,0 +1,167 @@
+🧸 Replit Prompt: Childcare Practitioner Quote Estimator Tool
+You are a full-stack developer building a mobile-friendly, embeddable AI-powered quote calculator for childcare practitioners. This tool will be offered as a standalone widget that can be embedded into websites built on WordPress, Squarespace, Wix, Webflow, or Showit.
+
+🎯 GOAL:
+Create a soft, parent-friendly quote calculator that:
+
+Gathers essential details about childcare needs
+
+Instantly calculates a tailored pricing estimate
+
+Presents a branded summary with itemized breakdown
+
+Captures lead contact info via email (optional)
+
+Is embeddable via iframe or JS snippet
+
+Works beautifully on mobile devices
+
+👩‍👧 TARGET USERS:
+Independent nannies
+
+Licensed childminders
+
+Daycare providers
+
+After-school program providers
+
+Montessori or nursery owners
+
+📝 INPUT OPTIONS (Editable via JSON Config):
+Care Type
+
+Full-Day Care
+
+Half-Day Care
+
+After-School Pickup
+
+Weekend Care
+
+Overnight Babysitting
+
+Child's Age
+
+Infant (0–1 yrs)
+
+Toddler (1–3 yrs)
+
+Preschooler (3–5 yrs)
+
+School-age (5–12 yrs)
+
+Days Needed Per Week
+
+1 to 7 (selectable)
+
+Time Slots
+
+Morning
+
+Afternoon
+
+Evening
+
+Overnight
+
+Special Requirements
+
+Meals Provided
+
+Homework Help
+
+Multiple Children
+
+Special Needs Support
+
+Promo Code or Subsidy – Optional
+
+💰 SAMPLE PRICING LOGIC (Editable via JSON):
+Base Full-Day Rate: €60/day (1 child, 8 hours)
+
+Half-Day: €35
+
+After-School: €25
+
+Overnight: €80
+
+Extra Child: +€20/day
+
+Meals: +€5/day
+
+Homework Help: +€10/day
+
+Special Needs Support: +€15/day
+
+Subsidy Code: Reduce total by 20%
+
+Promo Code: Apply €10 discount if valid
+
+🛠️ CORE FEATURES:
+✅ Smooth step-by-step React UI
+✅ Animated “Your Weekly Childcare Estimate” panel
+✅ Option to require email for full quote breakdown
+✅ PDF export or email option
+✅ “Request Childcare” or “Book Consultation” CTA
+✅ JSON pricing configuration for easy edits
+✅ One-click embed snippet
+
+🚀 ADVANCED FEATURES:
+💬 Natural Language Input (Optional)
+
+“I need full-day care for 2 toddlers and meals included” → auto-fills form
+
+⏳ Quote Timer
+
+“This price is valid for 48 hours” – adds urgency
+
+👪 Smart Suggestions
+
+Selecting “Multiple Children” triggers discounts or add-on reminders
+
+🌍 Language Toggle
+
+EN / DE / FR / ES via dropdown
+
+📈 Admin Dashboard
+
+See most requested care times, pricing combinations, and leads
+
+🔗 CRM Integration
+
+Push leads to Mailchimp, Notion, or Google Sheets
+
+🎨 DESIGN STYLE:
+Gentle and welcoming: pastel palette (mint, peach, sky blue)
+
+Rounded cards and friendly icons (teddy bear, sun, meal tray)
+
+Easy navigation with cheerful microinteractions
+
+Uploadable logo and theme color editor
+
+⚙️ TECH STACK:
+React + Tailwind CSS
+
+Supabase or Firebase (for lead capture)
+
+JSON-driven logic
+
+Optional OpenAI NLP for natural input
+
+Stripe (for future deposit payments or booking)
+
+📦 DELIVERABLE:
+Full MVP with embedded price logic
+
+Branded breakdown of services and cost
+
+Lead capture + PDF/email output
+
+Iframe/embed code for childcare provider website
+
+💡 Example Embed Code:
+html
+Copy
+Edit
+<iframe src="https://quotekit.ai/childcare?user=littlestarsvienna" style="width:100%;height:600px;border:none;"></iframe>

@@ -1,0 +1,148 @@
+Real Estate Photography AI Quote Estimator Tool
+plaintext
+CopyEdit
+You are a full-stack developer creating a client-side, embeddable AI-powered pricing calculator for **real estate photographers**. This embeddable widget will run standalone and can be added to any website (WordPress, Wix, Webflow, Squarespace, etc.).
+
+---
+
+? GOAL:
+Build a beautiful, responsive AI quote tool that:
+- Captures client/project requirements
+- Instantly calculates an estimated quote
+- Shows pricing with branded breakdown
+- Optionally collects lead info (email)
+- Is embeddable via iframe or JS
+- Mobile-first, frictionless UX
+
+---
+
+? TARGET NICHE:
+Real estate photographers offering services to agents, property developers, landlords, and Airbnb hosts — aiming to automate quoting and attract more serious leads.
+
+---
+
+? INPUT OPTIONS (Editable by Photographer):
+1. **Property Type** –  
+   - Apartment  
+   - House  
+   - Luxury Villa  
+   - Commercial Space  
+
+2. **Size of Property** –  
+   - Under 50m²  
+   - 50–100m²  
+   - 100–200m²  
+   - Over 200m²  
+
+3. **Services Needed** –  
+   - Interior Photos  
+   - Exterior Photos  
+   - Aerial/Drone Shots  
+   - Twilight Photography  
+   - Floor Plan  
+   - Virtual Tour (360°)
+
+4. **Delivery Timeframe** –  
+   - Standard (48–72 hrs)  
+   - Rush (24 hrs)  
+   - Same-Day  
+
+5. **Location** –  
+   - Within City  
+   - Up to 50km  
+   - 50km+
+
+6. **Promo Code** – Optional field for discounts
+
+---
+
+? PRICING LOGIC (Editable via JSON):
+- Base (Apartment, 50m², interior only): €150  
+- House: +€50  
+- Villa/Commercial: +€100  
+- Aerial shots: +€80  
+- Twilight shots: +€90  
+- Floor Plan: +€60  
+- 360 Virtual Tour: +€120  
+- Rush: +€50  
+- Same-Day: +€90  
+- Travel 50km+: +€75  
+- Promo code: 10% discount
+
+---
+
+? CORE FEATURES:
+✅ React UI with step-by-step form  
+✅ Real-time quote preview  
+✅ Animated “Your Property Media Package: €XXX”  
+✅ Optional email capture to reveal full breakdown  
+✅ PDF export or email quote  
+✅ Easy JSON customization for photographers  
+✅ Copy/paste iframe/embed code
+
+---
+
+? ADVANCED FEATURES TO INCLUDE:
+
+1. ? **Natural Language Input (Optional):**  
+User types: “I need aerial and twilight shots of a 200m² villa next week.”  
+→ Auto-parsed form fill
+
+2. ? **Email/PDF Export:**  
+Branded quote with logo, services, total price
+
+3. ? **Tooltip Assistants:**  
+> Hover on “Twilight Photography” → “Shot during dusk for dramatic light”
+
+4. ⏳ **Quote Lock Timer:**  
+> “Your price is valid for 48 hours” – adds urgency and saves to email
+
+5. ? **Smart Combo Highlights:**  
+> “Most popular: Interior + Aerial + Floor Plan”
+
+6. ? **Language Selector:**  
+Easily switch to Spanish, German, etc.
+
+7. ? **Webhook Integration:**  
+Push new leads to Notion, CRM, Google Sheets, etc.
+
+8. ? **Admin Dashboard (Phase 2):**  
+Track popular services, conversion rates, quote volume
+
+9. ?￯ﾸﾏ **Dynamic Rules:**  
+- If property >200m² → auto-suggest 360 Tour  
+- If commercial → auto-suggest rush turnaround
+
+10. ? **Private Packages / Affiliate Codes:**  
+Unlock hidden bundles with codes (e.g., realtors get 10% off)
+
+---
+
+? DESIGN STYLE:
+- Clean, high-contrast UI with white, grey, deep navy, and accent colors  
+- Rounded image previews for services  
+- Mobile-optimized  
+- Photographer can customize logo, button colors, and CTAs
+
+---
+
+?￯ﾸﾏ TECH STACK:
+- React + Tailwind CSS  
+- Supabase or Firebase (for leads)  
+- OpenAI or LangChain for NL parsing (optional)  
+- JSON-based config (no backend needed for pricing logic)  
+- Optional Stripe integration for deposits
+
+---
+
+? DELIVERABLE:
+- Fully functional quote app  
+- Live price estimator with logic  
+- Download/email quote  
+- Configurable JSON settings  
+- Embed code generator  
+- Optional admin view for lead tracking
+
+? Embed Example:
+```html
+<iframe src="https://realquote.ai/embed?user=topshotstudio" style="width:100%;height:600px;border:none;"></iframe>

@@ -1,0 +1,179 @@
+Replit Prompt: Cleaning Services Quote Estimator Tool
+You are a full-stack developer building a responsive, embeddable AI-powered quote calculator tailored for cleaning service providers. This widget will be sold as a standalone tool that cleaning companies and freelance cleaners can embed on their websites (WordPress, Wix, Squarespace, Webflow, Showit, etc.).
+
+🎯 GOAL:
+Build a sleek quote estimator that:
+
+Collects details about cleaning needs
+
+Calculates a price in real-time
+
+Displays a branded price breakdown
+
+Captures leads via email (optional)
+
+Works seamlessly on desktop and mobile
+
+Is embeddable via iframe or JavaScript snippet
+
+🧽 TARGET USERS:
+House cleaners
+
+Office & commercial cleaners
+
+Move-in/move-out services
+
+Airbnb turnaround specialists
+
+Carpet & upholstery cleaners
+
+📥 INPUT OPTIONS (Editable via JSON):
+Cleaning Type
+
+Regular / Weekly
+
+Deep Clean
+
+Move-in / Move-out
+
+Airbnb Turnaround
+
+Carpet / Upholstery
+
+Property Size
+
+Studio
+
+1 Bedroom
+
+2 Bedroom
+
+3 Bedroom
+
+4+ Bedroom
+
+Add-On Services
+
+Window Cleaning
+
+Inside Fridge
+
+Inside Oven
+
+Laundry & Folding
+
+Balcony / Patio
+
+Frequency
+
+One-time
+
+Weekly
+
+Biweekly
+
+Monthly
+
+Urgency
+
+Standard (2–3 days)
+
+Express (Next Day)
+
+Emergency (Same Day)
+
+Promo Code – Optional
+
+💰 SAMPLE PRICING LOGIC (Editable via JSON):
+Base Cleaning (Studio, standard): €60
+
+Add €15–€30 per additional bedroom
+
+Deep Clean: +25%
+
+Move-In/Out: +35%
+
+Add-ons:
+
+Windows: €20
+
+Fridge: €10
+
+Oven: €15
+
+Laundry: €15
+
+Express: +20%, Emergency: +50%
+
+Promo: Apply 10% discount with valid code
+
+🔧 CORE FEATURES:
+✅ Multi-step form UX with smooth transitions
+✅ Animated quote preview with real-time updates
+✅ Optional email input to reveal full quote
+✅ Export to PDF or send via email
+✅ “Book Now” or “Get Quote” CTA with editable link
+✅ Embed-ready via script or iframe
+✅ JSON-driven pricing config for easy customization
+
+🚀 ADVANCED FEATURES:
+🧠 Natural Language Input (Optional)
+
+“I need a 3-bedroom deep clean this weekend with laundry” → auto-fills form
+
+⏳ Quote Validity Countdown
+
+“This quote is valid for 72 hours” + email follow-up reminder
+
+🧽 Smart Recommendations
+
+Deep Clean → Suggest “Inside Oven” + “Windows”
+
+🌐 Language Support
+
+EN, DE, ES toggle via file or translation API
+
+📲 CRM Webhooks & Lead Capture
+
+Push email and quote to Notion, Zapier, Mailchimp, or Google Sheets
+
+📊 Admin Dashboard (Optional)
+
+View quote trends, lead stats, service combos
+
+🎨 DESIGN STYLE:
+Clean & crisp: teal, white, soft greys
+
+Icons for each cleaning task
+
+Rounded UI, subtle drop shadows
+
+Easy logo upload + customizable colors and button text
+
+🛠️ TECH STACK:
+React + Tailwind CSS
+
+Firebase or Supabase for storing leads
+
+JSON for editable pricing rules
+
+Optional OpenAI/NLP for natural language input
+
+Stripe integration in future releases
+
+📦 DELIVERABLE:
+MVP calculator
+
+Live quote preview
+
+Optional email collection + PDF/email
+
+Embed-ready for any website
+
+Admin panel for pricing logic (optional)
+
+💡 Example Embed Code:
+html
+Copy
+Edit
+<iframe src="https://quotekit.ai/cleaning?user=sparklean" style="width:100%;height:600px;border:none;

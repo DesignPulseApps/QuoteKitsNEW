@@ -1,0 +1,163 @@
+Replit Prompt: Private Medical Clinic Quote Estimator Tool
+You are a full-stack developer building a sleek, mobile-friendly, embeddable AI-powered quote calculator for private medical clinics. This calculator will be used by general practitioners, specialists, and outpatient centers to give patients a quick, transparent pricing estimate. The tool must work smoothly inside any website (WordPress, Webflow, Wix, Squarespace, Showit).
+
+🎯 GOAL:
+Create a patient-friendly estimator that:
+
+Gathers key treatment preferences
+
+Calculates and displays a branded cost breakdown instantly
+
+Optionally captures contact details for follow-up
+
+Works beautifully on mobile
+
+Can be embedded using iframe or JS snippet
+
+🩺 TARGET USERS:
+Private GP practices
+
+Dermatology & cosmetic clinics
+
+Physiotherapy and rehab centers
+
+Women's health & fertility centers
+
+Diagnostic labs
+
+Executive health check clinics
+
+📝 INPUT OPTIONS (Editable via JSON Config):
+Type of Consultation
+
+General GP Visit
+
+Specialist Appointment
+
+Health Check Package
+
+Second Opinion
+
+Preventative Screening
+
+Service Category
+
+Diagnostics (Bloodwork, Imaging)
+
+Preventative (Vaccines, ECG, Blood Pressure)
+
+Cosmetic / Aesthetic
+
+Mental Health
+
+Urgency
+
+Standard Appointment
+
+Same-Day / Priority Visit
+
+Add-Ons
+
+Lab Tests
+
+Imaging (X-ray, Ultrasound, MRI)
+
+Medical Certificate
+
+Follow-Up Call
+
+Promo Code – Optional
+
+Patient Contact Email – Optional, can gate full breakdown
+
+💰 SAMPLE PRICING LOGIC (Editable via JSON):
+General GP visit: €90
+
+Specialist consult: €150
+
+Same-day appointment surcharge: +€60
+
+Lab tests: +€40–€150 depending on tests
+
+Imaging: +€80–€250
+
+Medical certificate: +€35
+
+Follow-up call: +€30
+
+Apply 10% discount with valid promo code
+
+🛠️ CORE FEATURES:
+✅ Step-by-step React UI, professional yet friendly tone
+✅ Live quote estimate with itemized breakdown
+✅ Email capture before revealing full quote (optional)
+✅ Export as PDF or send via email
+✅ Editable config via JSON
+✅ Simple embed via iframe/snippet
+✅ Call-to-action button: "Book My Appointment"
+
+🚀 ADVANCED FEATURES:
+🧠 Natural Language Input
+
+“I need a same-day dermatology consult with blood test” → auto-fill form
+
+⏳ Quote Validity Timer
+
+“This quote is valid for 48 hours” with email reminder logic
+
+📚 Mini Tooltip Definitions
+
+Hover on “Follow-Up Call” → info: “Doctor calls 48 hours after visit”
+
+🌍 Multi-Language Support
+
+EN, DE, FR, IT selectable via dropdown
+
+📈 Admin Analytics
+
+Tracks most requested services, average quote value, conversion rate
+
+🔌 CRM Integration
+
+Export leads to Notion, Google Sheets, Mailchimp
+
+📆 Calendar Suggestion (Future Phase)
+
+Link availability based on user preferences
+
+🎨 DESIGN STYLE:
+Clean, clinical, and modern
+
+Color palette: teal, white, navy accents
+
+Subtle animations and progress transitions
+
+Rounded card layout for ease of use
+
+Upload logo + adjust color scheme from admin panel
+
+⚙️ TECH STACK:
+React + Tailwind CSS
+
+Supabase or Firebase for storing leads
+
+JSON logic for pricing and form steps
+
+Optional OpenAI integration for NLP
+
+Stripe for future deposit handling
+
+📦 DELIVERABLE:
+Fully working, embeddable quote estimator
+
+Customizable by the clinic
+
+Real-time estimate with lead capture
+
+Exportable snippet for any web platform
+
+💡 Example Embed Code:
+html
+Copy
+Edit
+<iframe src="https://quotekit.ai/privatemedical?user=viennahealthclinic" style="width:100%;height:650px;border

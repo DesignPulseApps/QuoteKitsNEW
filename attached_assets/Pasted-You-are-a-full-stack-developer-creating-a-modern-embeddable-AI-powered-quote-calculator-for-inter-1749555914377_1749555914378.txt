@@ -1,0 +1,139 @@
+You are a full-stack developer creating a modern, embeddable AI-powered quote calculator for **interior designers**. This tool will be used as a standalone widget that can be embedded into any website platform (WordPress, Squarespace, Webflow, Wix, Showit, etc.).
+
+---
+
+🎯 GOAL:
+Build a responsive, brandable quote estimator that:
+- Collects detailed project preferences  
+- Instantly calculates a price estimate  
+- Visually breaks down design services and options  
+- Captures lead data via email (optional)  
+- Can be embedded using iframe or script  
+- Feels premium, creative, and smooth on mobile
+
+---
+
+🛋️ TARGET USERS:
+- Independent interior designers  
+- Boutique design studios  
+- Home stagers  
+- Renovation consultants  
+- Virtual interior design services
+
+---
+
+📝 INPUT OPTIONS (Editable via JSON Config):
+1. **Project Type** –  
+   - Living Room  
+   - Bedroom  
+   - Kitchen  
+   - Bathroom  
+   - Whole Home  
+
+2. **Property Size** –  
+   - Under 50 m²  
+   - 51–100 m²  
+   - 101–150 m²  
+   - 151+ m²  
+
+3. **Service Level** –  
+   - Basic Styling  
+   - Full Design & Layout  
+   - Renovation & Build Support  
+   - Virtual Consultation Only  
+
+4. **Add-Ons** –  
+   - 3D Renderings  
+   - Furniture Sourcing  
+   - Mood Boards  
+   - In-person Visits  
+
+5. **Urgency** –  
+   - Flexible  
+   - Within 1 Month  
+   - ASAP  
+
+6. **Promo Code** – Optional
+
+---
+
+💸 SAMPLE PRICING LOGIC (Editable via JSON):
+- Base Design (Basic Styling for 1 room): €200  
+- Additional Rooms: +€150/room  
+- Full Service Upgrade: +€300  
+- 3D Render: +€100  
+- Furniture Sourcing: +€80  
+- Mood Board: +€50  
+- In-person Visit: +€120  
+- Property over 100 m²: +€200  
+- Promo: Apply 10% discount if valid
+
+---
+
+⚙️ CORE FEATURES:
+✅ Modern step-by-step form (React)  
+✅ Real-time animated price preview  
+✅ Optional email field to unlock full quote  
+✅ Breakdown of selections and services  
+✅ “Book a Consultation” CTA with link  
+✅ PDF summary export or email delivery  
+✅ One-click embed code or iframe  
+✅ JSON-config for pricing
+
+---
+
+✨ ADVANCED FEATURES:
+
+1. 🧠 **Natural Language Input (Optional):**  
+> “I need full design for a 2-bedroom apartment with mood board and 3D” → autofill form
+
+2. ⏳ **Quote Expiry Timer:**  
+Display: “This quote is valid for 3 days” — with optional lead capture
+
+3. 🖼️ **Smart Tooltips & Previews:**  
+Hover to see example render, board, or sourcing sample
+
+4. 🌟 **Popular Combinations:**  
+Highlight combos:  
+> “Most booked: Kitchen + Mood Board + 3D Render”
+
+5. 🌍 **Language Toggle:**  
+Multi-language dropdown (EN, DE, FR, ES)
+
+6. 📈 **Admin Dashboard & CRM Integration:**  
+Lead capture export, analytics on most-requested services
+
+7. 🎛️ **Dynamic Rules:**  
+- Add-ons like 3D only available for Full Design  
+- Price scales based on square meter selection  
+- In-person fee varies by city (editable config)
+
+---
+
+🎨 DESIGN STYLE:
+- Clean, elegant, and creative: neutrals, soft pastels, modern sans fonts  
+- Rounded cards, animated transitions, visual hierarchy  
+- Upload designer logo, brand colors, and CTA label  
+- Layout adapts beautifully to mobile or desktop
+
+---
+
+🛠️ TECH STACK:
+- React + Tailwind CSS  
+- Firebase or Supabase for optional lead storage  
+- JSON-based pricing rules  
+- Optional OpenAI API for natural input parsing  
+- Stripe integration in future phase
+
+---
+
+📦 DELIVERABLE:
+- Functional MVP with quote calculation and UI  
+- Editable JSON config  
+- Responsive layout and brand styling  
+- Email capture and PDF delivery  
+- Easy embed via snippet
+
+💡 Example Embed Code:
+```html
+<iframe src="https://quotekit.ai/interiordesign?user=ateliervisionhaus" style="width:100%;height:600px;border:none;"></iframe>

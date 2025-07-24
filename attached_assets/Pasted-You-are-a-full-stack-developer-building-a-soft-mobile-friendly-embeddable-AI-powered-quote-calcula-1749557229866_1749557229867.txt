@@ -1,0 +1,140 @@
+You are a full-stack developer building a soft, mobile-friendly, embeddable AI-powered quote calculator for **newborn photographers**. This tool will be sold as a standalone widget that photographers can embed into sites built with WordPress, Squarespace, Wix, Webflow, or Showit.
+
+---
+
+👶 GOAL:
+Develop a gentle, responsive price estimator that:
+- Captures parent preferences for a newborn session  
+- Instantly calculates a customized quote  
+- Displays a branded, calming price breakdown  
+- Captures leads (optional)  
+- Can be embedded via iframe or JS snippet  
+- Works flawlessly on mobile devices
+
+---
+
+🎯 TARGET USERS:
+- Boutique newborn photographers  
+- Home-studio portrait artists  
+- Lifestyle/documentary newborn shooters  
+- Studio-based maternity + newborn combos
+
+---
+
+🍼 INPUT OPTIONS (Editable via JSON Config):
+1. **Session Type** –  
+   - Classic Studio (posed)  
+   - Lifestyle (at home)  
+   - Combo: Newborn + Family  
+   - Mini Session  
+
+2. **Baby Age at Session** –  
+   - 5–10 Days  
+   - 11–21 Days  
+   - 1 Month+  
+
+3. **Number of People Included** –  
+   - Baby Only  
+   - Baby + Parents  
+   - Baby + Family (3–6)  
+
+4. **Add-Ons** –  
+   - Professional Makeup for Mom  
+   - Sibling Portraits  
+   - Custom Printed Album  
+   - Framed Wall Art  
+   - Extra Retouching  
+   - Extended Session Time  
+
+5. **Delivery Preference** –  
+   - Digital Only  
+   - Prints + Album  
+   - USB + Album  
+
+6. **Preferred Date** – Optional Picker
+
+7. **Promo Code** – Optional
+
+---
+
+📊 SAMPLE PRICING LOGIC (Editable via JSON):
+- Base Session: Classic Studio = €290  
+- Add €50 for lifestyle session  
+- Add €75 for Combo or Weekend  
+- Makeup: +€80  
+- Album: +€140  
+- Wall Art: +€120  
+- Extra Retouching: +€60  
+- Sibling Add-On: +€50  
+- Apply 10% discount if valid promo code used
+
+---
+
+✨ CORE FEATURES:
+✅ Animated quote reveal panel  
+✅ Step-by-step layout (React preferred)  
+✅ Optional email input before showing full quote  
+✅ PDF export / Email quote option  
+✅ CTA: “Book My Session” or “Send Me This Quote”  
+✅ Custom brandable settings (logo, color, copy)  
+✅ Easy embed script + JSON config
+
+---
+
+🎁 ADVANCED FEATURES:
+
+1. 🧠 **Natural Language Input (Optional):**  
+> “A newborn lifestyle shoot at our home with parents and siblings included” → auto-populates form
+
+2. ⏳ **Quote Validity Lock:**  
+“This quote is valid for 48 hours” with timer + email save
+
+3. ❓ **Smart Hints & Popups:**  
+> “What’s the best age for newborn sessions?” → hover tip
+
+4. 💬 **Emotional CTA Copy Switcher:**  
+> “Capture these fleeting moments forever”
+
+5. 💡 **Combo Recommendations:**  
+> “Most booked: Studio + Album + Wall Art”
+
+6. 🌍 **Language Toggle:**  
+Available in EN, DE, ES, IT
+
+7. 📈 **Admin Dashboard:**  
+Track requests, selections, email capture stats
+
+8. 🧩 **Dynamic Logic Triggers:**  
+- Add makeup for “Mom included” sessions  
+- Trigger family surcharge if “Family of 5+”  
+- Auto-highlight best packages when “Baby Age > 21 Days”
+
+---
+
+🎨 DESIGN STYLE:
+- Soft neutrals, pastel tones, beige/ivory  
+- Rounded UI, large elegant icons (e.g. baby feet, swaddle wraps)  
+- Soothing animations, warm transitions  
+- Upload logo, set fonts + brand palette  
+- Glassmorphism price panel optional
+
+---
+
+🛠️ TECH STACK:
+- React + Tailwind CSS  
+- Supabase or Firebase for storing leads (optional)  
+- JSON for configurable logic  
+- Optional OpenAI/LangChain for text-based pricing inputs  
+- Stripe (optional future release)
+
+---
+
+📦 DELIVERABLE:
+- Working embeddable quote calculator for newborn photographers  
+- Pricing breakdown + live quote preview  
+- Email capture + export tools  
+- Easy customization and embed code
+
+💡 Example Embed Code:
+```html
+<iframe src="https://quotekit.ai/newbornphotography?user=snugglebabyvienna" style="width:100%;height:600px;border:none;"></iframe>

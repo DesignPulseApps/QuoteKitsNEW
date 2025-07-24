@@ -1,0 +1,141 @@
+You are a full-stack developer creating a professional, embeddable AI-powered quote calculator for **painters and decorators**. This tool will be sold as a standalone widget and embedded in platforms like WordPress, Squarespace, Webflow, Wix, and Showit.
+
+---
+
+🎯 GOAL:
+Build a sleek, responsive pricing estimator that:
+- Collects essential project details  
+- Instantly displays a branded price estimate  
+- Captures lead emails (optional)  
+- Works across all modern web builders via iframe or script  
+- Provides real-time, editable pricing logic via JSON
+
+---
+
+🎨 TARGET USERS:
+- Residential painters & decorators  
+- Commercial painting contractors  
+- Wallpapering and interior finish specialists  
+- Home renovation teams  
+- Independent decorators
+
+---
+
+📝 INPUT OPTIONS (Editable via JSON Config):
+1. **Project Type** –  
+   - Interior Painting  
+   - Exterior Painting  
+   - Wallpapering  
+   - Decorative Finishing  
+   - Whole House Redecorating  
+
+2. **Number of Rooms / Area** –  
+   - 1 Room  
+   - 2–3 Rooms  
+   - 4–5 Rooms  
+   - Full Home (6+)  
+   - Exterior (select m²)
+
+3. **Condition of Walls** –  
+   - New / Recently Plastered  
+   - Minor Imperfections  
+   - Needs Prep / Repair Work  
+
+4. **Paint Type Preference** –  
+   - Standard  
+   - Premium / Washable  
+   - Eco-Friendly  
+
+5. **Add-Ons** –  
+   - Ceiling Included  
+   - Doors / Trims  
+   - Feature Wall / Accent  
+   - Two-Coat Finish  
+   - Furniture Protection & Cleanup
+
+6. **Urgency** –  
+   - Flexible  
+   - Within 2 Weeks  
+   - ASAP  
+
+7. **Promo Code** – Optional
+
+---
+
+💸 SAMPLE PRICING LOGIC (Editable via JSON):
+- Base interior room: €180  
+- +€120 per extra room  
+- Wall prep: +€50 per room  
+- Premium paint: +€30 per room  
+- Ceiling: +€25  
+- Trims & doors: +€40  
+- Feature wall: +€50  
+- Urgent project fee: +€100  
+- Apply 10% discount for valid promo codes
+
+---
+
+⚙️ CORE FEATURES:
+✅ Mobile-optimized, clean React interface  
+✅ Instant price update as user selects options  
+✅ Optional email gate before full quote shown  
+✅ Exportable quote breakdown (PDF or email)  
+✅ “Request Callback” or “Book Now” CTA link  
+✅ Simple embed code generation  
+✅ JSON-configured logic for flexibility
+
+---
+
+✨ ADVANCED FEATURES:
+
+1. 🧠 **Natural Language Input (Optional):**  
+> “Need to repaint 3 rooms with premium paint and trim” → pre-fills form
+
+2. ⏳ **Quote Expiry Notification:**  
+> “This price is valid for 48 hours” — leads prompted to save via email
+
+3. 🔍 **Smart Definitions:**  
+Hover-over popups:  
+> “What is a feature wall?” or “Premium paint explained”
+
+4. 🛠️ **Popular Combo Tips:**  
+> “Most booked: Interior + Ceiling + Doors + Two-Coats”
+
+5. 🌍 **Language Switcher:**  
+Dropdown for EN, DE, FR, IT, etc.
+
+6. 📈 **Admin Analytics Dashboard:**  
+View leads, quote values, most-selected services
+
+7. 🧩 **Dynamic Pricing Rules:**  
+- Add wall prep if “older property”  
+- Auto-apply furniture protection to full-home projects
+
+---
+
+🎨 DESIGN STYLE:
+- Trade-pro aesthetic: clean lines, light grays, navy blue, white space  
+- Iconography (paint roller, brush, dropcloth)  
+- Mobile-first UX with animated cards  
+- Upload brand logo, adjust colors and button text in style editor
+
+---
+
+🛠️ TECH STACK:
+- React + Tailwind CSS  
+- Supabase or Firebase for optional email storage  
+- OpenAI or LangChain optional for NLP entry  
+- Stripe (for payment integration in phase two)  
+- JSON-config for fast price logic edits
+
+---
+
+📦 DELIVERABLE:
+- Responsive quote calculator MVP  
+- Branded breakdown UI  
+- Optional email capture + PDF export  
+- One-click embed output
+
+💡 Example Embed Code:
+```html
+<iframe src="https://quotekit.ai/paintingdecorating?user=finishprovienna" style="width:100%;height:600px;border:none;"></iframe>

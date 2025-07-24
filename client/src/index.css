@@ -1,0 +1,176 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .font-display {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-weight: 800;
+    letter-spacing: -0.025em;
+  }
+  
+  .font-body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-weight: 500;
+  }
+}
+
+:root {
+  --background: #060517;
+  --foreground: hsl(0, 0%, 100%);
+  --muted: hsl(60, 4.8%, 95.9%);
+  --muted-foreground: hsl(25, 5.3%, 44.7%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(20, 14.3%, 4.1%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(20, 14.3%, 4.1%);
+  --border: hsl(20, 5.9%, 90%);
+  --input: hsl(20, 5.9%, 90%);
+  --primary: hsl(207, 90%, 54%);
+  --primary-foreground: hsl(211, 100%, 99%);
+  --secondary: hsl(60, 4.8%, 95.9%);
+  --secondary-foreground: hsl(24, 9.8%, 10%);
+  --accent: hsl(60, 4.8%, 95.9%);
+  --accent-foreground: hsl(24, 9.8%, 10%);
+  --destructive: hsl(0, 84.2%, 60.2%);
+  --destructive-foreground: hsl(60, 9.1%, 97.8%);
+  --ring: hsl(20, 14.3%, 4.1%);
+  --radius: 0.5rem;
+  
+  /* QuoteKit Custom Colors */
+  --midnight-50: hsl(220, 40%, 98%);
+  --midnight-100: hsl(220, 35%, 95%);
+  --midnight-500: hsl(215, 20%, 45%);
+  --midnight-600: hsl(215, 25%, 35%);
+  --midnight-700: hsl(215, 30%, 25%);
+  --midnight-800: hsl(215, 35%, 15%);
+  --midnight-900: #060517;
+  
+  --neon-400: hsl(159, 75%, 55%);
+  --neon-500: hsl(159, 80%, 45%);
+  
+  /* Food Photography Colors */
+  --cream-25: hsl(45, 30%, 98%);
+  --cream-50: hsl(45, 25%, 96%);
+  --stone-50: hsl(60, 9%, 98%);
+  --stone-200: hsl(20, 6%, 90%);
+  --stone-300: hsl(15, 4%, 84%);
+  --stone-400: hsl(20, 6%, 58%);
+  --stone-500: hsl(25, 5%, 45%);
+  --stone-600: hsl(24, 6%, 38%);
+  --stone-700: hsl(25, 5%, 25%);
+  --stone-800: hsl(24, 10%, 10%);
+  --amber-25: hsl(48, 95%, 98%);
+  --amber-50: hsl(48, 100%, 96%);
+  --amber-600: hsl(32, 95%, 44%);
+  --amber-700: hsl(26, 90%, 37%);
+  --neon-600: hsl(159, 85%, 35%);
+  --neon-700: hsl(159, 90%, 25%);
+}
+
+.dark {
+  --background: hsl(240, 10%, 3.9%);
+  --foreground: hsl(0, 0%, 98%);
+  --muted: hsl(240, 3.7%, 15.9%);
+  --muted-foreground: hsl(240, 5%, 64.9%);
+  --popover: hsl(240, 10%, 3.9%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --card: hsl(240, 10%, 3.9%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --border: hsl(240, 3.7%, 15.9%);
+  --input: hsl(240, 3.7%, 15.9%);
+  --primary: hsl(207, 90%, 54%);
+  --primary-foreground: hsl(211, 100%, 99%);
+  --secondary: hsl(240, 3.7%, 15.9%);
+  --secondary-foreground: hsl(0, 0%, 98%);
+  --accent: hsl(240, 3.7%, 15.9%);
+  --accent-foreground: hsl(0, 0%, 98%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(240, 4.9%, 83.9%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .bg-midnight-50 { background-color: hsl(220, 40%, 98%); }
+  .bg-midnight-100 { background-color: hsl(220, 35%, 95%); }
+  .bg-midnight-500 { background-color: hsl(215, 20%, 45%); }
+  .bg-midnight-600 { background-color: hsl(215, 25%, 35%); }
+  .bg-midnight-700 { background-color: hsl(215, 30%, 25%); }
+  .bg-midnight-800 { background-color: hsl(215, 35%, 15%); }
+  .bg-midnight-900 { background-color: hsl(215, 40%, 8%); }
+  
+  .bg-neon-400 { background-color: hsl(159, 75%, 55%); }
+  .bg-neon-500 { background-color: hsl(159, 80%, 45%); }
+  .bg-neon-600 { background-color: hsl(159, 85%, 35%); }
+  .bg-neon-700 { background-color: hsl(159, 90%, 25%); }
+  
+  .text-midnight-50 { color: hsl(220, 40%, 98%); }
+  .text-midnight-100 { color: hsl(220, 35%, 95%); }
+  .text-midnight-500 { color: hsl(215, 20%, 45%); }
+  .text-midnight-600 { color: hsl(215, 25%, 35%); }
+  .text-midnight-700 { color: hsl(215, 30%, 25%); }
+  .text-midnight-800 { color: hsl(215, 35%, 15%); }
+  .text-midnight-900 { color: hsl(215, 40%, 8%); }
+  
+  .text-neon-400 { color: hsl(159, 75%, 55%); }
+  .text-neon-500 { color: hsl(159, 80%, 45%); }
+  .text-neon-600 { color: hsl(159, 85%, 35%); }
+  .text-neon-700 { color: hsl(159, 90%, 25%); }
+  
+  .border-midnight-700 { border-color: hsl(215, 30%, 25%); }
+  .border-midnight-600 { border-color: hsl(215, 25%, 35%); }
+  .border-neon-400 { border-color: hsl(159, 75%, 55%); }
+  .border-neon-500 { border-color: hsl(159, 80%, 45%); }
+  
+  .hover\:border-midnight-600:hover { border-color: hsl(215, 25%, 35%); }
+  .hover\:border-neon-400:hover { border-color: hsl(159, 75%, 55%); }
+  
+  .hover\:bg-midnight-700:hover { background-color: hsl(215, 30%, 25%); }
+  .hover\:bg-midnight-600:hover { background-color: hsl(215, 25%, 35%); }
+  .hover\:bg-midnight-500:hover { background-color: hsl(215, 20%, 45%); }
+  .hover\:bg-neon-600:hover { background-color: hsl(159, 85%, 35%); }
+  
+  .hover\:text-neon-400:hover { color: hsl(159, 75%, 55%); }
+  .hover\:text-neon-300:hover { color: hsl(159, 70%, 65%); }
+  
+  .shadow-glow {
+    box-shadow: 0 0 20px hsla(159, 80%, 45%, 0.5);
+  }
+  
+  .hover\:shadow-glow:hover {
+    box-shadow: 0 0 30px hsla(159, 80%, 45%, 0.6);
+  }
+  
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .animate-glow {
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes glow {
+  from { box-shadow: 0 0 20px hsla(159, 80%, 45%, 0.5); }
+  to { box-shadow: 0 0 30px hsla(159, 80%, 45%, 0.8); }
+}
